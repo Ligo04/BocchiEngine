@@ -41,7 +41,8 @@ namespace Bocchi
                     break;
                 case LogSystem::LogLevel::fatal:
                     m_logger->critical(std::forward<TARGS>(args)...);
-                    fatalCallback(std::forward<TARGS>(args)...) break;
+                    fatalCallback(std::forward<TARGS>(args)...);
+                    break;
                 default:
                     break;
             }
@@ -51,7 +52,7 @@ namespace Bocchi
         void fatalCallback(TARGS&&... args)
         {
             const std::string format_str = fmt::format(std::forward<TARGS>(args)...);
-            return std::runtime_error(format_str);
+            throw std::runtime_error(format_str);
         }
 
     private:

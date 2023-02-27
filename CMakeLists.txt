@@ -19,6 +19,8 @@ target_include_directories(BocchiEngine PRIVATE
 target_include_directories(BocchiEngine PRIVATE
     E:/Library/.xmake/packages/g/glfw/3.3.8/d12e591897c9472fb7d3725fa5811388/include
     C:/VulkanSDK/1.3.231.1/include
+    E:/Library/.xmake/packages/v/vulkan-memory-allocator/v3.0.1/c002556f91bb44589ae9a7997252a731/include
+    E:/Library/.xmake/packages/v/vulkan-headers/1.3.231+1/0f4cca7c08ae41efa25d8d31c27328a8/include
     E:/Library/.xmake/packages/i/imgui/v1.89/70f284a1b79d48f2af7729f39014238a/include
     E:/Library/.xmake/packages/i/imgui/v1.89/70f284a1b79d48f2af7729f39014238a/include/imgui
     E:/Library/.xmake/packages/i/imgui/v1.89/70f284a1b79d48f2af7729f39014238a/include/backends
@@ -59,19 +61,23 @@ target_link_directories(BocchiEngine PRIVATE
     E:/Library/.xmake/packages/i/imgui/v1.89/70f284a1b79d48f2af7729f39014238a/lib
 )
 target_sources(BocchiEngine PRIVATE
-    Engine/common/Mics.cpp
-    Engine/common/stdafx.cpp
     Engine/editor/source/main.cpp
-    Engine/runtime/core/log_system.cpp
+    Engine/runtime/core/log/log_system.cpp
     Engine/runtime/Engine.cpp
     Engine/runtime/function/global/global_context.cpp
-    Engine/runtime/render/window_system.cpp
-    Engine/common/Mics.h
-    Engine/common/stdafx.h
-    Engine/runtime/core/log_system.h
+    Engine/runtime/function/render/render_system.cpp
+    Engine/runtime/function/render/RHI/vulkan/rhi_vk.cpp
+    Engine/runtime/function/render/window_system.cpp
+    Engine/runtime/core/base/hash.h
+    Engine/runtime/core/log/log_system.h
     Engine/runtime/core/mico.h
     Engine/runtime/Engine.h
     Engine/runtime/function/global/global_context.h
-    Engine/runtime/render/window_system.h
+    Engine/runtime/function/render/render_system.h
+    Engine/runtime/function/render/render_type.h
+    Engine/runtime/function/render/RHI/rhi.h
+    Engine/runtime/function/render/RHI/rhi_struct.h
+    Engine/runtime/function/render/RHI/vulkan/rhi_vk.h
+    Engine/runtime/function/render/window_system.h
 )
 

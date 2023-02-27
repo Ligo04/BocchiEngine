@@ -14,7 +14,7 @@ namespace Bocchi
     {
         int         width{1280};
         int         height{720};
-        const char* title{"Vulkan Engine"};
+        const char* title{"Bocchi Engine"};
         bool        is_fullscreen{false};
     };
 

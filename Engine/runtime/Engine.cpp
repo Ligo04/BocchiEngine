@@ -3,7 +3,7 @@
 #include "runtime/core/mico.h"
 
 #include "runtime/function/global/global_context.h"
-#include "runtime/render/window_system.h"
+#include "runtime/function/render/window_system.h"
 
 namespace Bocchi
 {

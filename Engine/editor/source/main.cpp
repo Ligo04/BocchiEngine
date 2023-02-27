@@ -11,5 +11,5 @@ int main()
     engine->clear();
     engine->shutdownEngine();
 
-    system("pause");
+    return 1;
 }

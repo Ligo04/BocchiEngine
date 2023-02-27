@@ -9,19 +9,19 @@ add_rules("mode.debug", "mode.release")
 
 
 --add vulkan sdk
-add_requires("glfw","vulkansdk")
+add_requires("glfw","vulkansdk","vulkan-memory-allocator")
 
 add_requires("imgui","spdlog")
 
 target("BocchiEngine")
     set_kind("binary")
     set_languages("cxx17")
-    add_packages("glfw","vulkansdk")
+    add_packages("glfw","vulkansdk","vulkan-memory-allocator")
     add_packages("imgui","spdlog")
     add_headerfiles("Engine/**.h")
     add_files("Engine/**.cpp")
     set_toolchains("myClang")
-
+    add_rules("c++.unity_build", {batchsize = 2})
     --add hear search 
     add_includedirs("Engine")
 

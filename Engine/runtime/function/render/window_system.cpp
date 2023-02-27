@@ -11,7 +11,7 @@ namespace Bocchi
 
     void WindowSystem::initialize(WindowCreateInfo info)
     {
-        if ( !glfwInit() )
+        if (!glfwInit())
         {
             return;
         }
@@ -22,10 +22,9 @@ namespace Bocchi
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
         m_pwindow = glfwCreateWindow(info.width, info.height, info.title, nullptr, nullptr);
 
-        if ( !m_pwindow )
+        if (!m_pwindow)
         {
             glfwTerminate();
-
             return;
         }
 
