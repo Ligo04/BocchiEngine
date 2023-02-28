@@ -6,8 +6,6 @@ toolchain_end()
 
 
 add_rules("mode.debug", "mode.release")
-
-
 --add vulkan sdk
 add_requires("glfw","vulkansdk","vulkan-memory-allocator")
 
