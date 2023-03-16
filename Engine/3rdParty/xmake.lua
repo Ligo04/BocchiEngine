@@ -5,7 +5,14 @@ BuildProject({
         projectType = "static",
         exception = true,
         UseUnityBuild=true,
-        unityBuildBatch=32
+        unityBuildBatch=32,
+        debugEvent = function()
+                add_defines("_DEBUG")
+                
+        end,
+        releaseEvent = function()
+                add_defines("NDEBUG")
+        end,
 })
 set_group("ThirdParty")
 add_includedirs("spdlog/include", {
@@ -21,10 +28,17 @@ BuildProject({
         projectType = "headeronly",
         exception = true,
         UseUnityBuild=true,
-        unityBuildBatch=32
+        unityBuildBatch=32,
+        debugEvent = function()
+                add_defines("_DEBUG")
+        end,
+        releaseEvent = function()
+                add_defines("NDEBUG")
+        end,
 })
 set_group("ThirdParty")
 add_includedirs("VulkanSDK/include", {public = true})
+add_headerfiles("VulkanSDK/include//**.h","VulkanSDK/include//**.hpp")
 if(is_os("windows")) then 
         add_linkdirs("VulkanSDK/lib/Win32",{public=true})
         add_links("vulkan-1",{public=true})
@@ -36,7 +50,13 @@ BuildProject({
         projectType = "headeronly",
         exception = true,
         UseUnityBuild=true,
-        unityBuildBatch=32
+        unityBuildBatch=32,
+        debugEvent = function()
+                add_defines("_DEBUG")
+        end,
+        releaseEvent = function()
+                add_defines("NDEBUG")
+        end,
 })
 set_group("ThirdParty")
 add_includedirs("vulkanmemoryallocator/include", {
@@ -52,7 +72,13 @@ BuildProject({
         projectType = "static",
         exception = true,
         UseUnityBuild=true,
-        unityBuildBatch=32
+        unityBuildBatch=32,
+        debugEvent = function()
+                add_defines("_DEBUG")
+        end,
+        releaseEvent = function()
+                add_defines("NDEBUG")
+        end,
 })
 set_group("ThirdParty")
 add_includedirs("glfw/include/", {public = true})
@@ -89,7 +115,13 @@ BuildProject({
         projectType = "static",
         exception = true,
         UseUnityBuild=true,
-        unityBuildBatch=32
+        unityBuildBatch=32,
+        debugEvent = function()
+                add_defines("_DEBUG")
+        end,
+        releaseEvent = function()
+                add_defines("NDEBUG")
+        end,
 })
 set_group("ThirdParty")
 add_includedirs("imgui", {public = true})

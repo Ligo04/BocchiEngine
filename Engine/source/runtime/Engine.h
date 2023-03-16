@@ -17,7 +17,7 @@ namespace Bocchi
         void initialize();
         void clear();
 
-        bool isQuit() const { return m_is_quit; };
+        bool isQuit() const { return m_is_quit; }
 
         void run();
         bool tickOneFrame(float delta_time);
@@ -30,7 +30,7 @@ namespace Bocchi
 
         void calculateFPS(float delta_time);
 
-
+        
         float calculateDeltaTime();
 
     

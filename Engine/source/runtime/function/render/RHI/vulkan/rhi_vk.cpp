@@ -1,14 +1,15 @@
 #include "rhi_vk.h"
 #include "runtime/function/render/window_system.h"
-#include <set>
 #include <limits>
+#include <set>
+
 
 
 namespace Bocchi
 {
     VulkanRHI::~VulkanRHI()
     {
-        //TODO
+        // TODO
     }
     void VulkanRHI::initialize(RHIInitInfo initialize_info)
     {
@@ -21,19 +22,19 @@ namespace Bocchi
         m_enable_validation_layers = true;
 #endif   // NODEBUG
 
-        //create Instance
-        createInstane();
-        //setup debugger
+        // create Instance
+        createInstance();
+        // setup debugger
         setupDebugMessenger();
-        //create surface
+        // create surface
         createSurface();
-        //physical device
+        // physical device
         pickPhysicsDevice();
-        //logical device
+        // logical device
         createLogicalDevice();
-        //swap chain
+        // swap chain
         createSwapChain();
-        //image view 
+        // image view
         createImageViews();
     }
     void VulkanRHI::prepareContext()
@@ -49,7 +50,7 @@ namespace Bocchi
         return VK_FALSE;
     }
 
-    void VulkanRHI::createInstane()
+    void VulkanRHI::createInstance()
     {
         if (m_enable_validation_layers && !checkValidationLayerSupport())
         {
@@ -70,7 +71,7 @@ namespace Bocchi
         vkinstance_create_info.sType            = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
         vkinstance_create_info.pApplicationInfo = &vkinstance_app_info;
 
-         VkDebugUtilsMessengerCreateInfoEXT debug_create_info{};
+        VkDebugUtilsMessengerCreateInfoEXT debug_create_info{};
         if (m_enable_validation_layers)
         {
             vkinstance_create_info.enabledLayerCount =
@@ -78,7 +79,7 @@ namespace Bocchi
             vkinstance_create_info.ppEnabledLayerNames = m_validation_layer.data();
 
             populateDebugMessengerCreateInfo(debug_create_info);
-            vkinstance_create_info.pNext = (VkDebugUtilsMessengerCreateInfoEXT*)&debug_create_info;
+            vkinstance_create_info.pNext = &debug_create_info;
         }
         else
         {
@@ -87,9 +88,9 @@ namespace Bocchi
         }
 
 
-        auto extensions = getRequiredExtensions();
-        vkinstance_create_info.enabledExtensionCount = (uint32_t)extensions.size();
-        vkinstance_create_info.ppEnabledExtensionNames   = extensions.data();
+        auto extensions                                = getRequiredExtensions();
+        vkinstance_create_info.enabledExtensionCount   = static_cast<uint32_t>(extensions.size());
+        vkinstance_create_info.ppEnabledExtensionNames = extensions.data();
 
         if (vkCreateInstance(&vkinstance_create_info, nullptr, &m_instance) != VK_SUCCESS)
         {
@@ -99,8 +100,7 @@ namespace Bocchi
 
     void VulkanRHI::createSurface()
     {
-        if (glfwCreateWindowSurface(
-            m_instance, m_window, nullptr, &m_surface) != VK_SUCCESS)
+        if (glfwCreateWindowSurface(m_instance, m_window, nullptr, &m_surface) != VK_SUCCESS)
         {
             LOG_ERROR("failed to create KHR surface!");
         }
@@ -110,7 +110,7 @@ namespace Bocchi
     {
         m_physical_device = VK_NULL_HANDLE;
 
-        //enum physcis device
+        // enum physcis device
         uint32_t physical_device_count = 0;
         vkEnumeratePhysicalDevices(m_instance, &physical_device_count, nullptr);
 
@@ -123,13 +123,13 @@ namespace Bocchi
             std::vector<VkPhysicalDevice> physical_devices(physical_device_count);
             vkEnumeratePhysicalDevices(m_instance, &physical_device_count, physical_devices.data());
 
-            //give device a score
+            // give device a score
             std::vector<std::pair<int, VkPhysicalDevice>> physical_device_candidates;
 
             for (const auto& device : physical_devices)
             {
                 int score = rateDeviceSuitability(device);
-                physical_device_candidates.push_back(std::make_pair(score,device));
+                physical_device_candidates.push_back(std::make_pair(score, device));
             }
 
             std::sort(physical_device_candidates.begin(),
@@ -180,7 +180,7 @@ namespace Bocchi
         VkPhysicalDeviceFeatures device_features;
         vkGetPhysicalDeviceFeatures(device, &device_features);
 
-        //discrete GPUs  have a sinificant performance advantage
+        // discrete GPUs  have a sinificant performance advantage
         if (device_properties.deviceType == VK_PHYSICAL_DEVICE_TYPE_DISCRETE_GPU)
         {
             score += 1000;
@@ -189,7 +189,7 @@ namespace Bocchi
         // Maximum possible size of textures affects graphics quality
         score += device_properties.limits.maxImageDimension2D;
 
-        //Application can't function without geometry shaders
+        // Application can't function without geometry shaders
         if (!device_features.geometryShader)
         {
             return 0;
@@ -209,8 +209,8 @@ namespace Bocchi
         vkGetPhysicalDeviceQueueFamilyProperties(
             device, &queue_family_count, queue_families.data());
 
-        //including the type of operations that are supported and the number of queues that can be
-        //created based on that family.
+        // including the type of operations that are supported and the number of queues that can be
+        // created based on that family.
 
         uint32_t i = 0;
         for (const auto& queue_family : queue_families)
@@ -240,7 +240,7 @@ namespace Bocchi
     bool VulkanRHI::checkDeviceExtensionSupport(VkPhysicalDevice device)
     {
         uint32_t extension_count;
-        vkEnumerateDeviceExtensionProperties(device, nullptr, &extension_count,nullptr);
+        vkEnumerateDeviceExtensionProperties(device, nullptr, &extension_count, nullptr);
         std::vector<VkExtensionProperties> available_extensions(extension_count);
         vkEnumerateDeviceExtensionProperties(
             device, nullptr, &extension_count, available_extensions.data());
@@ -262,7 +262,7 @@ namespace Bocchi
 
         std::vector<VkDeviceQueueCreateInfo> queue_create_infos;
         std::set<uint32_t> unique_queue_families{m_queue_indics.graphics_family.value(),
-                                                  m_queue_indics.present_family.value()};
+                                                 m_queue_indics.present_family.value()};
 
         float queue_priority = 1.0f;
         for (uint32_t queue_family : unique_queue_families)
@@ -297,7 +297,8 @@ namespace Bocchi
             device_create_info.enabledLayerCount = 0;
         }
 
-        if (vkCreateDevice(m_physical_device, &device_create_info, nullptr, &m_device) != VK_SUCCESS)
+        if (vkCreateDevice(m_physical_device, &device_create_info, nullptr, &m_device) !=
+            VK_SUCCESS)
         {
             LOG_ERROR("failed to create device!");
         }
@@ -312,7 +313,7 @@ namespace Bocchi
 
         VkSurfaceFormatKHR surface_format = chooseSwapSurfaceFormat(swap_chain_support.formats);
         VkPresentModeKHR   present_mode   = chooseSwapPresentMode(swap_chain_support.presentModes);
-        VkExtent2D extent = chooseSwapExtent(swap_chain_support.capabilities);
+        VkExtent2D         extent         = chooseSwapExtent(swap_chain_support.capabilities);
 
         uint32_t image_count = swap_chain_support.capabilities.minImageCount + 1;
 
@@ -332,13 +333,13 @@ namespace Bocchi
         swap_chain_create_info.imageArrayLayers = 1;
         swap_chain_create_info.imageUsage       = VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT;
 
-        uint32_t           queue_family_indices[] = {m_queue_indics.graphics_family.value(),
-                                                     m_queue_indics.present_family.value()};
+        uint32_t queue_family_indices[] = {m_queue_indics.graphics_family.value(),
+                                           m_queue_indics.present_family.value()};
 
-        //use concurrent
+        // use concurrent
         if (m_queue_indics.graphics_family != m_queue_indics.present_family)
         {
-            swap_chain_create_info.imageSharingMode = VK_SHARING_MODE_CONCURRENT;
+            swap_chain_create_info.imageSharingMode      = VK_SHARING_MODE_CONCURRENT;
             swap_chain_create_info.queueFamilyIndexCount = 2;
             swap_chain_create_info.pQueueFamilyIndices   = queue_family_indices;
         }
@@ -347,13 +348,14 @@ namespace Bocchi
             swap_chain_create_info.imageSharingMode = VK_SHARING_MODE_EXCLUSIVE;
         }
 
-        swap_chain_create_info.preTransform = swap_chain_support.capabilities.currentTransform;
+        swap_chain_create_info.preTransform   = swap_chain_support.capabilities.currentTransform;
         swap_chain_create_info.compositeAlpha = VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR;
         swap_chain_create_info.presentMode    = present_mode;
         swap_chain_create_info.clipped        = VK_TRUE;
         swap_chain_create_info.oldSwapchain   = VK_NULL_HANDLE;
 
-        if (vkCreateSwapchainKHR(m_device, &swap_chain_create_info, nullptr, &m_swap_chain) != VK_SUCCESS)
+        if (vkCreateSwapchainKHR(m_device, &swap_chain_create_info, nullptr, &m_swap_chain) !=
+            VK_SUCCESS)
         {
             LOG_ERROR("failed to create swap chain!");
         }
@@ -364,17 +366,16 @@ namespace Bocchi
 
         m_swap_chain_format = surface_format.format;
         m_swap_chain_extent = extent;
-
     }
 
     SwapChainSupportDetails VulkanRHI::querySwapChainSupport(VkPhysicalDevice device)
     {
         SwapChainSupportDetails details;
 
-        //query the basic surface capabilities
+        // query the basic surface capabilities
         vkGetPhysicalDeviceSurfaceCapabilitiesKHR(device, m_surface, &details.capabilities);
 
-        //query the basic supports surface formats
+        // query the basic supports surface formats
         uint32_t format_count;
         vkGetPhysicalDeviceSurfaceFormatsKHR(device, m_surface, &format_count, nullptr);
         if (format_count != 0)
@@ -418,7 +419,7 @@ namespace Bocchi
     {
         for (const auto& available_present_mode : availabnle_present_modes)
         {
-            //query the MAILBOX is available mode
+            // query the MAILBOX is available mode
             if (available_present_mode == VK_PRESENT_MODE_MAILBOX_KHR)
             {
                 return available_present_mode;
@@ -446,7 +447,7 @@ namespace Bocchi
                                              capabilities.minImageExtent.width,
                                              capabilities.maxImageExtent.width);
 
-            
+
             actual_extent.height = std::clamp(actual_extent.height,
                                               capabilities.minImageExtent.height,
                                               capabilities.maxImageExtent.height);
@@ -459,10 +460,10 @@ namespace Bocchi
     {
         m_swap_chain_image_views.resize(m_swap_chain_images.size());
 
-        for (size_t i = 0;i<m_swap_chain_images.size();++i)
+        for (size_t i = 0; i < m_swap_chain_images.size(); ++i)
         {
             VkImageViewCreateInfo image_view_create_info{};
-            image_view_create_info.sType = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
+            image_view_create_info.sType    = VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;
             image_view_create_info.image    = m_swap_chain_images[i];
             image_view_create_info.viewType = VK_IMAGE_VIEW_TYPE_2D;
             image_view_create_info.format   = m_swap_chain_format;
@@ -471,15 +472,16 @@ namespace Bocchi
             image_view_create_info.components.g = VK_COMPONENT_SWIZZLE_IDENTITY;
             image_view_create_info.components.b = VK_COMPONENT_SWIZZLE_IDENTITY;
             image_view_create_info.components.a = VK_COMPONENT_SWIZZLE_IDENTITY;
-            //no mipmapping
-            image_view_create_info.subresourceRange.aspectMask = VK_IMAGE_ASPECT_COLOR_BIT;
-            image_view_create_info.subresourceRange.baseMipLevel = 0;
-            image_view_create_info.subresourceRange.levelCount   = 1;
+            // no mipmapping
+            image_view_create_info.subresourceRange.aspectMask     = VK_IMAGE_ASPECT_COLOR_BIT;
+            image_view_create_info.subresourceRange.baseMipLevel   = 0;
+            image_view_create_info.subresourceRange.levelCount     = 1;
             image_view_create_info.subresourceRange.baseArrayLayer = 0;
             image_view_create_info.subresourceRange.layerCount     = 1;
 
             if (vkCreateImageView(
-                m_device, &image_view_create_info, nullptr, &m_swap_chain_image_views[i]) != VK_SUCCESS)
+                    m_device, &image_view_create_info, nullptr, &m_swap_chain_image_views[i]) !=
+                VK_SUCCESS)
             {
                 LOG_ERROR("failed to creat image View!");
             }
@@ -563,8 +565,8 @@ namespace Bocchi
         VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT* p_create_info,
         const VkAllocationCallbacks* p_allocator, VkDebugUtilsMessengerEXT* p_debug_messenger)
     {
-        auto func = (PFN_vkCreateDebugUtilsMessengerEXT)vkGetInstanceProcAddr(
-            instance, "vkCreateDebugUtilsMessengerEXT");
+        auto func = reinterpret_cast<PFN_vkCreateDebugUtilsMessengerEXT>(
+            vkGetInstanceProcAddr(instance, "vkCreateDebugUtilsMessengerEXT"));
         if (func != nullptr)
         {
             return func(instance, p_create_info, p_allocator, p_debug_messenger);
@@ -575,12 +577,12 @@ namespace Bocchi
         }
     }
 
-    void VulkanRHI::DestroyDebugUtilsMessengerEXT(VkInstance                   instance,
+    void VulkanRHI::destroyDebugUtilsMessengerEXT(VkInstance                   instance,
                                                   VkDebugUtilsMessengerEXT     debug_messenger,
                                                   const VkAllocationCallbacks* p_allocator)
     {
-        auto func = (PFN_vkDestroyDebugUtilsMessengerEXT)vkGetInstanceProcAddr(
-            instance, "vkDestroyDebugUtilsMessengerEXT");
+        auto func = reinterpret_cast<PFN_vkDestroyDebugUtilsMessengerEXT>(
+            vkGetInstanceProcAddr(instance, "vkDestroyDebugUtilsMessengerEXT"));
         if (func != nullptr)
         {
             func(instance, debug_messenger, p_allocator);
@@ -596,7 +598,7 @@ namespace Bocchi
         }
         if (m_enable_validation_layers)
         {
-            DestroyDebugUtilsMessengerEXT(m_instance, m_debug_messenger, nullptr);
+            destroyDebugUtilsMessengerEXT(m_instance, m_debug_messenger, nullptr);
         }
         vkDestroySwapchainKHR(m_device, m_swap_chain, nullptr);
         vkDestroyDevice(m_device, nullptr);

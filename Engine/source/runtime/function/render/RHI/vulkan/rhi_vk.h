@@ -5,9 +5,8 @@
 #include <GLFW/glfw3.h>
 #define GLFW_EXPOSE_NATIVE_WIN32
 #include <GLFW/glfw3native.h>
-
 #include "runtime/function/render/RHI/rhi.h"
-#include "runtime/core/mico.h"
+
 
 #include <optional>
 
@@ -28,7 +27,7 @@ namespace Bocchi
         virtual void clear() override;
 
     protected:
-        void createInstane();
+        void createInstance();
 
         // KHR_surface
         void createSurface();
@@ -50,7 +49,7 @@ namespace Bocchi
             const std::vector<VkPresentModeKHR>& availabnle_present_modes);
         VkExtent2D chooseSwapExtent(const VkSurfaceCapabilitiesKHR& capabilities);
 
-        //image view
+        // image view
         void createImageViews();
 
     private:
@@ -60,19 +59,19 @@ namespace Bocchi
         VkPhysicalDevice m_physical_device{nullptr};
         VkDevice         m_device{nullptr};
         VkQueue          m_graphiy_queue{nullptr};
-        VkSurfaceKHR     m_surface{nullptr};   // the WSI(windows system extension) :present rendered images
-        VkSwapchainKHR m_swap_chain{nullptr};
-        VkFormat       m_swap_chain_format;
-        VkExtent2D     m_swap_chain_extent;
+        VkSurfaceKHR     m_surface;
+        VkSwapchainKHR   m_swap_chain;
+        VkFormat         m_swap_chain_format;
+        VkExtent2D       m_swap_chain_extent;
 
         std::vector<VkImage>     m_swap_chain_images{};
         std::vector<VkImageView> m_swap_chain_image_views{};
-        
+
         const std::vector<const char*> m_device_extensions = {VK_KHR_SWAPCHAIN_EXTENSION_NAME};
 
         QueueFamilyIndices m_queue_indics;
 
-    private:
+
         // debug
         bool                     checkValidationLayerSupport();
         std::vector<const char*> getRequiredExtensions();
@@ -87,14 +86,13 @@ namespace Bocchi
         VkResult createDebugUtilsMessengerEXT(
             VkInstance instance, const VkDebugUtilsMessengerCreateInfoEXT* p_create_info,
             const VkAllocationCallbacks* p_allocator, VkDebugUtilsMessengerEXT* p_debug_messenger);
-        void DestroyDebugUtilsMessengerEXT(VkInstance                   instance,
+        void destroyDebugUtilsMessengerEXT(VkInstance                   instance,
                                            VkDebugUtilsMessengerEXT     debug_messenger,
                                            const VkAllocationCallbacks* p_allocator);
 
-    private:
         bool                           m_enable_validation_layers = {true};
-        VkDebugUtilsMessengerEXT       m_debug_messenger          = nullptr;
-        const std::vector<const char*> m_validation_layer         = {"VK_LAYER_KHRONOS_validation"};
-        uint32_t                       m_vulkan_version           = VK_API_VERSION_1_3;
+        VkDebugUtilsMessengerEXT       m_debug_messenger;
+        const std::vector<const char*> m_validation_layer = {"VK_LAYER_KHRONOS_validation"};
+        uint32_t                       m_vulkan_version   = VK_API_VERSION_1_3;
     };
-}  // namespace Bocchi
+}   // namespace Bocchi

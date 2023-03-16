@@ -1,5 +1,6 @@
 set_config("toolchain", "clang-cl")
 add_rules("mode.debug", "mode.release")
+set_defaultmode("debug")
 option("is_clang")
 add_csnippets("is_clang", "return (__clang__)?0:-1;", {
 	tryrun = true
@@ -46,6 +47,7 @@ function BuildProject(config)
 	end
 	target(projectName)
 	set_languages("c11","cxx17")
+	--设置默认架构
 	local projectType = GetValue(config.projectType)
 	if projectType ~= nil then
 		set_kind(projectType)

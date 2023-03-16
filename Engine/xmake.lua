@@ -8,9 +8,12 @@ BuildProject({
     projectType = "binary",
     debugEvent = function()
         add_defines("_DEBUG")
+        set_symbols("debug")
     end,
     releaseEvent = function()
         add_defines("NDEBUG")
+        set_symbols("hidden")
+        set_strip("all")
     end,
     exception = true,
     unityBuildBatch=8
