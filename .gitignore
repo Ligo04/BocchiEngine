@@ -8,3 +8,4 @@ build/
 vsxmake2022/*
 .vscode/*
 vs/*
+bin/Bocchi-Engine.exe

@@ -1,0 +1,9 @@
+#pragma once
+#include <string>
+
+namespace Bocchi
+{
+    bool        initShaderComplierCache(const std::string& shader_lib_dir, const std::string& shader_cache_dir);
+    std::string getShaderCompilerLibDir(); 
+    std::string getShaderCompilerCacheDir();
+} // namespace Bocchi
