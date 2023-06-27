@@ -7,7 +7,7 @@
 #include <fstream>
 
 
-namespace Bocchi
+namespace bocchi
 {
     std::wstring shader_cache_path = L"";
 

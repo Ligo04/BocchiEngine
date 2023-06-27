@@ -3,7 +3,7 @@
 #include <vulkan/vulkan.h>
 
 
-namespace Bocchi
+namespace bocchi
 {
     enum ShaderSourceType
     {

@@ -5,7 +5,7 @@
 #include <fstream>
 
 #define USE_DXC_SPIRV_FROM_DISK
-namespace Bocchi
+namespace bocchi
 {
     DxcCreateInstanceProc s_dxc_create_func;
 

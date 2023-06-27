@@ -1,11 +1,11 @@
 #pragma once
 
-#include "runtime/function/render/RHI/vulkan/vulkan_rhi.h"
+#include <memory>
+#include <nvrhi/nvrhi.h>
 #include "runtime/function/render/window_system.h"
 
-namespace Bocchi
+namespace bocchi
 {
-    class RHI;
     class WindowSystem;
 
     struct RenderSystemInfo
@@ -25,6 +25,6 @@ namespace Bocchi
         void clear();
 
     private:
-        std::shared_ptr<RHI> m_rhi;
+        
     };
 }

@@ -8,7 +8,7 @@
 #include<vector>
 
 
-namespace Bocchi
+namespace bocchi
 {
     struct WindowCreateInfo
     {
@@ -24,7 +24,7 @@ namespace Bocchi
         WindowSystem(/* args */) = default;
         ~WindowSystem();
 
-        void               initialize(WindowCreateInfo info);
+        void               initialize(const WindowCreateInfo& info);
         void               pollEvents() const;
         bool               shouldClose() const;
         void               setTitle(const char* title);

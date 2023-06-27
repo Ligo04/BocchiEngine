@@ -1,6 +1,6 @@
 #include "shader_compiler.h"
 
-namespace Bocchi
+namespace bocchi
 {
     size_t hashShaderString(const char* p_root_dir, const char* p_shader, size_t result)
     {

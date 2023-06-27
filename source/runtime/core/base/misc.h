@@ -1,7 +1,7 @@
 #pragma once
 #include "runtime/core/base/macro.h"
 
-namespace Bocchi
+namespace bocchi
 {
     std::string format(const char* format, ...);
     bool        lauchProcess(const char* command_line, const char* file_name_err);

@@ -1,7 +1,7 @@
 #include "window_system.h"
 
 
-namespace Bocchi
+namespace bocchi
 {
     WindowSystem::~WindowSystem()
     {
@@ -9,7 +9,7 @@ namespace Bocchi
         glfwTerminate();
     }
 
-    void WindowSystem::initialize(WindowCreateInfo info)
+    void WindowSystem::initialize(const WindowCreateInfo& info)
     {
         if (!glfwInit())
         {

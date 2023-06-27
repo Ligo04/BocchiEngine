@@ -106,3 +106,17 @@ target("dxc")
         add_linkdirs("dxc/lib/x64",{public=true})
         add_links("dxcompiler",{public=true})
 target_end()
+
+--nvrhi
+target("nvrhi")
+        _config_project({
+                project_kind = "static",
+                enable_exception = true,
+                batch_size=8
+        })
+        add_deps("vulkan")
+        add_includedirs("nvrhi/include", {public = true})
+        add_headerfiles("nvrhi/**.h")
+        add_files("nvrhi/**.cpp")
+target_end()
+

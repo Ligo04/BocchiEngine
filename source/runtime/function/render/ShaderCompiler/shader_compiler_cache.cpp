@@ -1,7 +1,7 @@
 #include "shader_compiler_cache.h"
 
 
-namespace Bocchi
+namespace bocchi
 {
     std::string s_shader_lib_dir;
     std::string s_shader_cache_dir;

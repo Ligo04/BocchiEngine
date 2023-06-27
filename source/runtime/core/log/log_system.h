@@ -5,7 +5,7 @@
 #include <stdexcept>
 
 
-namespace Bocchi
+namespace bocchi
 {
     class LogSystem final
     {

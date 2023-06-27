@@ -36,7 +36,6 @@ on_load(function(target)
 		target:set("exceptions", "no-cxx")
 	end
 	if is_mode("debug") then
-		target:set("runtimes", "MDd")
 		target:set("optimize", "none")
 		target:set("warnings", "none")
 		target:add("cxflags", "/GS", "/Gd", {
@@ -46,7 +45,6 @@ on_load(function(target)
 			tools = "cl"
 		});
 	else
-		target:set("runtimes", "MD")
 		target:set("optimize", "aggressive")
 		target:set("warnings", "none")
 		target:add("cxflags", "/GS-", "/Gd", {
@@ -54,17 +52,6 @@ on_load(function(target)
 		})
 		target:add("cxflags", "/Zc:preprocessor", {
 			tools = "cl"
-		})
-	end
-	if _get_or("use_simd", false) then
-		target:add("vectorexts", "sse", "sse2")
-	end
-	if _get_or("no_rtti", false) then
-		target:add("cxflags", "/GR-", {
-			tools = {"clang_cl", "cl"}
-		})
-		target:add("cxflags", "-fno-rtti", "-fno-rtti-data", {
-			tools = {"clang", "gcc"}
 		})
 	end
 	target:add("defines","UNICODE","_UNICODE","_WIN32","_WINDOWS")

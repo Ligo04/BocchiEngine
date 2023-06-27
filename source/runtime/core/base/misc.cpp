@@ -2,7 +2,7 @@
 #include "misc.h"
 #include <fstream>
 
-namespace Bocchi
+namespace bocchi
 {
     class MessageBuffer
     {

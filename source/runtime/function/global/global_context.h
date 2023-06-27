@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 
-namespace Bocchi
+namespace bocchi
 {
     class LogSystem;
     class WindowSystem;

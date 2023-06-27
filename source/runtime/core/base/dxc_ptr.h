@@ -1,5 +1,5 @@
 #pragma once
-namespace Bocchi
+namespace bocchi
 {
     template<typename T>
     class DxcPtr

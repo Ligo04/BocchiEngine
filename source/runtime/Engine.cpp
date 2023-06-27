@@ -5,7 +5,7 @@
 #include "runtime/function/global/global_context.h"
 #include "runtime/function/render/window_system.h"
 
-namespace Bocchi
+namespace bocchi
 {
     void BocchiEngine::startEngine(const std::string& config_file_path)
     {

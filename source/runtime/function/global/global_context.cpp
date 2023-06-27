@@ -4,7 +4,7 @@
 #include "runtime/function/render/render_system.h"
 
 
-namespace Bocchi
+namespace bocchi
 {
     RuntimeGlobalContext g_runtime_global_context;
 

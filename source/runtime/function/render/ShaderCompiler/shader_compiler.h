@@ -3,7 +3,7 @@
 #include "runtime/core/base/hash.h"
 #include <map>
 
-namespace Bocchi
+namespace bocchi
 {
     // hash a string of scource code  and rescur over its #include files
     size_t hashShaderString(const char* p_root_dir, const char* p_shader, size_t result = 2166136261);

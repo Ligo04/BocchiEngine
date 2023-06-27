@@ -4,7 +4,7 @@
 #include <d3dcompiler.h>
 #include "dxcapi.h"
 
-namespace Bocchi
+namespace bocchi
 {
     void throwIfFailed(HRESULT hr);
 

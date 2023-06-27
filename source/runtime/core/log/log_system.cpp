@@ -5,7 +5,7 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/spdlog.h>
 
-namespace Bocchi
+namespace bocchi
 {
     LogSystem::LogSystem()
     {

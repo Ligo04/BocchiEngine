@@ -2,7 +2,7 @@
 #include <chrono>
 #include <string>
 
-namespace Bocchi
+namespace bocchi
 {
     class BocchiEngine
     {

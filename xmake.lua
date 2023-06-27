@@ -2,8 +2,9 @@ set_project("Bocchi Engine")
 set_xmakever("2.7.0")
 set_version("0.0.1")
 
+add_rules("plugin.vsxmake.autoupdate")
+add_toolchains("clang")
 add_rules("mode.release", "mode.debug")
-
 option("enable_unity_build")
 set_values(true, false)
 set_default(true)
@@ -16,9 +17,9 @@ if is_arch("x64", "x86_64", "arm64") then
 	set_policy("build.ccache", true)
 	includes("xmake_func.lua")
     includes("thirdparty")
-    add_cxxflags("/utf-8")
     
-    target("Bocchi-Engine")
+    target("BocchiEngine")
+        set_group("BocchiEngine")
         -- set bin dir
         set_targetdir("bin")
         _config_project({
@@ -26,7 +27,7 @@ if is_arch("x64", "x86_64", "arm64") then
             enable_exception = true,
             batch_size=8
         })
-        add_deps("spdlog","vulkan","vkm","glfw","imgui")
+        add_deps("spdlog","glfw","imgui","nvrhi","vkm")
         add_includedirs("source")
         add_headerfiles("source/**.h")
         add_files("source/**.cpp")
