@@ -19,6 +19,8 @@
 
 #pragma once
 #include "thread_pool.h"
+#include <cassert>
+
 
 // This is a multithreaded shader cache. This is how it works:
 //

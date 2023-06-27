@@ -7,7 +7,7 @@ add_toolchains("clang")
 add_rules("mode.release", "mode.debug")
 option("enable_unity_build")
 set_values(true, false)
-set_default(true)
+set_default(false)
 set_showmenu(true)
 option_end()
 
@@ -25,7 +25,7 @@ if is_arch("x64", "x86_64", "arm64") then
         _config_project({
             project_kind = "binary",
             enable_exception = true,
-            batch_size=8
+            --batch_size=8
         })
         add_deps("spdlog","glfw","imgui","nvrhi","vkm")
         add_includedirs("source")

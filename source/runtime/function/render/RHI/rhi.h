@@ -74,12 +74,12 @@ namespace bocchi
     };
 
     class WindowSystem;
-    class RHI
+    class Rhi
     {
     public:
-        static RHI* Create(nvrhi::GraphicsAPI api);
+        static Rhi* Create(nvrhi::GraphicsAPI api);
 
-        bool CreateWindowDeviceAndSwapChain(const WindowCreateInfo& create_info);
+        //bool CreateWindowDeviceAndSwapChain(const WindowCreateInfo& create_info);
 
     protected:
         // derived class need to realise
@@ -113,6 +113,6 @@ namespace bocchi
         GLFWwindow*           m_window_ = nullptr;
 
     private:
-        static RHI* CreateVulkanRhi();
+        static Rhi* CreateVulkanRhi();
     };
 } // namespace bocchi

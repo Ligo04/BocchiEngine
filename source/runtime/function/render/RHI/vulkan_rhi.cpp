@@ -32,7 +32,7 @@ namespace bocchi
         return ret;
     }
 
-    class VulkanRhi : public RHI
+    class VulkanRhi : public Rhi
     {
     public:
         [[nodiscard]] nvrhi::IDevice* GetDevice() const override
@@ -1051,6 +1051,6 @@ namespace bocchi
         }
     }
 
-    RHI* RHI::CreateVulkanRhi() { return new VulkanRhi(); }
+    Rhi* Rhi::CreateVulkanRhi() { return new VulkanRhi(); }
 
 } // namespace bocchi

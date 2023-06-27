@@ -5,7 +5,7 @@ target("spdlog")
         _config_project({
                 project_kind = "static",
                 enable_exception = true,
-                batch_size=8
+                --batch_size=8
         })
         add_defines("SPDLOG_COMPILED_LIB")
         add_includedirs("spdlog/include", {
@@ -21,14 +21,10 @@ target("vulkan")
         _config_project({
                 project_kind = "headeronly",
                 enable_exception = true,
-                batch_size=8
+                --batch_size=8
         })
-        add_includedirs("VulkanSDK/include", {public = true})
-        add_headerfiles("VulkanSDK/include//**.h","VulkanSDK/include//**.hpp")
-        if(is_os("windows")) then 
-                add_linkdirs("VulkanSDK/lib/Win32",{public=true})
-                add_links("vulkan-1",{public=true})
-        end 
+        add_includedirs("Vulkan-Headers/include", {public = true})
+        add_headerfiles("Vulkan-Headers/include//**.h","Vulkan-Headers/include//**.hpp")
 target_end()
 
 
@@ -37,7 +33,7 @@ target("vkm")
         _config_project({
                 project_kind = "headeronly",
                 enable_exception = true,
-                batch_size=8
+                --batch_size=8
         })
         add_includedirs("vulkanmemoryallocator/include", {
 	    public = true
@@ -51,7 +47,7 @@ target("glfw")
         _config_project({
                 project_kind = "static",
                 enable_exception = true,
-                batch_size=8
+                --batch_size=8
         })
         add_includedirs("glfw/include/", {public = true})
         if(is_plat("windows")) then 
@@ -86,7 +82,7 @@ target("imgui")
         _config_project({
                 project_kind = "static",
                 enable_exception = true,
-                batch_size=8
+                --batch_size=8
         })
         add_includedirs("imgui", {public = true})
         add_headerfiles("imgui/**.h")
@@ -99,7 +95,7 @@ target("dxc")
         _config_project({
                 project_kind = "static",
                 enable_exception = true,
-                batch_size=8
+                --batch_size=8
         })
         add_includedirs("dxc/include", {public = true})
         add_headerfiles("dxc/**.h")
@@ -112,11 +108,16 @@ target("nvrhi")
         _config_project({
                 project_kind = "static",
                 enable_exception = true,
-                batch_size=8
+                --batch_size=8
         })
         add_deps("vulkan")
         add_includedirs("nvrhi/include", {public = true})
         add_headerfiles("nvrhi/**.h")
-        add_files("nvrhi/**.cpp")
+        add_files("nvrhi/src/**.cpp")
+
+        --vulkan
+        if is_plat("windows") then 
+                add_defines("VK_USE_PLATFORM_WIN32_KHR","NOMINMAX")
+        end
 target_end()
 
