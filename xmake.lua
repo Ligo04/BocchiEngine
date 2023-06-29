@@ -35,6 +35,7 @@ if is_arch("x64", "x86_64", "arm64") then
         add_headerfiles("source/**.h")
         add_files("source/**.cpp")
 
+        add_headerfiles("source/shaders/**.hlsl")
         add_files("source/shaders/**.hlsl",{rule="hlsl_shader_complier"})
     target_end()
 end 
