@@ -1,15 +1,17 @@
 #include "runtime/Engine.h"
 #include <nvrhi/nvrhi.h>
+
+
 int main()
 {
     bocchi::BocchiEngine* engine = new bocchi::BocchiEngine();
 
-    engine->startEngine("");
-    engine->initialize();
+    engine->StartEngine("");
+    engine->Initialize();
 
     engine->run();
     engine->clear();
-    engine->shutdownEngine();
+    engine->ShutdownEngine();
 
     return 1;
 }

@@ -2,8 +2,6 @@
 #include<nvrhi/nvrhi.h>
 #include<nvrhi/vulkan.h>
 #include<runtime/function/render/window_system.h>
-#define USE_VK 1
-
 namespace bocchi
 {
 
@@ -14,7 +12,7 @@ namespace bocchi
         void message(nvrhi::MessageSeverity severity, const char* message_text) override;
     };
 
-    struct RhiCreationParameters
+    struct RhiInitInfo
     {
         bool start_maximized   = false;
         bool start_full_screen = false;
@@ -74,12 +72,13 @@ namespace bocchi
     };
 
     class WindowSystem;
+
     class Rhi
     {
     public:
         static Rhi* Create(nvrhi::GraphicsAPI api);
 
-        //bool CreateWindowDeviceAndSwapChain(const WindowCreateInfo& create_info);
+    	virtual bool Initialize(const RhiInitInfo& init_info,GLFWwindow* p_window) = 0;
 
     protected:
         // derived class need to realise
@@ -109,8 +108,8 @@ namespace bocchi
 
 
     protected:
-        RhiCreationParameters m_rhi_creation_parameters_;
-        GLFWwindow*           m_window_ = nullptr;
+        RhiInitInfo m_rhi_creation_parameters_;
+        GLFWwindow*           m_p_window_ = nullptr;
 
     private:
         static Rhi* CreateVulkanRhi();

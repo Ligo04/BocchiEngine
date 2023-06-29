@@ -20,32 +20,33 @@ namespace bocchi
                 return CreateVulkanRhi();
 #endif
             default:
-                LOG_ERROR("DeviceManager::Create: Unsupported Graphics API (%d)", api);
+                LOG_ERROR("RHI::Create: Unsupported Graphics API (%d)", api);
                 return nullptr;
         }
 	}
 
-    DefaultMessageCallback& DefaultMessageCallback::GetInstance()
+
+	DefaultMessageCallback& DefaultMessageCallback::GetInstance()
     {
-        static DefaultMessageCallback Instance;
-        return Instance;
+        static DefaultMessageCallback instance;
+        return instance;
     }
 
-    void DefaultMessageCallback::message(nvrhi::MessageSeverity severity, const char* messageText)
+    void DefaultMessageCallback::message(nvrhi::MessageSeverity severity, const char* message_text)
     {
         switch (severity)
         {
             case nvrhi::MessageSeverity::Info:
-                LOG_INFO(messageText);
+                LOG_INFO(message_text);
                 break;
             case nvrhi::MessageSeverity::Warning:
-                LOG_WARN(messageText);
+                LOG_WARN(message_text);
                 break;
             case nvrhi::MessageSeverity::Error:
-                LOG_ERROR(messageText);
+                LOG_ERROR(message_text);
                 break;
             case nvrhi::MessageSeverity::Fatal:
-                LOG_FATAL(messageText);
+                LOG_FATAL(message_text);
                 break;
         }
     }

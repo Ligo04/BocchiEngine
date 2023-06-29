@@ -5,7 +5,7 @@ namespace bocchi
 {
     WindowSystem::~WindowSystem()
     {
-        glfwDestroyWindow(m_pwindow);
+        glfwDestroyWindow(m_pwindow_);
         glfwTerminate();
     }
 
@@ -16,63 +16,63 @@ namespace bocchi
             return;
         }
 
-        m_width  = info.width;
-        m_height = info.height;
+        m_width_  = info.width;
+        m_height_ = info.height;
 
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
-        m_pwindow = glfwCreateWindow(info.width, info.height, info.title, nullptr, nullptr);
+        m_pwindow_ = glfwCreateWindow(info.width, info.height, info.title, nullptr, nullptr);
 
-        if (!m_pwindow)
+        if (!m_pwindow_)
         {
             glfwTerminate();
             return;
         }
 
         // setup input callbacks
-        glfwSetWindowUserPointer(m_pwindow, this);
-        glfwSetKeyCallback(m_pwindow, keyCallback);
-        glfwSetCharCallback(m_pwindow, charCallback);
-        glfwSetCharModsCallback(m_pwindow, charModsCallback);
-        glfwSetMouseButtonCallback(m_pwindow, mouseButtonCallback);
-        glfwSetCursorPosCallback(m_pwindow, cursorPosCallback);
-        glfwSetCursorEnterCallback(m_pwindow, cursorEnterCallback);
-        glfwSetScrollCallback(m_pwindow, scrollCallback);
-        glfwSetDropCallback(m_pwindow, dropCallback);
-        glfwSetWindowSizeCallback(m_pwindow, windowSizeCallback);
-        glfwSetWindowCloseCallback(m_pwindow, windowCloseCallback);
+        glfwSetWindowUserPointer(m_pwindow_, this);
+        glfwSetKeyCallback(m_pwindow_, KeyCallback);
+        glfwSetCharCallback(m_pwindow_, CharCallback);
+        glfwSetCharModsCallback(m_pwindow_, CharModsCallback);
+        glfwSetMouseButtonCallback(m_pwindow_, MouseButtonCallback);
+        glfwSetCursorPosCallback(m_pwindow_, CursorPosCallback);
+        glfwSetCursorEnterCallback(m_pwindow_, CursorEnterCallback);
+        glfwSetScrollCallback(m_pwindow_, ScrollCallback);
+        glfwSetDropCallback(m_pwindow_, DropCallback);
+        glfwSetWindowSizeCallback(m_pwindow_, WindowSizeCallback);
+        glfwSetWindowCloseCallback(m_pwindow_, WindowCloseCallback);
 
-        glfwSetInputMode(m_pwindow, GLFW_RAW_MOUSE_MOTION, GLFW_FALSE);
+        glfwSetInputMode(m_pwindow_, GLFW_RAW_MOUSE_MOTION, GLFW_FALSE);
     }
 
-    void WindowSystem::pollEvents() const
+    void WindowSystem::PollEvents() const
     {
         glfwPollEvents();
     }
 
-    bool WindowSystem::shouldClose() const
+    bool WindowSystem::ShouldClose() const
     {
-        return glfwWindowShouldClose(m_pwindow);
+        return glfwWindowShouldClose(m_pwindow_);
     }
 
-    void WindowSystem::setTitle(const char* title)
+    void WindowSystem::SetTitle(const char* title)
     {
-        glfwSetWindowTitle(m_pwindow, title);
+        glfwSetWindowTitle(m_pwindow_, title);
     }
 
-    GLFWwindow* WindowSystem::getWindow() const
+    GLFWwindow* WindowSystem::GetWindow() const
     {
-        return m_pwindow;
+        return m_pwindow_;
     }
 
-    std::array<int, 2> WindowSystem::getWindowsSize() const
+    std::array<int, 2> WindowSystem::GetWindowsSize() const
     {
-        return std::array<int, 2>({m_width, m_height});
+        return std::array<int, 2>({m_width_, m_height_});
     }
 
-    void WindowSystem::setFocusMode(bool mode)
+    void WindowSystem::SetFocusMode(bool mode)
     {
-        m_is_focus_mode = mode;
+        m_is_focus_mode_ = mode;
         glfwSetInputMode(
-            m_pwindow, GLFW_CURSOR, m_is_focus_mode ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
+            m_pwindow_, GLFW_CURSOR, m_is_focus_mode_ ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
     }
 }   // namespace Bocchi

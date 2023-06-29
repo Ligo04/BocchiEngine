@@ -1,8 +1,10 @@
 #pragma once
 
 #include <memory>
-#include <nvrhi/nvrhi.h>
+#include "runtime/function/render/RHI/rhi.h"
 #include "runtime/function/render/window_system.h"
+
+#define USE_VK 1
 
 namespace bocchi
 {
@@ -25,6 +27,6 @@ namespace bocchi
         void clear();
 
     private:
-        
+        std::shared_ptr<Rhi> m_rhi_;
     };
 }

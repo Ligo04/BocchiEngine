@@ -25,197 +25,188 @@ namespace bocchi
         ~WindowSystem();
 
         void               initialize(const WindowCreateInfo& info);
-        void               pollEvents() const;
-        bool               shouldClose() const;
-        void               setTitle(const char* title);
-        GLFWwindow*        getWindow() const;
-        std::array<int, 2> getWindowsSize() const;
+        void               PollEvents() const;
+        bool               ShouldClose() const;
+        void               SetTitle(const char* title);
+        GLFWwindow*        GetWindow() const;
+        std::array<int, 2> GetWindowsSize() const;
 
-        typedef std::function<void()>                   onResetFunc;
-        typedef std::function<void(int, int, int, int)> onKeyFunc;
-        typedef std::function<void(unsigned int)>       onCharFunc;
-        typedef std::function<void(int, unsigned int)>  onCharModsFunc;
-        typedef std::function<void(int, int, int)>      onMouseButtonFunc;
-        typedef std::function<void(double, double)>     onCursorPosFunc;
-        typedef std::function<void(int)>                onCursorEnterFunc;
-        typedef std::function<void(double, double)>     onScrollFunc;
-        typedef std::function<void(int, const char**)>  onDropFunc;
-        typedef std::function<void(int, int)>           onWindowSizeFunc;
-        typedef std::function<void()>                   onWindowCloseFunc;
+        typedef std::function<void()>                   OnResetFunc;
+        typedef std::function<void(int, int, int, int)> OnKeyFunc;
+        typedef std::function<void(unsigned int)>       OnCharFunc;
+        typedef std::function<void(int, unsigned int)>  OnCharModsFunc;
+        typedef std::function<void(int, int, int)>      OnMouseButtonFunc;
+        typedef std::function<void(double, double)>     OnCursorPosFunc;
+        typedef std::function<void(int)>                OnCursorEnterFunc;
+        typedef std::function<void(double, double)>     OnScrollFunc;
+        typedef std::function<void(int, const char**)>  OnDropFunc;
+        typedef std::function<void(int, int)>           OnWindowSizeFunc;
+        typedef std::function<void()>                   OnWindowCloseFunc;
 
-        void registerOnResetFunc(onResetFunc func) { m_onResetFunc.push_back(func); }
-        void registerOnKeyFunc(onKeyFunc func) { m_onKeyFunc.push_back(func); }
-        void registerOnCharFunc(onCharFunc func) { m_onCharFunc.push_back(func); }
-        void registerOnCharModsFunc(onCharModsFunc func) { m_onCharModsFunc.push_back(func); }
-        void registerOnMouseButtonFunc(onMouseButtonFunc func)
+        void RegisterOnResetFunc(const OnResetFunc& func) { m_on_reset_func_.push_back(func); }
+        void RegisterOnKeyFunc(const OnKeyFunc& func) { m_on_key_func_.push_back(func); }
+        void RegisterOnCharFunc(const OnCharFunc& func) { m_on_char_func_.push_back(func); }
+        void RegisterOnCharModsFunc(const OnCharModsFunc& func) { m_on_char_mods_func_.push_back(func); }
+        void RegisterOnMouseButtonFunc(const OnMouseButtonFunc& func)
         {
-            m_onMouseButtonFunc.push_back(func);
+            m_on_mouse_button_func_.push_back(func);
         }
-        void registerOnCursorPosFunc(onCursorPosFunc func) { m_onCursorPosFunc.push_back(func); }
-        void registerOnCursorEnterFunc(onCursorEnterFunc func)
+        void RegisterOnCursorPosFunc(const OnCursorPosFunc& func) { m_on_cursor_pos_func_.push_back(func); }
+        void RegisterOnCursorEnterFunc(const OnCursorEnterFunc& func)
         {
-            m_onCursorEnterFunc.push_back(func);
+            m_on_cursor_enter_func_.push_back(func);
         }
-        void registerOnScrollFunc(onScrollFunc func) { m_onScrollFunc.push_back(func); }
-        void registerOnDropFunc(onDropFunc func) { m_onDropFunc.push_back(func); }
-        void registerOnWindowSizeFunc(onWindowSizeFunc func) { m_onWindowSizeFunc.push_back(func); }
-        void registerOnWindowCloseFunc(onWindowCloseFunc func)
+        void RegisterOnScrollFunc(const OnScrollFunc& func) { m_on_scroll_func_.push_back(func); }
+        void RegisterOnDropFunc(const OnDropFunc& func) { m_on_drop_func_.push_back(func); }
+        void RegisterOnWindowSizeFunc(const OnWindowSizeFunc& func) { m_on_window_size_func_.push_back(func); }
+        void RegisterOnWindowCloseFunc(const OnWindowCloseFunc& func)
         {
-            m_onWindowCloseFunc.push_back(func);
+            m_on_window_close_func_.push_back(func);
         }
 
-        bool isMouseButtonDown(int button) const
+        bool IsMouseButtonDown(int button) const
         {
             if ( button < GLFW_MOUSE_BUTTON_1 || button > GLFW_MOUSE_BUTTON_LAST )
             {
                 return false;
             }
-            return glfwGetMouseButton(m_pwindow, button) == GLFW_PRESS;
+            return glfwGetMouseButton(m_pwindow_, button) == GLFW_PRESS;
         }
 
-        bool getFocusMode() const { return m_is_focus_mode; };
-        void setFocusMode(bool mode);
+        bool GetFocusMode() const { return m_is_focus_mode_; };
+        void SetFocusMode(bool mode);
 
     protected:   
         // window event callbacks
-        static void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
+        static void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onKey(key, scancode, action, mods);
+                app->OnKey(key, scancode, action, mods);
             }
         }
-        static void charCallback(GLFWwindow* window, unsigned int codepoint)
+        static void CharCallback(GLFWwindow* window, unsigned int codepoint)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onChar(codepoint);
+                app->OnChar(codepoint);
             }
         }
-        static void charModsCallback(GLFWwindow* window, unsigned int codepoint, int mods)
+        static void CharModsCallback(GLFWwindow* window, unsigned int codepoint, int mods)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onCharMods(codepoint, mods);
+                app->OnCharMods(codepoint, mods);
             }
         }
-        static void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
+        static void MouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onMouseButton(button, action, mods);
+                app->OnMouseButton(button, action, mods);
             }
         }
-        static void cursorPosCallback(GLFWwindow* window, double xpos, double ypos)
+        static void CursorPosCallback(GLFWwindow* window, double xpos, double ypos)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onCursorPos(xpos, ypos);
+                app->OnCursorPos(xpos, ypos);
             }
         }
-        static void cursorEnterCallback(GLFWwindow* window, int entered)
+        static void CursorEnterCallback(GLFWwindow* window, int entered)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onCursorEnter(entered);
+                app->OnCursorEnter(entered);
             }
         }
-        static void scrollCallback(GLFWwindow* window, double xoffset, double yoffset)
+        static void ScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onScroll(xoffset, yoffset);
+                app->OnScroll(xoffset, yoffset);
             }
         }
-        static void dropCallback(GLFWwindow* window, int count, const char** paths)
+        static void DropCallback(GLFWwindow* window, int count, const char** paths)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->onDrop(count, paths);
+                app->OnDrop(count, paths);
             }
         }
-        static void windowSizeCallback(GLFWwindow* window, int width, int height)
+        static void WindowSizeCallback(GLFWwindow* window, int width, int height)
         {
-            WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window);
-            if ( app )
+	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
             {
-                app->m_width  = width;
-                app->m_height = height;
+                app->m_width_  = width;
+                app->m_height_ = height;
             }
         }
-        static void windowCloseCallback(GLFWwindow* window)
+        static void WindowCloseCallback(GLFWwindow* window)
         {
             glfwSetWindowShouldClose(window, true);
         }
 
-        void onReset()
+        void OnReset()
         {
-            for ( auto& func : m_onResetFunc ) func();
+            for ( auto& func : m_on_reset_func_ ) func();
         }
-        void onKey(int key, int scancode, int action, int mods)
+        void OnKey(int key, int scancode, int action, int mods)
         {
-            for ( auto& func : m_onKeyFunc ) func(key, scancode, action, mods);
+            for ( auto& func : m_on_key_func_ ) func(key, scancode, action, mods);
         }
-        void onChar(unsigned int codepoint)
+        void OnChar(unsigned int codepoint)
         {
-            for ( auto& func : m_onCharFunc ) func(codepoint);
+            for ( auto& func : m_on_char_func_ ) func(codepoint);
         }
-        void onCharMods(int codepoint, unsigned int mods)
+        void OnCharMods(int codepoint, unsigned int mods)
         {
-            for ( auto& func : m_onCharModsFunc ) func(codepoint, mods);
+            for ( auto& func : m_on_char_mods_func_ ) func(codepoint, mods);
         }
-        void onMouseButton(int button, int action, int mods)
+        void OnMouseButton(int button, int action, int mods)
         {
-            for ( auto& func : m_onMouseButtonFunc ) func(button, action, mods);
+            for ( auto& func : m_on_mouse_button_func_ ) func(button, action, mods);
         }
-        void onCursorPos(double xpos, double ypos)
+        void OnCursorPos(double xpos, double ypos)
         {
-            for ( auto& func : m_onCursorPosFunc ) func(xpos, ypos);
+            for ( auto& func : m_on_cursor_pos_func_ ) func(xpos, ypos);
         }
-        void onCursorEnter(int entered)
+        void OnCursorEnter(int entered)
         {
-            for ( auto& func : m_onCursorEnterFunc ) func(entered);
+            for ( auto& func : m_on_cursor_enter_func_ ) func(entered);
         }
-        void onScroll(double xoffset, double yoffset)
+        void OnScroll(double xoffset, double yoffset)
         {
-            for ( auto& func : m_onScrollFunc ) func(xoffset, yoffset);
+            for ( auto& func : m_on_scroll_func_ ) func(xoffset, yoffset);
         }
-        void onDrop(int count, const char** paths)
+        void OnDrop(int count, const char** paths)
         {
-            for ( auto& func : m_onDropFunc ) func(count, paths);
+            for ( auto& func : m_on_drop_func_ ) func(count, paths);
         }
-        void onWindowSize(int width, int height)
+        void OnWindowSize(int width, int height)
         {
-            for ( auto& func : m_onWindowSizeFunc ) func(width, height);
+            for ( auto& func : m_on_window_size_func_ ) func(width, height);
         }
 
     private:
-        GLFWwindow* m_pwindow{nullptr};
+        GLFWwindow* m_pwindow_{nullptr};
 
-        int m_width{0};
-        int m_height{0};
+        int m_width_{0};
+        int m_height_{0};
 
-        bool m_is_focus_mode{false};
+        bool m_is_focus_mode_{false};
 
-        std::vector<onResetFunc>       m_onResetFunc;
-        std::vector<onKeyFunc>         m_onKeyFunc;
-        std::vector<onCharFunc>        m_onCharFunc;
-        std::vector<onCharModsFunc>    m_onCharModsFunc;
-        std::vector<onMouseButtonFunc> m_onMouseButtonFunc;
-        std::vector<onCursorPosFunc>   m_onCursorPosFunc;
-        std::vector<onCursorEnterFunc> m_onCursorEnterFunc;
-        std::vector<onScrollFunc>      m_onScrollFunc;
-        std::vector<onDropFunc>        m_onDropFunc;
-        std::vector<onWindowSizeFunc>  m_onWindowSizeFunc;
-        std::vector<onWindowCloseFunc> m_onWindowCloseFunc;
+        std::vector<OnResetFunc>       m_on_reset_func_;
+        std::vector<OnKeyFunc>         m_on_key_func_;
+        std::vector<OnCharFunc>        m_on_char_func_;
+        std::vector<OnCharModsFunc>    m_on_char_mods_func_;
+        std::vector<OnMouseButtonFunc> m_on_mouse_button_func_;
+        std::vector<OnCursorPosFunc>   m_on_cursor_pos_func_;
+        std::vector<OnCursorEnterFunc> m_on_cursor_enter_func_;
+        std::vector<OnScrollFunc>      m_on_scroll_func_;
+        std::vector<OnDropFunc>        m_on_drop_func_;
+        std::vector<OnWindowSizeFunc>  m_on_window_size_func_;
+        std::vector<OnWindowCloseFunc> m_on_window_close_func_;
     };
 }
 

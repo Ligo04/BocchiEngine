@@ -7,77 +7,77 @@
 
 namespace bocchi
 {
-    void BocchiEngine::startEngine(const std::string& config_file_path)
+    void BocchiEngine::StartEngine(const std::string& config_file_path)
     {
-        g_runtime_global_context.startSystems(config_file_path);
+        g_runtime_global_context.StartSystems(config_file_path);
     }
 
-    void BocchiEngine::shutdownEngine() { g_runtime_global_context.shutdownSystems(); }
+    void BocchiEngine::ShutdownEngine() { g_runtime_global_context.ShutdownSystems(); }
 
-    void BocchiEngine::initialize() {}
+    void BocchiEngine::Initialize() {}
 
     void BocchiEngine::clear() {}
 
     void BocchiEngine::run()
     {
-        std::shared_ptr<WindowSystem> window_system = g_runtime_global_context.m_windows_system;
+        std::shared_ptr<WindowSystem> window_system = g_runtime_global_context.m_windows_system_;
         ASSERT(window_system);
 
-        while (!window_system->shouldClose())
+        while (!window_system->ShouldClose())
         {
-            const float delta_time = calculateDeltaTime();
-            tickOneFrame(delta_time);
+            const float delta_time = CalculateDeltaTime();
+            TickOneFrame(delta_time);
         }
     }
 
-    bool BocchiEngine::tickOneFrame(float delta_time)
+    bool BocchiEngine::TickOneFrame(float delta_time)
     {
         // first logical tick
-        logicalTick(delta_time);
-        calculateFPS(delta_time);
+        LogicalTick(delta_time);
+        CalculateFps(delta_time);
         // then render tick
-        rendererTick(delta_time);
+        RendererTick(delta_time);
         // then swap buffer
-        g_runtime_global_context.m_windows_system->pollEvents();
-        g_runtime_global_context.m_windows_system->setTitle(
-            ("Bocchi Engine " + std::to_string(getFPS()) + " FPS").c_str());
+        g_runtime_global_context.m_windows_system_->PollEvents();
+        g_runtime_global_context.m_windows_system_->SetTitle(
+            ("Bocchi Engine " + std::to_string(GetFps()) + " FPS").c_str());
 
-        const bool should_window_close = g_runtime_global_context.m_windows_system->shouldClose();
+        const bool should_window_close = g_runtime_global_context.m_windows_system_->ShouldClose();
 
         return !should_window_close;
     }
 
-    void BocchiEngine::logicalTick(float delta_time) {}
+    void BocchiEngine::LogicalTick(float delta_time) {}
 
-    void BocchiEngine::rendererTick(float delta_time) {}
+    void BocchiEngine::RendererTick(float delta_time) {}
 
-    const float BocchiEngine::m_s_fps_alpha = 1.f / 100;
-    void        BocchiEngine::calculateFPS(float delta_time)
+    const float BocchiEngine::m_s_fps_alpha_ = 1.f / 100;
+    void        BocchiEngine::CalculateFps(float delta_time)
     {
-        m_frame_count++;
+        m_frame_count_++;
 
-        if (m_frame_count == 1)
+        if (m_frame_count_ == 1)
         {
-            m_average_duration = delta_time;
+            m_average_duration_ = delta_time;
         }
         else
         {
-            m_average_duration = m_average_duration * (1 - m_s_fps_alpha) + delta_time * m_s_fps_alpha;
+            m_average_duration_ = m_average_duration_ * (1 - m_s_fps_alpha_) + delta_time * m_s_fps_alpha_;
         }
 
-        m_fps = static_cast<int>(1.f / m_average_duration);
+        m_fps_ = static_cast<int>(1.f / m_average_duration_);
     }
 
-    float BocchiEngine::calculateDeltaTime()
+    float BocchiEngine::CalculateDeltaTime()
     {
         float delta_time;
         {
             using namespace std::chrono;
             steady_clock::time_point tick_time_point;
-            duration<float> time_span = duration_cast<duration<float>>(tick_time_point - m_last_tick_time_point);
+            duration<float> time_span = duration_cast<duration<float>>(tick_time_point - m_last_tick_time_point_);
 
             delta_time             = time_span.count();
-            m_last_tick_time_point = tick_time_point;
+            m_last_tick_time_point_ = tick_time_point;
         }
         return delta_time;
     }

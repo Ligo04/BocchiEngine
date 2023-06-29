@@ -6,35 +6,35 @@ namespace bocchi
 {
     class BocchiEngine
     {
-        static const float m_s_fps_alpha;
+        static const float m_s_fps_alpha_;
 
     public:
-        void startEngine(const std::string& config_file_path);
-        void shutdownEngine();
+        void StartEngine(const std::string& config_file_path);
+        void ShutdownEngine();
 
-        void initialize();
+        void Initialize();
         void clear();
 
-        bool isQuit() const { return m_is_quit; }
+        bool IsQuit() const { return m_is_quit_; }
 
         void run();
-        bool tickOneFrame(float delta_time);
+        bool TickOneFrame(float delta_time);
 
-        int getFPS() const { return m_fps; }
+        int GetFps() const { return m_fps_; }
 
     protected:
-        void logicalTick(float delta_time);
-        void rendererTick(float delta_time);
+        void LogicalTick(float delta_time);
+        void RendererTick(float delta_time);
 
-        void calculateFPS(float delta_time);
+        void CalculateFps(float delta_time);
 
-        float calculateDeltaTime();
+        float CalculateDeltaTime();
 
-        bool                                  m_is_quit {false};
-        std::chrono::steady_clock::time_point m_last_tick_time_point {std::chrono::steady_clock::now()};
+        bool                                  m_is_quit_ {false};
+        std::chrono::steady_clock::time_point m_last_tick_time_point_ {std::chrono::steady_clock::now()};
 
-        float m_average_duration {0.f};
-        int   m_frame_count {0};
-        int   m_fps {0};
+        float m_average_duration_ {0.f};
+        int   m_frame_count_ {0};
+        int   m_fps_ {0};
     };
 } // namespace Bocchi
