@@ -47,7 +47,7 @@ namespace bocchi
         void SetAspect(float aspect);
         void SetFoVx(float fovx) { m_fov_x_ = fovx; }
 
-        pointf3 Position() const { return m_position_; }
+        [[nodiscard]] pointf3 Position() const { return m_position_; }
         quatf   Rotation() const { return m_rotation_; }
 
         vecf3 Forward() const { return (m_inv_rotation_*m_y_); }
