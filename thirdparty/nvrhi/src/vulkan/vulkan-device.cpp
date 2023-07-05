@@ -22,7 +22,6 @@
 
 #include "vulkan-backend.h"
 #include <unordered_map>
-
 #include <nvrhi/common/misc.h>
 
 #if defined(NVRHI_SHARED_LIBRARY_BUILD)

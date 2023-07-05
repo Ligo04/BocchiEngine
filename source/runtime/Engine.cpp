@@ -1,7 +1,6 @@
 #include "runtime/Engine.h"
 
 #include "runtime/core/base/macro.h"
-
 #include "runtime/function/global/global_context.h"
 #include "runtime/function/render/window_system.h"
 
@@ -51,7 +50,7 @@ namespace bocchi
 
     void BocchiEngine::RendererTick(float delta_time) {}
 
-    const float BocchiEngine::m_s_fps_alpha_ = 1.f / 100;
+    const float BocchiEngine::kFpsAlpha = 1.f / 100;
     void        BocchiEngine::CalculateFps(float delta_time)
     {
         m_frame_count_++;
@@ -62,7 +61,7 @@ namespace bocchi
         }
         else
         {
-            m_average_duration_ = m_average_duration_ * (1 - m_s_fps_alpha_) + delta_time * m_s_fps_alpha_;
+            m_average_duration_ = m_average_duration_ * (1 - kFpsAlpha) + delta_time * kFpsAlpha;
         }
 
         m_fps_ = static_cast<int>(1.f / m_average_duration_);

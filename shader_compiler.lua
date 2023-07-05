@@ -18,11 +18,11 @@ rule("hlsl_shader_complier")
                 local spv_output_path = path.join(spv_generated_dir,hlsl_basename..".spv")
 				batchcmds:show_progress(opt.progress, "${color.build.object}compiling.hlsl %s", sourcefile_hlsl)
                 if is_mode("debug") then  
-					batchcmds:vrunv(dxc,{"-spirv","-T",hlsl_shader_type.."_6_3","-E main","-fspv-debug=vulkan-with-source","-fspv-extension=SPV_KHR_non_semantic_info"," -fspv-target-env=vulkan1.3",
+					batchcmds:vrunv(dxc,{"-spirv","-T",hlsl_shader_type.."_6_3","-E","main","-fspv-debug=vulkan-with-source","-fspv-extension=SPV_KHR_non_semantic_info","-fspv-target-env=vulkan1.3",
                     "-fspv-extension=SPV_KHR_ray_tracing","-fspv-extension=SPV_KHR_multiview","-fspv-extension=SPV_KHR_shader_draw_parameters","-fspv-extension=SPV_EXT_descriptor_indexing",
                     sourcefile_hlsl,"-Fo ",spv_output_path})
                 else 
-					batchcmds:vrunv(dxc,{"-spirv","-T",hlsl_shader_type.."_6_3","-E main"," -fspv-target-env=vulkan1.3",
+					batchcmds:vrunv(dxc,{"-spirv","-T",hlsl_shader_type.."_6_3","-E","main"," -fspv-target-env=vulkan1.3",
                     "-fspv-extension=SPV_KHR_ray_tracing","-fspv-extension=SPV_KHR_multiview","-fspv-extension=SPV_KHR_shader_draw_parameters","-fspv-extension=SPV_EXT_descriptor_indexing",
                     sourcefile_hlsl,"-Fo ",spv_output_path})
                 end 

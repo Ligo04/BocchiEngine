@@ -30,11 +30,10 @@ if is_arch("x64", "x86_64", "arm64") then
         })
         --add defines
         add_defines("USE_VK")
-        add_deps("spdlog","glfw","imgui","nvrhi","vkm")
+        add_deps("spdlog","glfw","imgui","nvrhi","UGM")
         add_includedirs("source")
-        add_headerfiles("source/**.h")
+        add_headerfiles("source/**.h|source/**.hpp")
         add_files("source/**.cpp")
-
         add_headerfiles("source/shaders/**.hlsl")
         add_files("source/shaders/**.hlsl",{rule="hlsl_shader_complier"})
     target_end()

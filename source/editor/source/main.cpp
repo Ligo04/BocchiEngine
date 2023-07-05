@@ -1,9 +1,10 @@
+#include <ostream>
+
 #include "runtime/Engine.h"
-#include <nvrhi/nvrhi.h>
-
-
+#include <UGM/UGM.hpp>
 int main()
 {
+    Ubpa::matf4::eye().print();
     bocchi::BocchiEngine* engine = new bocchi::BocchiEngine();
 
     engine->StartEngine("");

@@ -4,13 +4,22 @@ set_group("ThirdParty")
 target("spdlog")
         _config_project({
                 project_kind = "static",
-                enable_exception = true,
-                --batch_size=8
+                batch_size=64
         })
-        add_defines("SPDLOG_COMPILED_LIB")
-        add_includedirs("spdlog/include", {
-                public = true
-        })
+        on_load(function(target)
+                local function rela(p)
+                        return path.relative(path.absolute(p, os.scriptdir()), os.projectdir())
+                end
+                target:add("includedirs", rela("spdlog/include"), {
+                        public = true
+                })
+
+	        target:add("defines", "SPDLOG_NO_EXCEPTIONS", "SPDLOG_NO_THREAD_ID", "SPDLOG_DISABLE_DEFAULT_LOGGER",
+                                         "FMT_CONSTEVAL=constexpr", "FMT_USE_CONSTEXPR=1", "FMT_EXCEPTIONS=0", {
+                                                public = true
+                                })
+	        target:add("defines", "FMT_EXPORT", "spdlog_EXPORTS", "SPDLOG_COMPILED_LIB")
+        end)
         add_headerfiles("spdlog/include/**.h")
         add_files("spdlog/src/**.cpp")
 target_end()
@@ -21,24 +30,9 @@ target("vulkan")
         _config_project({
                 project_kind = "headeronly",
                 enable_exception = true,
-                --batch_size=8
         })
         add_includedirs("Vulkan-Headers/include", {public = true})
-        add_headerfiles("Vulkan-Headers/include//**.h","Vulkan-Headers/include//**.hpp")
-target_end()
-
-
---vkm
-target("vkm")
-        _config_project({
-                project_kind = "headeronly",
-                enable_exception = true,
-                --batch_size=8
-        })
-        add_includedirs("vulkanmemoryallocator/include", {
-	    public = true
-        })
-        add_headerfiles("vulkanmemoryallocator/include/**.h")
+        add_headerfiles("Vulkan-Headers/include/**.h|Vulkan-Headers/include/**.hpp")
 target_end()
 
 --glfw
@@ -47,11 +41,20 @@ target("glfw")
         _config_project({
                 project_kind = "static",
                 enable_exception = true,
-                --batch_size=8
         })
-        add_includedirs("glfw/include/", {public = true})
+        on_load(function(target)
+                local function rela(p)
+                        return path.relative(path.absolute(p, os.scriptdir()), os.projectdir())
+                end
+                target:add("includedirs", rela("glfw/include"), {
+                        public = true
+                })
+                if(is_plat("windows")) then
+                        target:add("defines", "_GLFW_WIN32", "UNICODE", "UNICODE")
+                end 
+        end)
+
         if(is_plat("windows")) then 
-                add_defines("_GLFW_WIN32","UNICODE","UNICODE")
                 add_headerfiles(glfw_src_path.."win32_platform.h",glfw_src_path.."win32_joystick.h",glfw_src_path.."internal.h",
                         glfw_src_path.."wgl_context.h", glfw_src_path.."egl_context.h", glfw_src_path.."osmesa_context.h",
                         glfw_src_path.."osmesa_context.h",glfw_src_path.."mappings.h")
@@ -121,3 +124,13 @@ target("nvrhi")
         end
 target_end()
 
+--UGM
+target("UGM")
+        _config_project({
+                project_kind = "headeronly",
+                enable_exception = true,
+        })
+        add_includedirs("UGM", {public = true})
+        add_headerfiles("UGM/**.hpp|UGM/**.inl")
+        add_headerfiles("vs/UGM.natvis")
+target_end()

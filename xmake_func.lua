@@ -26,7 +26,7 @@ on_load(function(target)
 	if type(c_standard) == "string" and type(cxx_standard) == "string" then
 		target:set("languages", c_standard, cxx_standard)
 	else
-		target:set("languages", "clatest", "cxx17")
+		target:set("languages", "clatest", "cxx20")
 	end
 
 	local enable_exception = _get_or("enable_exception", nil)
@@ -39,7 +39,7 @@ on_load(function(target)
 		target:set("optimize", "none")
 		target:set("warnings", "none")
 		target:add("cxflags", "/GS", "/Gd", {
-			tools = {"clang_cl", "cl"}
+			tools = {"clang-cl", "cl"}
 		})
 		target:add("cxflags", "/Zc:preprocessor", {
 			tools = "cl"
@@ -48,13 +48,15 @@ on_load(function(target)
 		target:set("optimize", "aggressive")
 		target:set("warnings", "none")
 		target:add("cxflags", "/GS-", "/Gd", {
-			tools = {"clang_cl", "cl"}
+			tools = {"clang-cl", "cl"}
 		})
 		target:add("cxflags", "/Zc:preprocessor", {
 			tools = "cl"
 		})
 	end
-	target:add("defines","UNICODE","_UNICODE","_WIN32","_WINDOWS")
+	if is_plat("windows") then
+		target:add("defines","UNICODE","_UNICODE","_WIN32","_WINDOWS")
+	end
 end)
 rule_end()
 -- In-case of submod, when there is override rules, do not overload

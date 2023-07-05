@@ -11,6 +11,7 @@ namespace bocchi
     static std::vector<const char*> StringSetToVector(const std::unordered_set<std::string>& set)
     {
         std::vector<const char*> ret;
+        ret.reserve(set.size());
         for (const auto& s : set)
         {
             ret.push_back(s.c_str());
@@ -23,6 +24,7 @@ namespace bocchi
     static std::vector<T> SetToVector(const std::unordered_set<T>& set)
     {
         std::vector<T> ret;
+        ret.reserve(set.size());
         for (const auto& s : set)
         {
             ret.push_back(s);
@@ -229,7 +231,7 @@ namespace bocchi
 
     bool VulkanRhi::CreateWindowSurface()
     {
-        if (glfwCreateWindowSurface(m_vulkan_instance_, m_p_window_, nullptr, (VkSurfaceKHR*)&m_windows_surface_) !=
+        if (glfwCreateWindowSurface(m_vulkan_instance_, m_p_window_, nullptr, reinterpret_cast<VkSurfaceKHR*>(&m_windows_surface_)) !=
             VK_SUCCESS)
         {
             LOG_ERROR("failed to create KHR surface!");
@@ -435,14 +437,9 @@ namespace bocchi
             }
         }
 
-        if (m_graphics_queue_family_ == -1 || m_present_queue_family_ == -1 ||
+        return !(m_graphics_queue_family_ == -1 || m_present_queue_family_ == -1 ||
             (m_compute_queue_family_ == -1 && m_rhi_creation_parameters_.enable_compute_queue) ||
-            (m_transfer_queue_family_ == -1 && m_rhi_creation_parameters_.enable_copy_queue))
-        {
-            return false;
-        }
-
-        return true;
+            (m_transfer_queue_family_ == -1 && m_rhi_creation_parameters_.enable_copy_queue));
     }
 
     bool VulkanRhi::CreateDevice()
@@ -717,11 +714,7 @@ namespace bocchi
         m_p_window_                = p_window;
         m_rhi_creation_parameters_ = init_info;
 
-        if (!CreateDeviceAndSwapChain())
-        {
-            return false;
-        }
-        return true;
+        return CreateDeviceAndSwapChain();
     }
 
     bool VulkanRhi::CreateDeviceAndSwapChain()
@@ -733,7 +726,7 @@ namespace bocchi
         }
 
         const vk::DynamicLoader         dynamic_loader;
-        const PFN_vkGetInstanceProcAddr vk_get_instance_proc_addr =
+        PFN_vkGetInstanceProcAddr vk_get_instance_proc_addr =
             dynamic_loader.getProcAddress<PFN_vkGetInstanceProcAddr>("vkGetInstanceProcAddr");
         VULKAN_HPP_DEFAULT_DISPATCHER.init(vk_get_instance_proc_addr);
 

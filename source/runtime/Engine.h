@@ -6,7 +6,7 @@ namespace bocchi
 {
     class BocchiEngine
     {
-        static const float m_s_fps_alpha_;
+        static const float kFpsAlpha;
 
     public:
         void StartEngine(const std::string& config_file_path);

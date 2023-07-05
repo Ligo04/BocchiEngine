@@ -55,7 +55,6 @@ namespace bocchi
             const std::string format_str = fmt::format(std::forward<TARGS>(args)...);
             throw std::runtime_error(format_str);
         }
-
     private:
         std::shared_ptr<spdlog::logger> m_logger;
     };

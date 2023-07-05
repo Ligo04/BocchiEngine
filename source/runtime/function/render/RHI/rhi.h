@@ -2,13 +2,14 @@
 #include<nvrhi/nvrhi.h>
 #include<nvrhi/vulkan.h>
 #include<runtime/function/render/window_system.h>
+
 namespace bocchi
 {
 
     struct DefaultMessageCallback : public nvrhi::IMessageCallback
     {
         static DefaultMessageCallback& GetInstance();
-
+    
         void message(nvrhi::MessageSeverity severity, const char* message_text) override;
     };
 
@@ -41,7 +42,7 @@ namespace bocchi
         // For use in the case of multiple adapters; only effective if 'adapter' is null. If this is non-null, device
         // creation will try to match the given string against an adapter name.  If the specified string exists as a
         // sub-string of the adapter name, the device and window will be created on that adapter.  Case sensitive.
-        std::wstring adapter_name_substring = L"";
+        std::wstring adapter_name_substring;
 
         // set to true to enable DPI scale factors to be computed per monitor
         // this will keep the on-screen window size in pixels constant

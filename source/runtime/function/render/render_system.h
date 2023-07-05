@@ -20,7 +20,7 @@ namespace bocchi
 
     public:
         RenderSystem(/* args */) = default;
-        ~RenderSystem();
+        ~RenderSystem()=default;
 
         void initialize(const RenderSystemInfo& render_system_info);
         void tick(float delta_time);

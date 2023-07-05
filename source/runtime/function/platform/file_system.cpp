@@ -257,9 +257,7 @@ namespace bocchi
     {
         if (FindMountPoint(path, nullptr, nullptr))
         {
-            std::stringstream ss;
-            ss << "Cannot mount a filesystem at " << path.c_str() << ": there is another FS that includes this path";
-            LOG_ERROR(ss.str());
+            LOG_ERROR("Cannot mount a filesystem at {} there is another FS that includes this path", path.string());
             return;
         }
 
@@ -293,7 +291,7 @@ namespace bocchi
     {
         std::string spath = path.lexically_normal().generic_string();
 
-        for (auto it : m_mount_points_)
+        for (const auto& it : m_mount_points_)
         {
             if (spath.find(it.first, 0) == 0 &&
                 ((spath.length() == it.first.length()) || (spath[it.first.length()] == '/')))
@@ -383,6 +381,7 @@ namespace bocchi
 
         return status::kPathNotFound;
     }
+
 
     int RootFileSystem::EnumerateDirectories(const std::filesystem::path& path,
                                              EnumerateCallbackT           callback,

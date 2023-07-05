@@ -24,7 +24,7 @@
 
 #include <cstdint>
 #include <cassert>
-
+#include <sstream>
 namespace nvrhi 
 {
     template<typename T> T align(T size, T alignment)
