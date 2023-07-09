@@ -14,6 +14,7 @@ c++20
 - shadermake(开源着色器编译库)
 - UGM(开源图形数学库)
 - imgui
+- Entt(实体组件)
 
 ## TODO
 

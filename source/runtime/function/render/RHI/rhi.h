@@ -1,15 +1,15 @@
 #pragma once
-#include<nvrhi/nvrhi.h>
-#include<nvrhi/vulkan.h>
-#include<runtime/function/render/window_system.h>
+#include <nvrhi/nvrhi.h>
+#include <nvrhi/vulkan.h>
+#include <runtime/function/render/window_system.h>
 
 namespace bocchi
 {
 
-    struct DefaultMessageCallback : public nvrhi::IMessageCallback
+    struct DefaultMessageCallback final : public nvrhi::IMessageCallback
     {
         static DefaultMessageCallback& GetInstance();
-    
+
         void message(nvrhi::MessageSeverity severity, const char* message_text) override;
     };
 
@@ -79,7 +79,7 @@ namespace bocchi
     public:
         static Rhi* Create(nvrhi::GraphicsAPI api);
 
-    	virtual bool Initialize(const RhiInitInfo& init_info,GLFWwindow* p_window) = 0;
+        virtual bool Initialize(const RhiInitInfo& init_info, GLFWwindow* p_window) = 0;
 
     protected:
         // derived class need to realise
@@ -90,9 +90,9 @@ namespace bocchi
         virtual void Present()                   = 0;
 
     private:
-        [[nodiscard]] virtual nvrhi::IDevice*    GetDevice() const       = 0;
+        [[nodiscard]] virtual nvrhi::IDevice*    GetDevice() const         = 0;
         [[nodiscard]] virtual const char*        GetRendererString() const = 0;
-        [[nodiscard]] virtual nvrhi::GraphicsAPI GetGraphicsApi() const  = 0;
+        [[nodiscard]] virtual nvrhi::GraphicsAPI GetGraphicsApi() const    = 0;
 
         // back buffer
         [[nodiscard]] virtual nvrhi::ITexture* GetCurrentBackBuffer()        = 0;
@@ -100,17 +100,16 @@ namespace bocchi
         [[nodiscard]] virtual uint32_t         GetCurrentBackBufferIndex()   = 0;
         [[nodiscard]] virtual uint32_t         GetBackBufferCount()          = 0;
 
-    	virtual bool IsVulkanInstanceExtensionEnabled(const char* extension_name) const { return false; }
+        virtual bool IsVulkanInstanceExtensionEnabled(const char* extension_name) const { return false; }
         virtual bool IsVulkanDeviceExtensionEnabled(const char* extension_name) const { return false; }
         virtual bool IsVulkanLayerEnabled(const char* layer_name) const { return false; }
         virtual void GetEnabledVulkanInstanceExtensions(std::vector<std::string>& extensions) const {}
         virtual void GetEnabledVulkanDeviceExtensions(std::vector<std::string>& extensions) const {}
         virtual void GetEnabledVulkanLayers(std::vector<std::string>& layers) const {}
 
-
     protected:
         RhiInitInfo m_rhi_creation_parameters_;
-        GLFWwindow*           m_p_window_ = nullptr;
+        GLFWwindow* m_p_window_ = nullptr;
 
     private:
         static Rhi* CreateVulkanRhi();

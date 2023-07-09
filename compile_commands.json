@@ -1,6 +1,116 @@
 [
 {
   "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui.cpp.obj", "thirdparty\\imgui\\imgui.cpp"],
+  "file": "thirdparty\\imgui\\imgui.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_demo.cpp.obj", "thirdparty\\imgui\\imgui_demo.cpp"],
+  "file": "thirdparty\\imgui\\imgui_demo.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_draw.cpp.obj", "thirdparty\\imgui\\imgui_draw.cpp"],
+  "file": "thirdparty\\imgui\\imgui_draw.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_vulkan.cpp.obj", "thirdparty\\imgui\\imgui_impl_vulkan.cpp"],
+  "file": "thirdparty\\imgui\\imgui_impl_vulkan.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_win32.cpp.obj", "thirdparty\\imgui\\imgui_impl_win32.cpp"],
+  "file": "thirdparty\\imgui\\imgui_impl_win32.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_tables.cpp.obj", "thirdparty\\imgui\\imgui_tables.cpp"],
+  "file": "thirdparty\\imgui\\imgui_tables.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_widgets.cpp.obj", "thirdparty\\imgui\\imgui_widgets.cpp"],
+  "file": "thirdparty\\imgui\\imgui_widgets.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\editor\\source\\main.cpp.obj", "source\\editor\\source\\main.cpp"],
+  "file": "source\\editor\\source\\main.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\async.cpp.obj", "source\\runtime\\core\\base\\async.cpp"],
+  "file": "source\\runtime\\core\\base\\async.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\hash.cpp.obj", "source\\runtime\\core\\base\\hash.cpp"],
+  "file": "source\\runtime\\core\\base\\hash.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\thread_pool.cpp.obj", "source\\runtime\\core\\base\\thread_pool.cpp"],
+  "file": "source\\runtime\\core\\base\\thread_pool.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\log\\log_system.cpp.obj", "source\\runtime\\core\\log\\log_system.cpp"],
+  "file": "source\\runtime\\core\\log\\log_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\Engine.cpp.obj", "source\\runtime\\Engine.cpp"],
+  "file": "source\\runtime\\Engine.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\global\\global_context.cpp.obj", "source\\runtime\\function\\global\\global_context.cpp"],
+  "file": "source\\runtime\\function\\global\\global_context.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\platform\\file_system.cpp.obj", "source\\runtime\\function\\platform\\file_system.cpp"],
+  "file": "source\\runtime\\function\\platform\\file_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_camera.cpp.obj", "source\\runtime\\function\\render\\render_camera.cpp"],
+  "file": "source\\runtime\\function\\render\\render_camera.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_pass.cpp.obj", "source\\runtime\\function\\render\\render_pass.cpp"],
+  "file": "source\\runtime\\function\\render\\render_pass.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_system.cpp.obj", "source\\runtime\\function\\render\\render_system.cpp"],
+  "file": "source\\runtime\\function\\render\\render_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\RHI\\rhi.cpp.obj", "source\\runtime\\function\\render\\RHI\\rhi.cpp"],
+  "file": "source\\runtime\\function\\render\\RHI\\rhi.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp.obj", "source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp"],
+  "file": "source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp.obj", "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"],
+  "file": "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\window_system.cpp.obj", "source\\runtime\\function\\render\\window_system.cpp"],
+  "file": "source\\runtime\\function\\render\\window_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
   "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_init.c.obj", "thirdparty\\glfw\\src\\win32_init.c"],
   "file": "thirdparty\\glfw\\src\\win32_init.c"
 },
@@ -363,104 +473,4 @@
   "directory": "D:\\Project\\BocchiEngine",
   "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\stdout_sinks.cpp.obj", "thirdparty\\spdlog\\src\\stdout_sinks.cpp"],
   "file": "thirdparty\\spdlog\\src\\stdout_sinks.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\editor\\source\\main.cpp.obj", "source\\editor\\source\\main.cpp"],
-  "file": "source\\editor\\source\\main.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\async.cpp.obj", "source\\runtime\\core\\base\\async.cpp"],
-  "file": "source\\runtime\\core\\base\\async.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\hash.cpp.obj", "source\\runtime\\core\\base\\hash.cpp"],
-  "file": "source\\runtime\\core\\base\\hash.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\thread_pool.cpp.obj", "source\\runtime\\core\\base\\thread_pool.cpp"],
-  "file": "source\\runtime\\core\\base\\thread_pool.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\log\\log_system.cpp.obj", "source\\runtime\\core\\log\\log_system.cpp"],
-  "file": "source\\runtime\\core\\log\\log_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\Engine.cpp.obj", "source\\runtime\\Engine.cpp"],
-  "file": "source\\runtime\\Engine.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\global\\global_context.cpp.obj", "source\\runtime\\function\\global\\global_context.cpp"],
-  "file": "source\\runtime\\function\\global\\global_context.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\platform\\file_system.cpp.obj", "source\\runtime\\function\\platform\\file_system.cpp"],
-  "file": "source\\runtime\\function\\platform\\file_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_system.cpp.obj", "source\\runtime\\function\\render\\render_system.cpp"],
-  "file": "source\\runtime\\function\\render\\render_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\RHI\\rhi.cpp.obj", "source\\runtime\\function\\render\\RHI\\rhi.cpp"],
-  "file": "source\\runtime\\function\\render\\RHI\\rhi.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp.obj", "source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp"],
-  "file": "source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp.obj", "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"],
-  "file": "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\window_system.cpp.obj", "source\\runtime\\function\\render\\window_system.cpp"],
-  "file": "source\\runtime\\function\\render\\window_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui.cpp.obj", "thirdparty\\imgui\\imgui.cpp"],
-  "file": "thirdparty\\imgui\\imgui.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_demo.cpp.obj", "thirdparty\\imgui\\imgui_demo.cpp"],
-  "file": "thirdparty\\imgui\\imgui_demo.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_draw.cpp.obj", "thirdparty\\imgui\\imgui_draw.cpp"],
-  "file": "thirdparty\\imgui\\imgui_draw.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_vulkan.cpp.obj", "thirdparty\\imgui\\imgui_impl_vulkan.cpp"],
-  "file": "thirdparty\\imgui\\imgui_impl_vulkan.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_win32.cpp.obj", "thirdparty\\imgui\\imgui_impl_win32.cpp"],
-  "file": "thirdparty\\imgui\\imgui_impl_win32.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_tables.cpp.obj", "thirdparty\\imgui\\imgui_tables.cpp"],
-  "file": "thirdparty\\imgui\\imgui_tables.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_widgets.cpp.obj", "thirdparty\\imgui\\imgui_widgets.cpp"],
-  "file": "thirdparty\\imgui\\imgui_widgets.cpp"
 }]

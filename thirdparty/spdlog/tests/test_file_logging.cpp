@@ -6,7 +6,7 @@
 #define SIMPLE_LOG "test_logs/simple_log"
 #define ROTATING_LOG "test_logs/rotating_log"
 
-TEST_CASE("simple_file_logger", "[simple_logger]]")
+TEST_CASE("simple_file_logger", "[simple_logger]")
 {
     prepare_logdir();
     spdlog::filename_t filename = SPDLOG_FILENAME_T(SIMPLE_LOG);
@@ -20,10 +20,10 @@ TEST_CASE("simple_file_logger", "[simple_logger]]")
     logger->flush();
     require_message_count(SIMPLE_LOG, 2);
     using spdlog::details::os::default_eol;
-    REQUIRE(file_contents(SIMPLE_LOG) == fmt::format("Test message 1{}Test message 2{}", default_eol, default_eol));
+    REQUIRE(file_contents(SIMPLE_LOG) == spdlog::fmt_lib::format("Test message 1{}Test message 2{}", default_eol, default_eol));
 }
 
-TEST_CASE("flush_on", "[flush_on]]")
+TEST_CASE("flush_on", "[flush_on]")
 {
     prepare_logdir();
     spdlog::filename_t filename = SPDLOG_FILENAME_T(SIMPLE_LOG);
@@ -41,10 +41,10 @@ TEST_CASE("flush_on", "[flush_on]]")
     require_message_count(SIMPLE_LOG, 3);
     using spdlog::details::os::default_eol;
     REQUIRE(file_contents(SIMPLE_LOG) ==
-            fmt::format("Should not be flushed{}Test message 1{}Test message 2{}", default_eol, default_eol, default_eol));
+            spdlog::fmt_lib::format("Should not be flushed{}Test message 1{}Test message 2{}", default_eol, default_eol, default_eol));
 }
 
-TEST_CASE("rotating_file_logger1", "[rotating_logger]]")
+TEST_CASE("rotating_file_logger1", "[rotating_logger]")
 {
     prepare_logdir();
     size_t max_size = 1024 * 10;
@@ -60,7 +60,7 @@ TEST_CASE("rotating_file_logger1", "[rotating_logger]]")
     require_message_count(ROTATING_LOG, 10);
 }
 
-TEST_CASE("rotating_file_logger2", "[rotating_logger]]")
+TEST_CASE("rotating_file_logger2", "[rotating_logger]")
 {
     prepare_logdir();
     size_t max_size = 1024 * 10;
@@ -97,4 +97,13 @@ TEST_CASE("rotating_file_logger2", "[rotating_logger]]")
     logger->flush();
     REQUIRE(get_filesize(ROTATING_LOG) <= max_size);
     REQUIRE(get_filesize(ROTATING_LOG ".1") <= max_size);
+}
+
+// test that passing max_size=0 throws
+TEST_CASE("rotating_file_logger3", "[rotating_logger]")
+{
+    prepare_logdir();
+    size_t max_size = 0;
+    spdlog::filename_t basename = SPDLOG_FILENAME_T(ROTATING_LOG);
+    REQUIRE_THROWS_AS(spdlog::rotating_logger_mt("logger", basename, max_size, 0), spdlog::spdlog_ex);
 }

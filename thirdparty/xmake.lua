@@ -13,7 +13,6 @@ target("spdlog")
                 target:add("includedirs", rela("spdlog/include"), {
                         public = true
                 })
-
 	        target:add("defines", "SPDLOG_NO_EXCEPTIONS", "SPDLOG_NO_THREAD_ID", "SPDLOG_DISABLE_DEFAULT_LOGGER",
                                          "FMT_CONSTEVAL=constexpr", "FMT_USE_CONSTEXPR=1", "FMT_EXCEPTIONS=0", {
                                                 public = true
