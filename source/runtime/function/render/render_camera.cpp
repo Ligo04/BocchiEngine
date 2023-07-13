@@ -12,7 +12,7 @@ namespace bocchi
     {
         std::lock_guard<std::mutex> lock_guard(m_view_matrix_mutex_);
         m_current_camera_type_                  = type;
-        m_view_matrices_[kMMainViewMatrixIndex] = view_matrix;
+        m_view_matrices_[m_m_main_view_matrix_index_] = view_matrix;
     }
 
     void RenderCamera::move(const vecf3& delta) { m_position_ += delta; }
@@ -40,7 +40,7 @@ namespace bocchi
         m_inv_rotation_ = m_rotation_.inverse();
     }
 
-    void RenderCamera::zoom(const float offset) { m_fov_x_ = std::clamp(m_fov_x_ + offset, kMMinFov, kMMaxFov); }
+    void RenderCamera::zoom(const float offset) { m_fov_x_ = std::clamp(m_fov_x_ + offset, m_m_min_fov_, m_m_max_fov_); }
 
     void RenderCamera::LookAt(const pointf3& position, const pointf3& target, const vecf3& up)
     {
@@ -77,12 +77,12 @@ namespace bocchi
 
         switch (m_current_camera_type_)
         {
-            case RenderCameraType::kEditor:
+            case RenderCameraType::Editor:
                 view_matrix = transformf::look_at(Position(), Position() + Forward(), Up());
                 break;
 
-            case RenderCameraType::kMotor:
-                view_matrix = m_view_matrices_[kMMainViewMatrixIndex];
+            case RenderCameraType::Motor:
+                view_matrix = m_view_matrices_[m_m_main_view_matrix_index_];
                 break;
 
             default:

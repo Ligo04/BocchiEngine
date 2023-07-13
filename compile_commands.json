@@ -1,38 +1,78 @@
 [
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui.cpp.obj", "thirdparty\\imgui\\imgui.cpp"],
-  "file": "thirdparty\\imgui\\imgui.cpp"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_init.c.obj", "thirdparty\\glfw\\src\\win32_init.c"],
+  "file": "thirdparty\\glfw\\src\\win32_init.c"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_demo.cpp.obj", "thirdparty\\imgui\\imgui_demo.cpp"],
-  "file": "thirdparty\\imgui\\imgui_demo.cpp"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_joystick.c.obj", "thirdparty\\glfw\\src\\win32_joystick.c"],
+  "file": "thirdparty\\glfw\\src\\win32_joystick.c"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_draw.cpp.obj", "thirdparty\\imgui\\imgui_draw.cpp"],
-  "file": "thirdparty\\imgui\\imgui_draw.cpp"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_monitor.c.obj", "thirdparty\\glfw\\src\\win32_monitor.c"],
+  "file": "thirdparty\\glfw\\src\\win32_monitor.c"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_vulkan.cpp.obj", "thirdparty\\imgui\\imgui_impl_vulkan.cpp"],
-  "file": "thirdparty\\imgui\\imgui_impl_vulkan.cpp"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_time.c.obj", "thirdparty\\glfw\\src\\win32_time.c"],
+  "file": "thirdparty\\glfw\\src\\win32_time.c"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_win32.cpp.obj", "thirdparty\\imgui\\imgui_impl_win32.cpp"],
-  "file": "thirdparty\\imgui\\imgui_impl_win32.cpp"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_thread.c.obj", "thirdparty\\glfw\\src\\win32_thread.c"],
+  "file": "thirdparty\\glfw\\src\\win32_thread.c"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_tables.cpp.obj", "thirdparty\\imgui\\imgui_tables.cpp"],
-  "file": "thirdparty\\imgui\\imgui_tables.cpp"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_window.c.obj", "thirdparty\\glfw\\src\\win32_window.c"],
+  "file": "thirdparty\\glfw\\src\\win32_window.c"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_widgets.cpp.obj", "thirdparty\\imgui\\imgui_widgets.cpp"],
-  "file": "thirdparty\\imgui\\imgui_widgets.cpp"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\wgl_context.c.obj", "thirdparty\\glfw\\src\\wgl_context.c"],
+  "file": "thirdparty\\glfw\\src\\wgl_context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\egl_context.c.obj", "thirdparty\\glfw\\src\\egl_context.c"],
+  "file": "thirdparty\\glfw\\src\\egl_context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\osmesa_context.c.obj", "thirdparty\\glfw\\src\\osmesa_context.c"],
+  "file": "thirdparty\\glfw\\src\\osmesa_context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\window.c.obj", "thirdparty\\glfw\\src\\window.c"],
+  "file": "thirdparty\\glfw\\src\\window.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\vulkan.c.obj", "thirdparty\\glfw\\src\\vulkan.c"],
+  "file": "thirdparty\\glfw\\src\\vulkan.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\context.c.obj", "thirdparty\\glfw\\src\\context.c"],
+  "file": "thirdparty\\glfw\\src\\context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\init.c.obj", "thirdparty\\glfw\\src\\init.c"],
+  "file": "thirdparty\\glfw\\src\\init.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\input.c.obj", "thirdparty\\glfw\\src\\input.c"],
+  "file": "thirdparty\\glfw\\src\\input.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\monitor.c.obj", "thirdparty\\glfw\\src\\monitor.c"],
+  "file": "thirdparty\\glfw\\src\\monitor.c"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
@@ -111,78 +151,38 @@
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_init.c.obj", "thirdparty\\glfw\\src\\win32_init.c"],
-  "file": "thirdparty\\glfw\\src\\win32_init.c"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui.cpp.obj", "thirdparty\\imgui\\imgui.cpp"],
+  "file": "thirdparty\\imgui\\imgui.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_joystick.c.obj", "thirdparty\\glfw\\src\\win32_joystick.c"],
-  "file": "thirdparty\\glfw\\src\\win32_joystick.c"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_demo.cpp.obj", "thirdparty\\imgui\\imgui_demo.cpp"],
+  "file": "thirdparty\\imgui\\imgui_demo.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_monitor.c.obj", "thirdparty\\glfw\\src\\win32_monitor.c"],
-  "file": "thirdparty\\glfw\\src\\win32_monitor.c"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_draw.cpp.obj", "thirdparty\\imgui\\imgui_draw.cpp"],
+  "file": "thirdparty\\imgui\\imgui_draw.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_time.c.obj", "thirdparty\\glfw\\src\\win32_time.c"],
-  "file": "thirdparty\\glfw\\src\\win32_time.c"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_vulkan.cpp.obj", "thirdparty\\imgui\\imgui_impl_vulkan.cpp"],
+  "file": "thirdparty\\imgui\\imgui_impl_vulkan.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_thread.c.obj", "thirdparty\\glfw\\src\\win32_thread.c"],
-  "file": "thirdparty\\glfw\\src\\win32_thread.c"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_win32.cpp.obj", "thirdparty\\imgui\\imgui_impl_win32.cpp"],
+  "file": "thirdparty\\imgui\\imgui_impl_win32.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_window.c.obj", "thirdparty\\glfw\\src\\win32_window.c"],
-  "file": "thirdparty\\glfw\\src\\win32_window.c"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_tables.cpp.obj", "thirdparty\\imgui\\imgui_tables.cpp"],
+  "file": "thirdparty\\imgui\\imgui_tables.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\wgl_context.c.obj", "thirdparty\\glfw\\src\\wgl_context.c"],
-  "file": "thirdparty\\glfw\\src\\wgl_context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\egl_context.c.obj", "thirdparty\\glfw\\src\\egl_context.c"],
-  "file": "thirdparty\\glfw\\src\\egl_context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\osmesa_context.c.obj", "thirdparty\\glfw\\src\\osmesa_context.c"],
-  "file": "thirdparty\\glfw\\src\\osmesa_context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\window.c.obj", "thirdparty\\glfw\\src\\window.c"],
-  "file": "thirdparty\\glfw\\src\\window.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\vulkan.c.obj", "thirdparty\\glfw\\src\\vulkan.c"],
-  "file": "thirdparty\\glfw\\src\\vulkan.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\context.c.obj", "thirdparty\\glfw\\src\\context.c"],
-  "file": "thirdparty\\glfw\\src\\context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\init.c.obj", "thirdparty\\glfw\\src\\init.c"],
-  "file": "thirdparty\\glfw\\src\\init.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\input.c.obj", "thirdparty\\glfw\\src\\input.c"],
-  "file": "thirdparty\\glfw\\src\\input.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\monitor.c.obj", "thirdparty\\glfw\\src\\monitor.c"],
-  "file": "thirdparty\\glfw\\src\\monitor.c"
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_widgets.cpp.obj", "thirdparty\\imgui\\imgui_widgets.cpp"],
+  "file": "thirdparty\\imgui\\imgui_widgets.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
@@ -446,6 +446,11 @@
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp.obj", "thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp"],
+  "file": "thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
   "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\cfg.cpp.obj", "thirdparty\\spdlog\\src\\cfg.cpp"],
   "file": "thirdparty\\spdlog\\src\\cfg.cpp"
 },
@@ -458,11 +463,6 @@
   "directory": "D:\\Project\\BocchiEngine",
   "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\file_sinks.cpp.obj", "thirdparty\\spdlog\\src\\file_sinks.cpp"],
   "file": "thirdparty\\spdlog\\src\\file_sinks.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\fmt.cpp.obj", "thirdparty\\spdlog\\src\\fmt.cpp"],
-  "file": "thirdparty\\spdlog\\src\\fmt.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",

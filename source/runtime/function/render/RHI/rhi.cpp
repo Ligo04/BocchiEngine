@@ -26,6 +26,7 @@ struct fmt::formatter<nvrhi::GraphicsAPI> : formatter<string_view>
         return formatter<string_view>::format(name, ctx);
     }
 };
+
 namespace bocchi
 {
     Rhi* Rhi::Create(nvrhi::GraphicsAPI api)

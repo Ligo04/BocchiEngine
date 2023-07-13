@@ -114,7 +114,7 @@ namespace bocchi
         {
             return false;
         }
-
+        
         // add any extensions required by glfw
         uint32_t     glfw_ext_count;
         const char** glfw_ext = glfwGetRequiredInstanceExtensions(&glfw_ext_count);
@@ -152,7 +152,7 @@ namespace bocchi
         for (const auto& instance_ext : vk::enumerateInstanceExtensionProperties())
         {
             const std::string name = instance_ext.extensionName;
-            if (m_optional_extensions_.instance.find(name) != m_optional_extensions_.instance.end())
+            if (m_optional_extensions_.instance.contains(name) )
             {
                 m_enable_extension_set_.instance.insert(name);
             }
@@ -185,10 +185,8 @@ namespace bocchi
             return false;
         }
 
-        const uint32_t mini_vulkan_version = VK_MAKE_API_VERSION(0, 1, 3, 0);
-
         // check if the vulkan api version is sufficient
-        if (application_info.apiVersion < mini_vulkan_version)
+        if ( constexpr uint32_t mini_vulkan_version = VK_MAKE_API_VERSION(0, 1, 3, 0) ; application_info.apiVersion < mini_vulkan_version)
         {
             LOG_ERROR(
                 "The Vulkan API version supported on the system (%d.%d.%d) is too low, at least %d.%d.%d is required.",
@@ -437,9 +435,9 @@ namespace bocchi
             }
         }
 
-        return !(m_graphics_queue_family_ == -1 || m_present_queue_family_ == -1 ||
-            (m_compute_queue_family_ == -1 && m_rhi_creation_parameters_.enable_compute_queue) ||
-            (m_transfer_queue_family_ == -1 && m_rhi_creation_parameters_.enable_copy_queue));
+        return m_graphics_queue_family_ != -1 && m_present_queue_family_ != -1 &&
+            (m_compute_queue_family_ != -1 || !m_rhi_creation_parameters_.enable_compute_queue) &&
+            (m_transfer_queue_family_ != -1 || !m_rhi_creation_parameters_.enable_copy_queue);
     }
 
     bool VulkanRhi::CreateDevice()

@@ -36,19 +36,23 @@ on_load(function(target)
 		target:set("exceptions", "no-cxx")
 	end
 	if is_mode("debug") then
+		-- target:add("defines", "DEBUG","_DEBUG")
+		-- target:set("symbols", "debug")
+		target:set("runtimes", "MDd")
 		target:set("optimize", "none")
 		target:set("warnings", "none")
 		target:add("cxflags", "/GS", "/Gd", {
-			tools = {"clang-cl", "cl"}
+			tools = {"clang_cl", "cl"}
 		})
 		target:add("cxflags", "/Zc:preprocessor", {
 			tools = "cl"
 		});
 	else
+		target:set("runtimes", "MD")
 		target:set("optimize", "aggressive")
 		target:set("warnings", "none")
 		target:add("cxflags", "/GS-", "/Gd", {
-			tools = {"clang-cl", "cl"}
+			tools = {"clang_cl", "cl"}
 		})
 		target:add("cxflags", "/Zc:preprocessor", {
 			tools = "cl"

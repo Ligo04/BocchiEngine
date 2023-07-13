@@ -10,3 +10,4 @@ vsxmake2022/*
 vs/*
 bin/
 .cache/
+compile_commands.json

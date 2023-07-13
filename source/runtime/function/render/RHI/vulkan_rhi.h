@@ -188,16 +188,16 @@ namespace bocchi
         bool m_buffer_device_handle_address_supported_ = false;
 
     private:
-        static VKAPI_ATTR VkBool32 VKAPI_CALL VulkanDebugCallback(VkDebugReportFlagsEXT      flags,
-                                                                  VkDebugReportObjectTypeEXT obj_type,
-                                                                  uint64_t                   obj,
+        static VKAPI_ATTR VkBool32 VKAPI_CALL VulkanDebugCallback(VkDebugReportFlagsEXT       /*flags*/,
+                                                                  VkDebugReportObjectTypeEXT  /*obj_type*/,
+                                                                  uint64_t                    /*obj*/,
                                                                   size_t                     location,
                                                                   int32_t                    code,
                                                                   const char*                layer_prefix,
                                                                   const char*                msg,
                                                                   void*                      user_data)
         {
-            if (const VulkanRhi* manager = (const VulkanRhi*)user_data)
+            if (const VulkanRhi* manager = static_cast<const VulkanRhi*>(user_data))
             {
                 const auto& ignored = manager->m_rhi_creation_parameters_.ignored_vulkan_validation_message_locations;
                 const auto  found   = std::find(ignored.begin(), ignored.end(), location);
@@ -210,4 +210,4 @@ namespace bocchi
             return VK_FALSE;
         }
     };
-}
+} // namespace bocchi

@@ -9,14 +9,14 @@ namespace bocchi
 
     enum class RenderCameraType : int
     {
-        kEditor,
-        kMotor
+        Editor,
+        Motor
     };
 
     class RenderCamera
     {
     public:
-        RenderCameraType m_current_camera_type_ {RenderCameraType::kEditor};
+        RenderCameraType m_current_camera_type_ {RenderCameraType::Editor};
 
         static const vecf3 m_x_, m_y_, m_z_;
 
@@ -27,14 +27,14 @@ namespace bocchi
         float m_zfar_ {0.1f};
         vecf3 m_up_axis_ {m_z_};
 
-        static constexpr float kMMinFov {10.0f};
-        static constexpr float kMMaxFov {89.0f};
-        static constexpr int   kMMainViewMatrixIndex {0};
+        static constexpr float m_m_min_fov_ {10.0f};
+        static constexpr float m_m_max_fov_ {89.0f};
+        static constexpr int   m_m_main_view_matrix_index_ {0};
 
         std::vector<transformf> m_view_matrices_ {transformf::eye()};
 
         void SetCurrentCameraType(RenderCameraType type);
-        void SetMainViewMatrix(const transformf& view_matrix, RenderCameraType type = RenderCameraType::kEditor);
+        void SetMainViewMatrix(const transformf& view_matrix, RenderCameraType type = RenderCameraType::Editor);
 
         void move(const vecf3& delta);
         void rotate(vecf2 delta);
