@@ -44,7 +44,7 @@ namespace bocchi
         glfwSetInputMode(m_pwindow_, GLFW_RAW_MOUSE_MOTION, GLFW_FALSE);
     }
 
-    void WindowSystem::PollEvents() const
+    void WindowSystem::PollEvents()
     {
         glfwPollEvents();
     }
@@ -54,7 +54,7 @@ namespace bocchi
         return glfwWindowShouldClose(m_pwindow_);
     }
 
-    void WindowSystem::SetTitle(const char* title)
+    void WindowSystem::SetTitle(const char* title) const
     {
         glfwSetWindowTitle(m_pwindow_, title);
     }
@@ -68,6 +68,8 @@ namespace bocchi
     {
         return std::array<int, 2>({m_width_, m_height_});
     }
+
+    bool WindowSystem::GetFocusMode() const { return m_is_focus_mode_; }
 
     void WindowSystem::SetFocusMode(bool mode)
     {

@@ -25,9 +25,10 @@ namespace bocchi
         ~WindowSystem();
 
         void               initialize(const WindowCreateInfo& info);
-        void               PollEvents() const;
+
+        static void        PollEvents();
         bool               ShouldClose() const;
-        void               SetTitle(const char* title);
+        void               SetTitle(const char* title) const;
         GLFWwindow*        GetWindow() const;
         std::array<int, 2> GetWindowsSize() const;
 
@@ -64,7 +65,7 @@ namespace bocchi
             m_on_window_close_func_.push_back(func);
         }
 
-        bool IsMouseButtonDown(int button) const
+        [[nodiscard]] bool IsMouseButtonDown(int button) const
         {
             if ( button < GLFW_MOUSE_BUTTON_1 || button > GLFW_MOUSE_BUTTON_LAST )
             {
@@ -73,70 +74,70 @@ namespace bocchi
             return glfwGetMouseButton(m_pwindow_, button) == GLFW_PRESS;
         }
 
-        bool GetFocusMode() const { return m_is_focus_mode_; };
+        bool GetFocusMode() const;
         void SetFocusMode(bool mode);
 
     protected:   
         // window event callbacks
         static void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnKey(key, scancode, action, mods);
             }
         }
         static void CharCallback(GLFWwindow* window, unsigned int codepoint)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnChar(codepoint);
             }
         }
         static void CharModsCallback(GLFWwindow* window, unsigned int codepoint, int mods)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnCharMods(codepoint, mods);
             }
         }
         static void MouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnMouseButton(button, action, mods);
             }
         }
         static void CursorPosCallback(GLFWwindow* window, double xpos, double ypos)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if (  auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnCursorPos(xpos, ypos);
             }
         }
         static void CursorEnterCallback(GLFWwindow* window, int entered)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnCursorEnter(entered);
             }
         }
         static void ScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnScroll(xoffset, yoffset);
             }
         }
         static void DropCallback(GLFWwindow* window, int count, const char** paths)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->OnDrop(count, paths);
             }
         }
         static void WindowSizeCallback(GLFWwindow* window, int width, int height)
         {
-	        if ( WindowSystem* app = (WindowSystem*)glfwGetWindowUserPointer(window) )
+	        if ( auto app = static_cast<WindowSystem*>(glfwGetWindowUserPointer(window)) )
             {
                 app->m_width_  = width;
                 app->m_height_ = height;

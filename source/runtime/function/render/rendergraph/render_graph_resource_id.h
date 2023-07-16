@@ -1,7 +1,7 @@
 #pragma once
 #include <compare>
 #include <cstdint>
-
+#include <nvrhi/nvrhi.h>
 namespace bocchi
 {
     enum class RenderGraphRescourceType : uint8_t
@@ -33,7 +33,7 @@ namespace bocchi
 
         [[nodiscard]] bool IsValid() const { return id != invalid_id; }
 
-        auto operator<=>(const RenderGraphResourceId&) const;
+        auto operator<=>(const RenderGraphResourceId&) const=default;
 
         uint32_t id;
     };

@@ -5,7 +5,7 @@
 
 namespace bocchi
 {
-
+    
     struct DefaultMessageCallback final : public nvrhi::IMessageCallback
     {
         static DefaultMessageCallback& GetInstance();

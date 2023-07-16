@@ -25,7 +25,6 @@ if is_arch("x64", "x86_64", "arm64") then
         _config_project({
             project_kind = "binary",
             enable_exception = true,
-            --batch_size=8
         })
         --add definess
         if is_mode("debug") then

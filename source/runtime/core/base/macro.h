@@ -20,9 +20,12 @@
 #define POLIT_SLEEP(_ms) std::this_thread::sleep_for(std::chrono::milliseconds(_ms));
 
 #define POLIT_NAME_OF(name) #name
+
+
 #ifdef NDEBUG
 #    define ASSERT(statement)
 #else
 #    define ASSERT(statement) assert(statement)
 #endif   // NDEBUG
+
 
