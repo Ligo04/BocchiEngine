@@ -1,476 +1,501 @@
 [
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_init.c.obj", "thirdparty\\glfw\\src\\win32_init.c"],
-  "file": "thirdparty\\glfw\\src\\win32_init.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_joystick.c.obj", "thirdparty\\glfw\\src\\win32_joystick.c"],
-  "file": "thirdparty\\glfw\\src\\win32_joystick.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_monitor.c.obj", "thirdparty\\glfw\\src\\win32_monitor.c"],
-  "file": "thirdparty\\glfw\\src\\win32_monitor.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_time.c.obj", "thirdparty\\glfw\\src\\win32_time.c"],
-  "file": "thirdparty\\glfw\\src\\win32_time.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_thread.c.obj", "thirdparty\\glfw\\src\\win32_thread.c"],
-  "file": "thirdparty\\glfw\\src\\win32_thread.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_window.c.obj", "thirdparty\\glfw\\src\\win32_window.c"],
-  "file": "thirdparty\\glfw\\src\\win32_window.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\wgl_context.c.obj", "thirdparty\\glfw\\src\\wgl_context.c"],
-  "file": "thirdparty\\glfw\\src\\wgl_context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\egl_context.c.obj", "thirdparty\\glfw\\src\\egl_context.c"],
-  "file": "thirdparty\\glfw\\src\\egl_context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\osmesa_context.c.obj", "thirdparty\\glfw\\src\\osmesa_context.c"],
-  "file": "thirdparty\\glfw\\src\\osmesa_context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\window.c.obj", "thirdparty\\glfw\\src\\window.c"],
-  "file": "thirdparty\\glfw\\src\\window.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\vulkan.c.obj", "thirdparty\\glfw\\src\\vulkan.c"],
-  "file": "thirdparty\\glfw\\src\\vulkan.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\context.c.obj", "thirdparty\\glfw\\src\\context.c"],
-  "file": "thirdparty\\glfw\\src\\context.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\init.c.obj", "thirdparty\\glfw\\src\\init.c"],
-  "file": "thirdparty\\glfw\\src\\init.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\input.c.obj", "thirdparty\\glfw\\src\\input.c"],
-  "file": "thirdparty\\glfw\\src\\input.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c2x", "-Ithirdparty\\glfw\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-D_GLFW_WIN32", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\monitor.c.obj", "thirdparty\\glfw\\src\\monitor.c"],
-  "file": "thirdparty\\glfw\\src\\monitor.c"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\editor\\source\\main.cpp.obj", "source\\editor\\source\\main.cpp"],
-  "file": "source\\editor\\source\\main.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\async.cpp.obj", "source\\runtime\\core\\base\\async.cpp"],
-  "file": "source\\runtime\\core\\base\\async.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\hash.cpp.obj", "source\\runtime\\core\\base\\hash.cpp"],
-  "file": "source\\runtime\\core\\base\\hash.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\thread_pool.cpp.obj", "source\\runtime\\core\\base\\thread_pool.cpp"],
-  "file": "source\\runtime\\core\\base\\thread_pool.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\log\\log_system.cpp.obj", "source\\runtime\\core\\log\\log_system.cpp"],
-  "file": "source\\runtime\\core\\log\\log_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\Engine.cpp.obj", "source\\runtime\\Engine.cpp"],
-  "file": "source\\runtime\\Engine.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\global\\global_context.cpp.obj", "source\\runtime\\function\\global\\global_context.cpp"],
-  "file": "source\\runtime\\function\\global\\global_context.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\platform\\file_system.cpp.obj", "source\\runtime\\function\\platform\\file_system.cpp"],
-  "file": "source\\runtime\\function\\platform\\file_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_camera.cpp.obj", "source\\runtime\\function\\render\\render_camera.cpp"],
-  "file": "source\\runtime\\function\\render\\render_camera.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_pass.cpp.obj", "source\\runtime\\function\\render\\render_pass.cpp"],
-  "file": "source\\runtime\\function\\render\\render_pass.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_system.cpp.obj", "source\\runtime\\function\\render\\render_system.cpp"],
-  "file": "source\\runtime\\function\\render\\render_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\RHI\\rhi.cpp.obj", "source\\runtime\\function\\render\\RHI\\rhi.cpp"],
-  "file": "source\\runtime\\function\\render\\RHI\\rhi.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp.obj", "source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp"],
-  "file": "source\\runtime\\function\\render\\RHI\\vulkan_rhi.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp.obj", "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"],
-  "file": "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Isource", "-Ithirdparty\\spdlog\\include", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-Ithirdparty\\UGM", "-DUSE_VK", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\window_system.cpp.obj", "source\\runtime\\function\\render\\window_system.cpp"],
-  "file": "source\\runtime\\function\\render\\window_system.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui.cpp.obj", "thirdparty\\imgui\\imgui.cpp"],
-  "file": "thirdparty\\imgui\\imgui.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_demo.cpp.obj", "thirdparty\\imgui\\imgui_demo.cpp"],
-  "file": "thirdparty\\imgui\\imgui_demo.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_draw.cpp.obj", "thirdparty\\imgui\\imgui_draw.cpp"],
-  "file": "thirdparty\\imgui\\imgui_draw.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_vulkan.cpp.obj", "thirdparty\\imgui\\imgui_impl_vulkan.cpp"],
-  "file": "thirdparty\\imgui\\imgui_impl_vulkan.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_impl_win32.cpp.obj", "thirdparty\\imgui\\imgui_impl_win32.cpp"],
-  "file": "thirdparty\\imgui\\imgui_impl_win32.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_tables.cpp.obj", "thirdparty\\imgui\\imgui_tables.cpp"],
-  "file": "thirdparty\\imgui\\imgui_tables.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\imgui", "-Ithirdparty\\glfw\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_widgets.cpp.obj", "thirdparty\\imgui\\imgui_widgets.cpp"],
-  "file": "thirdparty\\imgui\\imgui_widgets.cpp"
-},
-{
-  "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\dxgi-format.cpp.obj", "thirdparty\\nvrhi\\src\\common\\dxgi-format.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\dxgi-format.cpp.obj", "thirdparty\\nvrhi\\src\\common\\dxgi-format.cpp"],
   "file": "thirdparty\\nvrhi\\src\\common\\dxgi-format.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\format-info.cpp.obj", "thirdparty\\nvrhi\\src\\common\\format-info.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\format-info.cpp.obj", "thirdparty\\nvrhi\\src\\common\\format-info.cpp"],
   "file": "thirdparty\\nvrhi\\src\\common\\format-info.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\misc.cpp.obj", "thirdparty\\nvrhi\\src\\common\\misc.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\misc.cpp.obj", "thirdparty\\nvrhi\\src\\common\\misc.cpp"],
   "file": "thirdparty\\nvrhi\\src\\common\\misc.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\shader-blob.cpp.obj", "thirdparty\\nvrhi\\src\\common\\shader-blob.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\shader-blob.cpp.obj", "thirdparty\\nvrhi\\src\\common\\shader-blob.cpp"],
   "file": "thirdparty\\nvrhi\\src\\common\\shader-blob.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\sparse-bitset.cpp.obj", "thirdparty\\nvrhi\\src\\common\\sparse-bitset.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\sparse-bitset.cpp.obj", "thirdparty\\nvrhi\\src\\common\\sparse-bitset.cpp"],
   "file": "thirdparty\\nvrhi\\src\\common\\sparse-bitset.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\state-tracking.cpp.obj", "thirdparty\\nvrhi\\src\\common\\state-tracking.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\state-tracking.cpp.obj", "thirdparty\\nvrhi\\src\\common\\state-tracking.cpp"],
   "file": "thirdparty\\nvrhi\\src\\common\\state-tracking.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\utils.cpp.obj", "thirdparty\\nvrhi\\src\\common\\utils.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\common\\utils.cpp.obj", "thirdparty\\nvrhi\\src\\common\\utils.cpp"],
   "file": "thirdparty\\nvrhi\\src\\common\\utils.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-buffer.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-buffer.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-buffer.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-buffer.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-buffer.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-commandlist.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-commandlist.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-commandlist.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-compute.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-compute.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-compute.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-compute.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-compute.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-constants.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-constants.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-constants.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-constants.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-constants.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-device.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-device.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-device.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-device.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-device.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-graphics.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-graphics.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-graphics.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-graphics.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-graphics.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-queries.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-queries.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-queries.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-queries.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-queries.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-resource-bindings.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-resource-bindings.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-resource-bindings.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-resource-bindings.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-resource-bindings.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-shader.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-shader.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-shader.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-shader.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-shader.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-texture.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-texture.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d11\\d3d11-texture.cpp.obj", "thirdparty\\nvrhi\\src\\d3d11\\d3d11-texture.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d11\\d3d11-texture.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-buffer.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-buffer.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-buffer.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-buffer.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-buffer.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-commandlist.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-commandlist.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-commandlist.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-compute.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-compute.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-compute.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-compute.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-compute.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-constants.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-constants.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-constants.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-constants.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-constants.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-descriptor-heap.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-descriptor-heap.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-descriptor-heap.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-descriptor-heap.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-descriptor-heap.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-device.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-device.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-device.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-device.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-device.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-graphics.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-graphics.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-graphics.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-graphics.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-graphics.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-meshlets.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-meshlets.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-meshlets.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-meshlets.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-meshlets.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-queries.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-queries.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-queries.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-queries.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-queries.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-raytracing.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-raytracing.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-raytracing.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-raytracing.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-raytracing.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-resource-bindings.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-resource-bindings.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-resource-bindings.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-resource-bindings.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-resource-bindings.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-shader.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-shader.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-shader.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-shader.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-shader.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-state-tracking.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-state-tracking.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-state-tracking.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-state-tracking.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-state-tracking.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-texture.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-texture.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-texture.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-texture.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-texture.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-upload.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-upload.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\d3d12\\d3d12-upload.cpp.obj", "thirdparty\\nvrhi\\src\\d3d12\\d3d12-upload.cpp"],
   "file": "thirdparty\\nvrhi\\src\\d3d12\\d3d12-upload.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\validation\\validation-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\validation\\validation-commandlist.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\validation\\validation-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\validation\\validation-commandlist.cpp"],
   "file": "thirdparty\\nvrhi\\src\\validation\\validation-commandlist.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\validation\\validation-device.cpp.obj", "thirdparty\\nvrhi\\src\\validation\\validation-device.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\validation\\validation-device.cpp.obj", "thirdparty\\nvrhi\\src\\validation\\validation-device.cpp"],
   "file": "thirdparty\\nvrhi\\src\\validation\\validation-device.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-allocator.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-allocator.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-allocator.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-allocator.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-allocator.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-buffer.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-buffer.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-buffer.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-buffer.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-buffer.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-commandlist.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-commandlist.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-commandlist.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-commandlist.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-compute.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-compute.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-compute.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-compute.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-compute.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-constants.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-constants.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-constants.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-constants.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-constants.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-device.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-device.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-device.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-device.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-device.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-graphics.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-graphics.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-graphics.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-graphics.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-graphics.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-meshlets.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-meshlets.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-meshlets.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-meshlets.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-meshlets.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-queries.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-queries.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-queries.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-queries.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-queries.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-queue.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-queue.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-queue.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-queue.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-queue.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-raytracing.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-raytracing.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-raytracing.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-raytracing.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-raytracing.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-resource-bindings.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-resource-bindings.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-resource-bindings.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-resource-bindings.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-resource-bindings.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-shader.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-shader.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-shader.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-shader.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-shader.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-staging-texture.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-staging-texture.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-staging-texture.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-staging-texture.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-staging-texture.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-state-tracking.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-state-tracking.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-state-tracking.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-state-tracking.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-state-tracking.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-texture.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-texture.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-texture.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-texture.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-texture.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\nvrhi\\include", "-Ithirdparty\\Vulkan-Headers\\include", "-DVK_USE_PLATFORM_WIN32_KHR", "-DNOMINMAX", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-fexceptions", "-fcxx-exceptions", "-o", "build\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-upload.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-upload.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\nvrhi.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DVK_USE_PLATFORM_WIN32_KHR", "/DNOMINMAX", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\nvrhi\\windows\\x64\\debug\\thirdparty\\nvrhi\\src\\vulkan\\vulkan-upload.cpp.obj", "thirdparty\\nvrhi\\src\\vulkan\\vulkan-upload.cpp"],
   "file": "thirdparty\\nvrhi\\src\\vulkan\\vulkan-upload.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\async.cpp.obj", "thirdparty\\spdlog\\src\\async.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\editor\\source\\main.cpp.obj", "source\\editor\\source\\main.cpp"],
+  "file": "source\\editor\\source\\main.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\hash.cpp.obj", "source\\runtime\\core\\base\\hash.cpp"],
+  "file": "source\\runtime\\core\\base\\hash.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\base\\thread_pool.cpp.obj", "source\\runtime\\core\\base\\thread_pool.cpp"],
+  "file": "source\\runtime\\core\\base\\thread_pool.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\core\\log\\log_system.cpp.obj", "source\\runtime\\core\\log\\log_system.cpp"],
+  "file": "source\\runtime\\core\\log\\log_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\Engine.cpp.obj", "source\\runtime\\Engine.cpp"],
+  "file": "source\\runtime\\Engine.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\global\\global_context.cpp.obj", "source\\runtime\\function\\global\\global_context.cpp"],
+  "file": "source\\runtime\\function\\global\\global_context.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\platform\\file_system.cpp.obj", "source\\runtime\\function\\platform\\file_system.cpp"],
+  "file": "source\\runtime\\function\\platform\\file_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\rendergraph\\render_graph.cpp.obj", "source\\runtime\\function\\render\\rendergraph\\render_graph.cpp"],
+  "file": "source\\runtime\\function\\render\\rendergraph\\render_graph.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\rendergraph\\render_graph_builder.cpp.obj", "source\\runtime\\function\\render\\rendergraph\\render_graph_builder.cpp"],
+  "file": "source\\runtime\\function\\render\\rendergraph\\render_graph_builder.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\rendergraph\\render_graph_context.cpp.obj", "source\\runtime\\function\\render\\rendergraph\\render_graph_context.cpp"],
+  "file": "source\\runtime\\function\\render\\rendergraph\\render_graph_context.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_camera.cpp.obj", "source\\runtime\\function\\render\\render_camera.cpp"],
+  "file": "source\\runtime\\function\\render\\render_camera.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_common.cpp.obj", "source\\runtime\\function\\render\\render_common.cpp"],
+  "file": "source\\runtime\\function\\render\\render_common.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_pass.cpp.obj", "source\\runtime\\function\\render\\render_pass.cpp"],
+  "file": "source\\runtime\\function\\render\\render_pass.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\render_system.cpp.obj", "source\\runtime\\function\\render\\render_system.cpp"],
+  "file": "source\\runtime\\function\\render\\render_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\rhi\\rhi.cpp.obj", "source\\runtime\\function\\render\\rhi\\rhi.cpp"],
+  "file": "source\\runtime\\function\\render\\rhi\\rhi.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\rhi\\vulkan_rhi.cpp.obj", "source\\runtime\\function\\render\\rhi\\vulkan_rhi.cpp"],
+  "file": "source\\runtime\\function\\render\\rhi\\vulkan_rhi.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp.obj", "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"],
+  "file": "source\\runtime\\function\\render\\ShaderCompiler\\shader_compiler.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbin\\compile.BocchiEngine.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Isource", "/Ithirdparty\\spdlog\\include", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\nvrhi\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/Ithirdparty\\UGM", "/DDEBUG", "/D_DEBUG", "/DUSE_VK", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\BocchiEngine\\windows\\x64\\debug\\source\\runtime\\function\\render\\window_system.cpp.obj", "source\\runtime\\function\\render\\window_system.cpp"],
+  "file": "source\\runtime\\function\\render\\window_system.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\spdlog.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\spdlog\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/DFMT_EXPORT", "/Dspdlog_EXPORTS", "/DSPDLOG_COMPILED_LIB", "/EHsc-", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\async.cpp.obj", "thirdparty\\spdlog\\src\\async.cpp"],
   "file": "thirdparty\\spdlog\\src\\async.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp.obj", "thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\spdlog.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\spdlog\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/DFMT_EXPORT", "/Dspdlog_EXPORTS", "/DSPDLOG_COMPILED_LIB", "/EHsc-", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp.obj", "thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp"],
   "file": "thirdparty\\spdlog\\src\\bundled_fmtlib_format.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\cfg.cpp.obj", "thirdparty\\spdlog\\src\\cfg.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\spdlog.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\spdlog\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/DFMT_EXPORT", "/Dspdlog_EXPORTS", "/DSPDLOG_COMPILED_LIB", "/EHsc-", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\cfg.cpp.obj", "thirdparty\\spdlog\\src\\cfg.cpp"],
   "file": "thirdparty\\spdlog\\src\\cfg.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\color_sinks.cpp.obj", "thirdparty\\spdlog\\src\\color_sinks.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\spdlog.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\spdlog\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/DFMT_EXPORT", "/Dspdlog_EXPORTS", "/DSPDLOG_COMPILED_LIB", "/EHsc-", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\color_sinks.cpp.obj", "thirdparty\\spdlog\\src\\color_sinks.cpp"],
   "file": "thirdparty\\spdlog\\src\\color_sinks.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\file_sinks.cpp.obj", "thirdparty\\spdlog\\src\\file_sinks.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\spdlog.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\spdlog\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/DFMT_EXPORT", "/Dspdlog_EXPORTS", "/DSPDLOG_COMPILED_LIB", "/EHsc-", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\file_sinks.cpp.obj", "thirdparty\\spdlog\\src\\file_sinks.cpp"],
   "file": "thirdparty\\spdlog\\src\\file_sinks.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\spdlog.cpp.obj", "thirdparty\\spdlog\\src\\spdlog.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\spdlog.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\spdlog\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/DFMT_EXPORT", "/Dspdlog_EXPORTS", "/DSPDLOG_COMPILED_LIB", "/EHsc-", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\spdlog.cpp.obj", "thirdparty\\spdlog\\src\\spdlog.cpp"],
   "file": "thirdparty\\spdlog\\src\\spdlog.cpp"
 },
 {
   "directory": "D:\\Project\\BocchiEngine",
-  "arguments": ["clang.exe", "-c", "-Qunused-arguments", "-m64", "-g", "-w", "-O0", "-std=c++20", "-Ithirdparty\\spdlog\\include", "-DUNICODE", "-D_UNICODE", "-D_WIN32", "-D_WINDOWS", "-DSPDLOG_NO_EXCEPTIONS", "-DSPDLOG_NO_THREAD_ID", "-DSPDLOG_DISABLE_DEFAULT_LOGGER", "-DFMT_CONSTEVAL=constexpr", "-DFMT_USE_CONSTEXPR=1", "-DFMT_EXCEPTIONS=0", "-DFMT_EXPORT", "-Dspdlog_EXPORTS", "-DSPDLOG_COMPILED_LIB", "-fno-exceptions", "-fno-cxx-exceptions", "-o", "build\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\stdout_sinks.cpp.obj", "thirdparty\\spdlog\\src\\stdout_sinks.cpp"],
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\spdlog.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\spdlog\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/DSPDLOG_NO_EXCEPTIONS", "/DSPDLOG_NO_THREAD_ID", "/DSPDLOG_DISABLE_DEFAULT_LOGGER", "/DFMT_SHARED", "/DSPDLOG_SHARED_LIB", "/DFMT_CONSTEVAL=constexpr", "/DFMT_USE_CONSTEXPR=1", "/DFMT_EXCEPTIONS=0", "/DFMT_EXPORT", "/Dspdlog_EXPORTS", "/DSPDLOG_COMPILED_LIB", "/EHsc-", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\spdlog\\windows\\x64\\debug\\thirdparty\\spdlog\\src\\stdout_sinks.cpp.obj", "thirdparty\\spdlog\\src\\stdout_sinks.cpp"],
   "file": "thirdparty\\spdlog\\src\\stdout_sinks.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\backends\\imgui_impl_dx11.cpp.obj", "thirdparty\\imgui\\backends\\imgui_impl_dx11.cpp"],
+  "file": "thirdparty\\imgui\\backends\\imgui_impl_dx11.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\backends\\imgui_impl_dx12.cpp.obj", "thirdparty\\imgui\\backends\\imgui_impl_dx12.cpp"],
+  "file": "thirdparty\\imgui\\backends\\imgui_impl_dx12.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\backends\\imgui_impl_glfw.cpp.obj", "thirdparty\\imgui\\backends\\imgui_impl_glfw.cpp"],
+  "file": "thirdparty\\imgui\\backends\\imgui_impl_glfw.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\backends\\imgui_impl_vulkan.cpp.obj", "thirdparty\\imgui\\backends\\imgui_impl_vulkan.cpp"],
+  "file": "thirdparty\\imgui\\backends\\imgui_impl_vulkan.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui.cpp.obj", "thirdparty\\imgui\\imgui.cpp"],
+  "file": "thirdparty\\imgui\\imgui.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_demo.cpp.obj", "thirdparty\\imgui\\imgui_demo.cpp"],
+  "file": "thirdparty\\imgui\\imgui_demo.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_draw.cpp.obj", "thirdparty\\imgui\\imgui_draw.cpp"],
+  "file": "thirdparty\\imgui\\imgui_draw.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_tables.cpp.obj", "thirdparty\\imgui\\imgui_tables.cpp"],
+  "file": "thirdparty\\imgui\\imgui_tables.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\imgui.pdb", "/w", "/Od", "/std:c++20", "/MDd", "/Ithirdparty\\imgui", "/Ithirdparty\\glfw\\include", "/Ithirdparty\\Vulkan-Headers\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\imgui\\windows\\x64\\debug\\thirdparty\\imgui\\imgui_widgets.cpp.obj", "thirdparty\\imgui\\imgui_widgets.cpp"],
+  "file": "thirdparty\\imgui\\imgui_widgets.cpp"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_init.c.obj", "thirdparty\\glfw\\src\\win32_init.c"],
+  "file": "thirdparty\\glfw\\src\\win32_init.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_joystick.c.obj", "thirdparty\\glfw\\src\\win32_joystick.c"],
+  "file": "thirdparty\\glfw\\src\\win32_joystick.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_monitor.c.obj", "thirdparty\\glfw\\src\\win32_monitor.c"],
+  "file": "thirdparty\\glfw\\src\\win32_monitor.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_time.c.obj", "thirdparty\\glfw\\src\\win32_time.c"],
+  "file": "thirdparty\\glfw\\src\\win32_time.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_thread.c.obj", "thirdparty\\glfw\\src\\win32_thread.c"],
+  "file": "thirdparty\\glfw\\src\\win32_thread.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\win32_window.c.obj", "thirdparty\\glfw\\src\\win32_window.c"],
+  "file": "thirdparty\\glfw\\src\\win32_window.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\wgl_context.c.obj", "thirdparty\\glfw\\src\\wgl_context.c"],
+  "file": "thirdparty\\glfw\\src\\wgl_context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\egl_context.c.obj", "thirdparty\\glfw\\src\\egl_context.c"],
+  "file": "thirdparty\\glfw\\src\\egl_context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\osmesa_context.c.obj", "thirdparty\\glfw\\src\\osmesa_context.c"],
+  "file": "thirdparty\\glfw\\src\\osmesa_context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\window.c.obj", "thirdparty\\glfw\\src\\window.c"],
+  "file": "thirdparty\\glfw\\src\\window.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\vulkan.c.obj", "thirdparty\\glfw\\src\\vulkan.c"],
+  "file": "thirdparty\\glfw\\src\\vulkan.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\context.c.obj", "thirdparty\\glfw\\src\\context.c"],
+  "file": "thirdparty\\glfw\\src\\context.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\init.c.obj", "thirdparty\\glfw\\src\\init.c"],
+  "file": "thirdparty\\glfw\\src\\init.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\input.c.obj", "thirdparty\\glfw\\src\\input.c"],
+  "file": "thirdparty\\glfw\\src\\input.c"
+},
+{
+  "directory": "D:\\Project\\BocchiEngine",
+  "arguments": ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\cl.exe", "/c", "/nologo", "/Zi", "/FS", "/Fdbuild\\windows\\x64\\debug\\glfw.pdb", "/w", "/Od", "/std:c17", "/MDd", "/Ithirdparty\\glfw\\include", "/DUNICODE", "/D_UNICODE", "/D_WIN32", "/D_WINDOWS", "/D_GLFW_WIN32", "/EHsc", "/GS", "/Gd", "/Zc:preprocessor", "/Fobuild\\.objs\\glfw\\windows\\x64\\debug\\thirdparty\\glfw\\src\\monitor.c.obj", "thirdparty\\glfw\\src\\monitor.c"],
+  "file": "thirdparty\\glfw\\src\\monitor.c"
 }]

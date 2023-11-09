@@ -2,20 +2,22 @@ set_project("Bocchi Engine")
 set_xmakever("2.7.0")
 set_version("0.0.1")
 
-add_rules("plugin.vsxmake.autoupdate")
-add_rules("mode.release", "mode.debug")
-
 option("enable_unity_build")
 set_values(true, false)
 set_default(false)
 set_showmenu(true)
 option_end()
 
+add_rules("plugin.vsxmake.autoupdate")
+add_rules("mode.release", "mode.debug")
+set_defaultmode("debug")
+
+
 includes("shader_compiler.lua")
 includes("xmake_func.lua")
 includes("thirdparty")
+
 if is_arch("x64", "x86_64", "arm64") then
-    set_defaultmode("debug")
 	-- disable ccache in-case error
 	set_policy("build.ccache", true)
     target("BocchiEngine")

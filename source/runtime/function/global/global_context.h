@@ -19,9 +19,9 @@ namespace bocchi
         void ShutdownSystems();
 
     public:
-        std::shared_ptr<LogSystem>    m_logger_system_;
-        std::shared_ptr<WindowSystem> m_windows_system_;
-        std::shared_ptr<RenderSystem> m_render_system_;
+        std::shared_ptr<LogSystem>    m_logger_system;
+        std::shared_ptr<WindowSystem> m_windows_system;
+        std::shared_ptr<RenderSystem> m_render_system;
     };
 
     extern RuntimeGlobalContext g_runtime_global_context;

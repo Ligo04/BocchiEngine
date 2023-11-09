@@ -27,6 +27,6 @@ namespace bocchi
         void clear();
 
     private:
-        std::shared_ptr<Rhi> m_rhi_;
+        std::shared_ptr<Rhi> m_rhi;
     };
 }

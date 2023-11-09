@@ -41,9 +41,9 @@ namespace bocchi
         std::shared_ptr<IBlob> GetByteCode(const char* file_name, const char* entry_name);
 
     private:
-        nvrhi::DeviceHandle m_device_;
-        std::unordered_map<std::string, std::shared_ptr<IBlob>> m_byte_code_cache_map_;
-        std::shared_ptr<IFileSystem>                            m_file_system_;
-        std::filesystem::path                                   m_base_path_;
+        nvrhi::DeviceHandle m_device;
+        std::unordered_map<std::string, std::shared_ptr<IBlob>> m_byte_code_cache_map;
+        std::shared_ptr<IFileSystem>                            m_file_system;
+        std::filesystem::path                                   m_base_path;
     };
 }

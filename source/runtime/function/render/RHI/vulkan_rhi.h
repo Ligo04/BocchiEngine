@@ -1,21 +1,21 @@
 #pragma once
 #include <queue>
+#include <string>
 #include <unordered_set>
-
 #include "rhi.h"
 #include "runtime/core/base/macro.h"
 
 namespace bocchi
 {
-    class VulkanRhi : public Rhi
+    class VulkanRhi final : public Rhi
     {
     public:
         [[nodiscard]] nvrhi::IDevice* GetDevice() const override
         {
-            if (m_validation_layer_)
-                return m_validation_layer_;
+            if (m_validation_layer)
+                return m_validation_layer;
 
-            return m_nvrhi_vk_device_;
+            return m_nvrhi_vk_device;
         }
 
         [[nodiscard]] nvrhi::GraphicsAPI GetGraphicsApi() const override { return nvrhi::GraphicsAPI::VULKAN; }
@@ -28,7 +28,7 @@ namespace bocchi
 
         void ResizeSwapChain() override
         {
-            if (m_vulkan_device_)
+            if (m_vulkan_device)
             {
                 DestroySwapChain();
                 CreateSwapChain();
@@ -37,45 +37,45 @@ namespace bocchi
 
         nvrhi::ITexture* GetCurrentBackBuffer() override
         {
-            return m_swap_chain_images_[m_swap_chain_index_].rhi_handle;
+            return m_swap_chain_images[m_swap_chain_index].rhi_handle;
         }
 
         nvrhi::ITexture* GetBackBuffer(uint32_t index) override
         {
-            if (index < m_swap_chain_images_.size())
+            if (index < m_swap_chain_images.size())
             {
-                return m_swap_chain_images_[index].rhi_handle;
+                return m_swap_chain_images[index].rhi_handle;
             }
             return nullptr;
         }
 
-        uint32_t GetCurrentBackBufferIndex() override { return m_swap_chain_index_; }
+        uint32_t GetCurrentBackBufferIndex() override { return m_swap_chain_index; }
 
-        uint32_t GetBackBufferCount() override { return static_cast<uint32_t>(m_swap_chain_images_.size()); }
+        uint32_t GetBackBufferCount() override { return static_cast<uint32_t>(m_swap_chain_images.size()); }
 
         void BeginFrame() override;
         void Present() override;
 
-        const char* GetRendererString() const override { return m_renderer_string_.c_str(); }
+        const char* GetRendererString() const override { return m_renderer_string.c_str(); }
 
         bool IsVulkanInstanceExtensionEnabled(const char* extension_name) const override
         {
-            return m_enable_extension_set_.instance.find(extension_name) != m_enable_extension_set_.instance.end();
+            return m_enable_extension_set.instance.find(extension_name) != m_enable_extension_set.instance.end();
         }
 
         bool IsVulkanDeviceExtensionEnabled(const char* extension_name) const override
         {
-            return m_enable_extension_set_.device.find(extension_name) != m_enable_extension_set_.device.end();
+            return m_enable_extension_set.device.find(extension_name) != m_enable_extension_set.device.end();
         }
 
         bool IsVulkanLayerEnabled(const char* layer_name) const override
         {
-            return m_enable_extension_set_.layers.find(layer_name) != m_enable_extension_set_.layers.end();
+            return m_enable_extension_set.layers.find(layer_name) != m_enable_extension_set.layers.end();
         }
 
         void GetEnabledVulkanInstanceExtensions(std::vector<std::string>& extensions) const override
         {
-            for (const auto& ext : m_enable_extension_set_.instance)
+            for (const auto& ext : m_enable_extension_set.instance)
             {
                 extensions.push_back(ext);
             }
@@ -83,7 +83,7 @@ namespace bocchi
 
         void GetEnabledVulkanDeviceExtensions(std::vector<std::string>& extensions) const override
         {
-            for (const auto& ext : m_enable_extension_set_.device)
+            for (const auto& ext : m_enable_extension_set.device)
             {
                 extensions.push_back(ext);
             }
@@ -91,7 +91,7 @@ namespace bocchi
 
         void GetEnabledVulkanLayers(std::vector<std::string>& layers) const override
         {
-            for (const auto& ext : m_enable_extension_set_.layers)
+            for (const auto& ext : m_enable_extension_set.layers)
             {
                 layers.push_back(ext);
             }
@@ -111,18 +111,18 @@ namespace bocchi
         {
             std::unordered_set<std::string> instance;
             std::unordered_set<std::string> layers;
-            std::unordered_set<std::string> device;
+             std::unordered_set<std::string> device;
         };
 
         // mini set of required extension
-        VulkanExtensionSet m_enable_extension_set_ = {
+        VulkanExtensionSet m_enable_extension_set = {
             {VK_KHR_GET_PHYSICAL_DEVICE_PROPERTIES_2_EXTENSION_NAME},
             {},
             {VK_KHR_SWAPCHAIN_EXTENSION_NAME, VK_KHR_MAINTENANCE1_EXTENSION_NAME},
         };
 
         // optional extensions
-        VulkanExtensionSet m_optional_extensions_ = {
+        VulkanExtensionSet m_optional_extensions = {
             // instance
             {VK_EXT_SAMPLER_FILTER_MINMAX_EXTENSION_NAME, VK_EXT_DEBUG_UTILS_EXTENSION_NAME},
             // layers
@@ -138,34 +138,34 @@ namespace bocchi
         };
 
         // raytracing extension
-        std::unordered_set<std::string> m_ray_tracing_extensions_ = {VK_KHR_ACCELERATION_STRUCTURE_EXTENSION_NAME,
+        std::unordered_set<std::string> m_ray_tracing_extensions = {VK_KHR_ACCELERATION_STRUCTURE_EXTENSION_NAME,
                                                                      VK_KHR_DEFERRED_HOST_OPERATIONS_EXTENSION_NAME,
                                                                      VK_KHR_PIPELINE_LIBRARY_EXTENSION_NAME,
                                                                      VK_KHR_RAY_QUERY_EXTENSION_NAME,
                                                                      VK_KHR_RAY_TRACING_PIPELINE_EXTENSION_NAME};
 
-        std::string m_renderer_string_;
+        std::string m_renderer_string;
 
-        vk::Instance               m_vulkan_instance_;
-        vk::DebugReportCallbackEXT m_debug_report_callback_ext_;
+        vk::Instance               m_vulkan_instance;
+        vk::DebugReportCallbackEXT m_debug_report_callback_ext;
 
-        vk::PhysicalDevice m_vulkan_physical_device_;
+        vk::PhysicalDevice m_vulkan_physical_device;
 
-        int m_graphics_queue_family_ = -1;
-        int m_compute_queue_family_  = -1;
-        int m_transfer_queue_family_ = -1;
-        int m_present_queue_family_  = -1;
+        int m_graphics_queue_family = -1;
+        int m_compute_queue_family  = -1;
+        int m_transfer_queue_family = -1;
+        int m_present_queue_family  = -1;
 
-        vk::Device m_vulkan_device_;
-        vk::Queue  m_graphics_queue_;
-        vk::Queue  m_compute_queue_;
-        vk::Queue  m_transfer_queue_;
-        vk::Queue  m_present_queue_;
+        vk::Device m_vulkan_device;
+        vk::Queue  m_graphics_queue;
+        vk::Queue  m_compute_queue;
+        vk::Queue  m_transfer_queue;
+        vk::Queue  m_present_queue;
 
-        vk::SurfaceKHR m_windows_surface_;
+        vk::SurfaceKHR m_windows_surface;
 
-        vk::SurfaceFormatKHR m_swap_chain_format_;
-        vk::SwapchainKHR     m_swap_chain_;
+        vk::SurfaceFormatKHR m_swap_chain_format;
+        vk::SwapchainKHR     m_swap_chain;
 
         struct SwapChainImage
         {
@@ -173,39 +173,38 @@ namespace bocchi
             nvrhi::TextureHandle rhi_handle;
         };
 
-        std::vector<SwapChainImage> m_swap_chain_images_;
-        uint32_t                    m_swap_chain_index_ = static_cast<uint32_t>(-1);
+        std::vector<SwapChainImage> m_swap_chain_images;
+        uint32_t                    m_swap_chain_index = static_cast<uint32_t>(-1);
 
-        nvrhi::vulkan::DeviceHandle m_nvrhi_vk_device_;
-        nvrhi::DeviceHandle         m_validation_layer_;
+        nvrhi::vulkan::DeviceHandle m_nvrhi_vk_device;
+        nvrhi::DeviceHandle         m_validation_layer;
 
-        nvrhi::CommandListHandle m_barrier_command_list_;
-        vk::Semaphore            m_present_semaphore_;
+        nvrhi::CommandListHandle m_barrier_command_list;
+        vk::Semaphore            m_present_semaphore;
 
-        std::queue<nvrhi::EventQueryHandle>  m_frame_in_flight_;
-        std::vector<nvrhi::EventQueryHandle> m_query_pool_;
+        std::queue<nvrhi::EventQueryHandle> m_frame_in_flight;
+        std::vector<nvrhi::EventQueryHandle> m_query_pool;
 
-        bool m_buffer_device_handle_address_supported_ = false;
+        bool m_buffer_device_handle_address_supported = false;
 
     private:
         static VKAPI_ATTR VkBool32 VKAPI_CALL VulkanDebugCallback(VkDebugReportFlagsEXT       /*flags*/,
                                                                   VkDebugReportObjectTypeEXT  /*obj_type*/,
                                                                   uint64_t                    /*obj*/,
-                                                                  size_t                     location,
-                                                                  int32_t                    code,
-                                                                  const char*                layer_prefix,
-                                                                  const char*                msg,
-                                                                  void*                      user_data)
+                                                                  size_t      location,
+                                                                  int32_t     code,
+                                                                  const char* layer_prefix,
+                                                                  const char* msg,
+                                                                  void* user_data)
         {
-            if (const VulkanRhi* manager = static_cast<const VulkanRhi*>(user_data))
+            if ( auto manager = static_cast<const VulkanRhi*>(user_data))
             {
-                const auto& ignored = manager->m_rhi_creation_parameters_.ignored_vulkan_validation_message_locations;
-                const auto  found   = std::find(ignored.begin(), ignored.end(), location);
-                if (found != ignored.end())
+                const auto& ignored = manager->m_rhi_creation_parameters.ignored_vulkan_validation_message_locations;
+                if ( const auto found = std::ranges::find(ignored, location) ; found != ignored.end())
                     return VK_FALSE;
             }
 
-            LOG_ERROR("[Vulkan: location=0x%zx code=%d, layerPrefix='%s'] %s", location, code, layer_prefix, msg);
+            LOG_ERROR("[Vulkan: location=0x%zx code=%d, layerPrefix='%s'] %s", location, code, layer_prefix, msg)
 
             return VK_FALSE;
         }

@@ -47,7 +47,6 @@ namespace bocchi
 #endif
             default:
                 LOG_ERROR("RHI::Create: Unsupported Graphics API (%d)", api);
-                // LOG_ERROR("RHI::Create: Unsupported Graphics API");
                 return nullptr;
         }
     }

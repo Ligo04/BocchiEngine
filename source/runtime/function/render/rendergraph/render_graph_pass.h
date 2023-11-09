@@ -1,12 +1,10 @@
 #pragma once
-#include "runtime/core/utils/enum_utils.h"
-#include "runtime/function/render/rendergraph/render_graph_context.h"
-#include <functional>
 #include <nvrhi/nvrhi.h>
 #include <optional>
 #include <unordered_set>
 
-#include "render_graph_pass.h"
+#include "runtime/core/utils/enum_utils.h"
+#include "runtime/function/render/rendergraph/render_graph_context.h"
 
 namespace bocchi
 {
@@ -111,15 +109,21 @@ namespace bocchi
         virtual ~RenderGraphPassBase() = default;
 
     protected:
-        virtual void Setup(RenderGraphBuilder&) = 0;
-        virtual void Execute(RenderGraphContext&, nvrhi::ICommandList*) const = 0;
+        virtual void Setup(RenderGraphBuilder&)                                    = 0;
+        virtual void Execute(RenderGraphContext&, nvrhi::CommandListHandle) const = 0;
 
         bool IsCulled() const { return CanBeCulled() && m_ref_count_ == 0; }
         bool CanBeCulled() const { return !HasAnyFlag(m_pass_flags_, RenderPassFlags::ForceNocull); };
-        bool SkipAutoRenderPassSetup() const { return !HasAnyFlag(m_pass_flags_, RenderPassFlags::SkipAutoRenderPass); };
+        bool SkipAutoRenderPassSetup() const
+        {
+            return !HasAnyFlag(m_pass_flags_, RenderPassFlags::SkipAutoRenderPass);
+        };
         bool UseLegacyRenderPasses() const { return !HasAnyFlag(m_pass_flags_, RenderPassFlags::LegacyRenderPass); };
         bool AllowUavWrites() const { return !HasAnyFlag(m_pass_flags_, RenderPassFlags::AllowUauWrite); };
-        bool ActAsCreatorWhenWriting() const { return !HasAnyFlag(m_pass_flags_, RenderPassFlags::ActAsCreatorWhenWriting); };
+        bool ActAsCreatorWhenWriting() const
+        {
+            return !HasAnyFlag(m_pass_flags_, RenderPassFlags::ActAsCreatorWhenWriting);
+        };
 
     private:
         const std::string   m_name_;
@@ -148,7 +152,67 @@ namespace bocchi
     class RenderGraphPass final : public RenderGraphPassBase
     {
     public:
-        using SetupFunc = std::function<void(PassData&, RenderGraphBuilder&)>;
-        //using ExecuteFunc=std::function<void(const PassData&)
+        
+        using SetupFunc   = std::function<void(PassData&, RenderGraphBuilder&)>;
+        using ExecuteFunc = std::function<void(PassData const&, RenderGraphContext&, nvrhi::CommandListHandle)>;
+
+        RenderGraphPass(const char*         name,
+                        SetupFunc&&         setup,
+                        ExecuteFunc&&       execute,
+                        RenderGraphPassType type  = RenderGraphPassType::Graphics,
+                        RenderPassFlags     flags = RenderPassFlags::None) :
+            RenderGraphPassBase(name, type, flags),
+            m_setup_func_(std::move(setup)), m_execute_func_(std::move(execute))
+        {}
+
+    private:
+        PassData    m_data_;
+        SetupFunc   m_setup_func_;
+        ExecuteFunc m_execute_func_;
+
+        void Setup(RenderGraphBuilder& builder) override
+        {
+            ASSERT(m_setup_func_ != nullptr && "setup fuinction is null!");
+            m_setup_func_(m_data_, builder);
+        }
+
+        void Execute(RenderGraphContext& context, nvrhi::CommandListHandle command_list) const override
+        {
+            ASSERT(m_setup_func_ != nullptr && "execute funtion is null");
+            m_execute_func_(m_data_, context, command_list);
+        }
+    };
+
+    template<>
+    class RenderGraphPass<void> final : public RenderGraphPassBase
+    {
+    public:
+        using SetupFunc   = std::function<void(RenderGraphBuilder&)>;
+        using ExecuteFunc = std::function<void(RenderGraphContext&, nvrhi::CommandListHandle)>;
+
+        RenderGraphPass(const char*         name,
+                        SetupFunc&&         setup,
+                        ExecuteFunc&&       execute,
+                        RenderGraphPassType type  = RenderGraphPassType::Graphics,
+                        RenderPassFlags     flags = RenderPassFlags::None) :
+            RenderGraphPassBase(name, type, flags),
+            m_setup_func_(std::move(setup)), m_execute_func_(std::move(execute))
+        {}
+
+    private:
+        SetupFunc   m_setup_func_;
+        ExecuteFunc m_execute_func_;
+
+        void Setup(RenderGraphBuilder& builder) override
+        {
+            ASSERT(m_setup_func_ != nullptr && "setup fuinction is null!");
+            m_setup_func_(builder);
+        }
+
+        void Execute(RenderGraphContext& context, nvrhi::CommandListHandle command_list) const override
+        {
+            ASSERT(m_setup_func_ != nullptr && "execute funtion is null");
+            m_execute_func_(context, command_list);
+        }
     };
 } // namespace bocchi

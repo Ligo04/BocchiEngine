@@ -449,6 +449,14 @@ namespace nvrhi
         constexpr TextureDesc& setUseClearValue(bool value) { useClearValue = value; return *this; }
         constexpr TextureDesc& setInitialState(ResourceStates value) { initialState = value; return *this; }
         constexpr TextureDesc& setKeepInitialState(bool value) { keepInitialState = value; return *this; }
+
+        // TODO: complete?
+        bool IsCompatible(TextureDesc const& desc) const
+        {
+            return dimension == desc.dimension && width == desc.width && height == desc.height && depth == desc.depth &&
+                   arraySize == desc.arraySize && format == desc.format && sampleCount == desc.sampleCount &&
+                   sharedResourceFlags == desc.sharedResourceFlags && initialState == desc.initialState;
+        }
     };
 
     // describes a 2D section of a single mip level + single slice of a texture
@@ -631,6 +639,9 @@ namespace nvrhi
         constexpr BufferDesc& setInitialState(ResourceStates value) { initialState = value; return *this; }
         constexpr BufferDesc& setKeepInitialState(bool value) { keepInitialState = value; return *this; }
         constexpr BufferDesc& setCpuAccess(CpuAccessMode value) { cpuAccess = value; return *this; }
+
+        //TODO:complete?
+        std::strong_ordering operator<=>(const BufferDesc& other) const = default;
     };
 
     struct BufferRange

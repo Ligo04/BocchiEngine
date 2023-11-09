@@ -15,12 +15,12 @@ namespace bocchi
         void Initialize();
         void clear();
 
-        bool IsQuit() const { return m_is_quit_; }
+        bool IsQuit() const { return m_is_quit; }
 
         void run();
         bool TickOneFrame(float delta_time);
 
-        int GetFps() const { return m_fps_; }
+        int GetFps() const { return m_fps; }
 
     protected:
         void LogicalTick(float delta_time);
@@ -30,11 +30,11 @@ namespace bocchi
 
         float CalculateDeltaTime();
 
-        bool                                  m_is_quit_ {false};
-        std::chrono::steady_clock::time_point m_last_tick_time_point_ {std::chrono::steady_clock::now()};
+        bool                                  m_is_quit {false};
+        std::chrono::steady_clock::time_point m_last_tick_time_point {std::chrono::steady_clock::now()};
 
-        float m_average_duration_ {0.f};
-        int   m_frame_count_ {0};
-        int   m_fps_ {0};
+        float m_average_duration {0.f};
+        int   m_frame_count {0};
+        int   m_fps {0};
     };
 } // namespace Bocchi

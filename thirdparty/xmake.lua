@@ -13,16 +13,14 @@ target("spdlog")
                 target:add("includedirs", rela("spdlog/include"), {
                         public = true
                 })
-	        target:add("defines", "SPDLOG_NO_EXCEPTIONS", "SPDLOG_NO_THREAD_ID", "SPDLOG_DISABLE_DEFAULT_LOGGER",
-                                         "FMT_CONSTEVAL=constexpr", "FMT_USE_CONSTEXPR=1", "FMT_EXCEPTIONS=0", {
-                                                public = true
-                                })
+	        target:add("defines", "SPDLOG_NO_EXCEPTIONS", "SPDLOG_NO_THREAD_ID", "SPDLOG_DISABLE_DEFAULT_LOGGER", "FMT_SHARED",
+			"SPDLOG_SHARED_LIB", "FMT_CONSTEVAL=constexpr", "FMT_USE_CONSTEXPR=1", "FMT_EXCEPTIONS=0", {
+			public = true})
 	        target:add("defines", "FMT_EXPORT", "spdlog_EXPORTS", "SPDLOG_COMPILED_LIB")
         end)
         add_headerfiles("spdlog/include/**.h")
         add_files("spdlog/src/**.cpp")
 target_end()
-
 
 --vulkan
 target("vulkan")
@@ -50,6 +48,9 @@ target("glfw")
                 })
                 if(is_plat("windows")) then
                         target:add("defines", "_GLFW_WIN32", "UNICODE", "UNICODE")
+                        target:add("syslinks","user32", "shell32", "gdi32")
+                elseif is_plat("mingw") then
+                        target:add("syslinks","gdi32")
                 end 
         end)
 
@@ -63,21 +64,7 @@ target("glfw")
                 glfw_src_path.."window.c",glfw_src_path.."vulkan.c",glfw_src_path.."context.c",
                 glfw_src_path.."init.c",glfw_src_path.."input.c",glfw_src_path.."monitor.c")
         end 
-
-        if is_plat("macosx") then
-                add_frameworks("Cocoa", "IOKit")
-        elseif is_plat("windows") then
-                add_syslinks("user32", "shell32", "gdi32")
-        elseif is_plat("mingw") then
-                add_syslinks("gdi32")
-        elseif is_plat("linux") then
-                -- TODO: add wayland support
-                add_deps("libx11", "libxrandr", "libxrender", "libxinerama", "libxfixes", "libxcursor", "libxi", "libxext")
-                add_syslinks("dl", "pthread")
-                add_defines("_GLFW_X11")
-        end
 target_end()
-
 
 --IMGUI
 target("imgui")
@@ -110,17 +97,27 @@ target("nvrhi")
         _config_project({
                 project_kind = "static",
                 enable_exception = true,
-                --batch_size=8
+                batch_size=8
         })
+        on_load(function (target) 
+                local function rela(p)
+                        return path.relative(path.absolute(p, os.scriptdir()), os.projectdir())
+                end
+                target:add("includedirs", rela("nvrhi/include"), {
+                        public = true
+                })
+                --target:add("links","dxguid")
+                if is_plat("windows") then 
+                        target:add("defines", "VK_USE_PLATFORM_WIN32_KHR","NOMINMAX")
+                end
+        end)
+        set_runtimes("/MT")
         add_deps("vulkan")
-        add_includedirs("nvrhi/include", {public = true})
         add_headerfiles("nvrhi/**.h")
         add_files("nvrhi/src/**.cpp")
-
-        --vulkan
-        if is_plat("windows") then 
-                add_defines("VK_USE_PLATFORM_WIN32_KHR","NOMINMAX")
-        end
+        add_links("dxguid")
+        --msvc
+        add_headerfiles("nvrhi/tools/nvrhi.natvis")
 target_end()
 
 --UGM

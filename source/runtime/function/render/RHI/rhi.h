@@ -3,9 +3,10 @@
 #include <nvrhi/vulkan.h>
 #include <runtime/function/render/window_system.h>
 
+
 namespace bocchi
 {
-    
+
     struct DefaultMessageCallback final : public nvrhi::IMessageCallback
     {
         static DefaultMessageCallback& GetInstance();
@@ -77,6 +78,8 @@ namespace bocchi
     class Rhi
     {
     public:
+        virtual ~Rhi() = default;
+
         static Rhi* Create(nvrhi::GraphicsAPI api);
 
         virtual bool Initialize(const RhiInitInfo& init_info, GLFWwindow* p_window) = 0;
@@ -108,8 +111,8 @@ namespace bocchi
         virtual void GetEnabledVulkanLayers(std::vector<std::string>& layers) const {}
 
     protected:
-        RhiInitInfo m_rhi_creation_parameters_;
-        GLFWwindow* m_p_window_ = nullptr;
+        RhiInitInfo m_rhi_creation_parameters = {};
+        GLFWwindow* m_p_window                = nullptr;
 
     private:
         static Rhi* CreateVulkanRhi();

@@ -14,7 +14,7 @@ namespace bocchi
     class RenderGraph;
 
     template<RenderGraphRescourceType Rescourcetype>
-    struct RenderGraphresouceTraits;
+    struct RenderGraphResouceTraits;
 
     template<>
     struct RenderGraphResouceTraits<RenderGraphRescourceType::Texture>
@@ -24,7 +24,7 @@ namespace bocchi
     };
 
     template<>
-    struct RenderGraphResourceTraits<RenderGraphRescourceType::Buffer>
+    struct RenderGraphResouceTraits<RenderGraphRescourceType::Buffer>
     {
         using Resource     = nvrhi::BufferHandle;
         using ResourceDesc = nvrhi::BufferDesc;
@@ -49,8 +49,8 @@ namespace bocchi
     template<RenderGraphRescourceType ResourceType>
     struct TypeRenderGraphResource : RenderGraphResource
     {
-        using Resouce      = typename RenderGraphresouceTraits<ResourceType>::Resource;
-        using ResourceDesc = typename RenderGraphresouceTraits<ResourceType>::ResourceDesc;
+        using Resouce      = typename RenderGraphResouceTraits<ResourceType>::Resource;
+        using ResourceDesc = typename RenderGraphResouceTraits<ResourceType>::ResourceDesc;
 
         TypeRenderGraphResource(size_t id, Resouce* resource, char const* name = "") :
             RenderGraphResource(id, true, name), resource(resource), resource_desc(resource->Get()->getDesc())
@@ -76,7 +76,7 @@ namespace bocchi
 
     class RenderGraphContext
     {
-        //friend RenderGraph;
+        friend RenderGraph;
     public:
         RenderGraphContext()                          = delete;
         RenderGraphContext(const RenderGraphContext&) = delete;
@@ -87,8 +87,26 @@ namespace bocchi
         nvrhi::TextureHandle GetTexture(RenderGraphTextureId res_id) const;
         nvrhi::BufferHandle  GetBuffer(RenderGraphBufferId res_id) const;
 
+        nvrhi::TextureHandle const GetCopySrcTexture(RenderTextureCopySrcId res_id) const;
+        nvrhi::TextureHandle GetCopyDstTexture(RenderTextureCopyDstId res_id) const;
+        nvrhi::BufferHandle const  GetCopySrcBuffer(RenderGraphBufferId res_id) const;
+        nvrhi::BufferHandle GetCopyDstBuffer(RenderGraphBufferId res_id) const;
+        nvrhi::BufferHandle const GetIndirectBuffer(RenderBufferIndirectArgsId res_id) const;
+        nvrhi::BufferHandle const GetVertexBuffer(RenderBufferVertexId res_id) const;
+        nvrhi::BufferHandle const  GetIndexBuffer(RenderBufferIndexId res_id) const;
+        nvrhi::BufferHandle const GetConstantBuffer(RenderBufferConstantId res_id) const;
+
+        nvrhi::DescriptorTableHandle GetRenderTarget(RenderGraphRenderTargetId res_id) const;
+        nvrhi::DescriptorTableHandle GetDepthStencil(RenderGraphDepthStencilId res_id) const;
+        nvrhi::DescriptorTableHandle GetReadOnlyTexture(RenderGraphTextureReadOnlyId res_id) const;
+        nvrhi::DescriptorTableHandle GetReadWriteTexture(RenderGraphTextureReadWriteId res_id) const;
+        nvrhi::DescriptorTableHandle GetReadOnlyBuffer(RenderGraphBufferReadOnlyId res_id) const;
+        nvrhi::DescriptorTableHandle GetReadWriteBuffer(RenderGraphBufferReadWriteId res_id) const;
 
     private:
+        RenderGraph & m_render_graph_;
         RenderGraphPassBase& m_render_graph_pass_;
+
+        RenderGraphContext(RenderGraph& render_graph, RenderGraphPassBase& render_graph_pass);
     };
 } // namespace bocchi

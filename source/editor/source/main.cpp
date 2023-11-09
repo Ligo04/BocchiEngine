@@ -1,10 +1,9 @@
 #include <ostream>
-
-#include "runtime/Engine.h"
 #include <UGM/UGM.hpp>
+#include "runtime/Engine.h"
+
 int main()
 {
-    Ubpa::matf4::eye().print();
     bocchi::BocchiEngine* engine = new bocchi::BocchiEngine();
 
     engine->StartEngine("");
@@ -14,5 +13,6 @@ int main()
     engine->clear();
     engine->ShutdownEngine();
 
+    
     return 1;
 }

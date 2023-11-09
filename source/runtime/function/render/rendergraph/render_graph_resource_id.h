@@ -73,7 +73,7 @@ namespace bocchi
     using RenderBufferIndirectArgsId = RenderGraphBufferModeId<RenderGraphMode::IndirectArgs>;
     using RenderBufferVertexId       = RenderGraphBufferModeId<RenderGraphMode::Vertex>;
     using RenderBufferIndexId        = RenderGraphBufferModeId<RenderGraphMode::Index>;
-    using RenderbufferConstantId     = RenderGraphBufferModeId<RenderGraphMode::Constant>;
+    using RenderBufferConstantId     = RenderGraphBufferModeId<RenderGraphMode::Constant>;
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
 

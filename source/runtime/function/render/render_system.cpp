@@ -11,8 +11,8 @@ void bocchi::RenderSystem::initialize(const RenderSystemInfo& render_system_info
 	RhiInitInfo rhi_init_info;
     rhi_init_info.back_buffer_width  = render_system_info.window_system->GetWindowsSize()[0];
     rhi_init_info.back_buffer_height = render_system_info.window_system->GetWindowsSize()[1];
-    m_rhi_                           = std::shared_ptr<Rhi>(Rhi::Create(api));
-    m_rhi_->Initialize(rhi_init_info, render_system_info.window_system->GetWindow());
+    m_rhi                           = std::shared_ptr<Rhi>(Rhi::Create(api));
+    m_rhi->Initialize(rhi_init_info, render_system_info.window_system->GetWindow());
     
 
 }

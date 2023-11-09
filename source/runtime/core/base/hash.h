@@ -1,7 +1,6 @@
 #pragma once
 
 #include <cstddef>
-#include <functional>
 #include <stdint.h>
 #include <string>
 #include <vcruntime.h>
@@ -44,11 +43,11 @@ namespace bocchi
         template<uint64_t C>
         struct CrcInternal<C, 0>
         {
-            static constexpr uint64_t kValue = C;
+            static constexpr uint64_t value = C;
         };
 
         template<uint64_t C>
-        constexpr uint64_t kCrcinterValue = CrcInternal<C>::kValue;
+        constexpr uint64_t kCrcinterValue = CrcInternal<C>::value;
 
 #define CRC64_TABLE_0(x) CRC64_TABLE_1(x) CRC64_TABLE_1((x) + 128)
 #define CRC64_TABLE_1(x) CRC64_TABLE_2(x) CRC64_TABLE_2((x) + 64)

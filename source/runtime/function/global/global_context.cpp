@@ -11,24 +11,24 @@ namespace bocchi
     void RuntimeGlobalContext::StartSystems(const std::string& config_file_path)
     {
 
-        m_logger_system_ = std::make_shared<LogSystem>();
+        m_logger_system = std::make_shared<LogSystem>();
         
-        m_windows_system_ = std::make_shared<WindowSystem>();
+        m_windows_system = std::make_shared<WindowSystem>();
         WindowCreateInfo window_create_info{};
-        m_windows_system_->initialize(window_create_info);
+        m_windows_system->initialize(window_create_info);
         
-        m_render_system_ = std::make_shared<RenderSystem>();
+        m_render_system = std::make_shared<RenderSystem>();
         RenderSystemInfo render_system_info;
-        render_system_info.window_system = m_windows_system_;
+        render_system_info.window_system = m_windows_system;
 
-        m_render_system_->initialize(render_system_info);
+        m_render_system->initialize(render_system_info);
     }
 
     void RuntimeGlobalContext::ShutdownSystems()
     {
-        m_logger_system_.reset();
-        m_windows_system_.reset();
-        m_render_system_.reset();
+        m_logger_system.reset();
+        m_windows_system.reset();
+        m_render_system.reset();
 
     }
 }   // namespace

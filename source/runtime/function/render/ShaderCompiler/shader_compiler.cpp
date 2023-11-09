@@ -8,11 +8,11 @@ namespace bocchi
     ShaderCompiler::ShaderCompiler(const nvrhi::DeviceHandle&          renderer_interface,
                                    const std::shared_ptr<IFileSystem>& file_system,
                                    const std::filesystem::path&        base_path) :
-        m_device_(renderer_interface),
-        m_file_system_(file_system), m_base_path_(base_path)
+        m_device(renderer_interface),
+        m_file_system(file_system), m_base_path(base_path)
     {}
 
-    void ShaderCompiler::ClearCache() { m_byte_code_cache_map_.clear(); }
+    void ShaderCompiler::ClearCache() { m_byte_code_cache_map.clear(); }
 
     nvrhi::ShaderHandle ShaderCompiler::CreateShader(const char*                     file_name,
                                                      const char*                     entry_name,
@@ -64,7 +64,7 @@ namespace bocchi
             return nullptr;
         }
 
-        return m_device_->createShader(desc_copy, permutation_byte_code, permutation_size);
+        return m_device->createShader(desc_copy, permutation_byte_code, permutation_size);
     }
 
     nvrhi::ShaderLibraryHandle ShaderCompiler::CreateShaderLibrary(const char*                     file_name,
@@ -103,7 +103,7 @@ namespace bocchi
             return nullptr;
         }
 
-        return m_device_->createShaderLibrary(permutation_byte_code, permutation_size);
+        return m_device->createShaderLibrary(permutation_byte_code, permutation_size);
     }
 
     std::shared_ptr<IBlob> ShaderCompiler::GetByteCode(const char* file_name, const char* entry_name)
@@ -131,19 +131,19 @@ namespace bocchi
 
 
 #if USE_VK
-        std::filesystem::path shader_file_path = m_base_path_ / (adjusted_name + ".spirv");
+        std::filesystem::path shader_file_path = m_base_path / (adjusted_name + ".spirv");
 #elif USE_DX12
-        std::filesystem::path shader_file_path = m_base_path_ / (adjusted_name + ".bin");
+        std::filesystem::path shader_file_path = m_base_path / (adjusted_name + ".bin");
 #endif
 
-        std::shared_ptr<IBlob>& data = m_byte_code_cache_map_[shader_file_path.generic_string()];
+        std::shared_ptr<IBlob>& data = m_byte_code_cache_map[shader_file_path.generic_string()];
 
         if (data)
         {
             return data;
         }
 
-        data = m_file_system_->ReadFile(shader_file_path);
+        data = m_file_system->ReadFile(shader_file_path);
 
         if (!data)
         {
