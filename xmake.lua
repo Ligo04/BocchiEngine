@@ -1,43 +1,119 @@
 set_project("Bocchi Engine")
-set_xmakever("2.7.0")
+set_xmakever("2.8.0")
 set_version("0.0.1")
 
-option("enable_unity_build")
-set_values(true, false)
-set_default(false)
-set_showmenu(true)
+-- set_toolset("cc", "clang")
+-- set_toolset("cxx", "clang", "clang++")
+add_rules("mode.debug", "mode.profile", "mode.release")
+if is_mode("debug") then
+    add_defines("LUNA_DEBUG_LEVEL=2")
+elseif is_mode("profile") then
+    add_defines("LUNA_DEBUG_LEVEL=1")
+else 
+    add_defines("LUNA_DEBUG_LEVEL=0")
+end
+
+option("shared")
+    set_default(true)
+    set_showmenu(true)
+    set_description("Build All SDK Modules as Shared Library.")
+    add_defines("LUNA_BUILD_SHARED_LIB")
 option_end()
 
-add_rules("plugin.vsxmake.autoupdate")
-add_rules("mode.release", "mode.debug")
-set_defaultmode("debug")
+option("contract_assertion")
+    set_default(false)
+    set_showmenu(true)
+    set_description("Enables contract assertions. This is always enabled in debug build.")
+option_end()
+
+option("thread_safe_assertion")
+    set_default(false)
+    set_showmenu(true)
+    set_description("Enables thread safe assertions. This is always enabled in debug build.")
+    add_defines("LUNA_ENABLE_THREAD_SAFE_ASSERTION")
+option_end()
+
+option("memory_profiler")
+    set_default(true)
+    set_showmenu(true)
+    set_description("Whether to forcly enable memory profiler for Luna SDK. The memory profiler will still be enabled in Debug and Profile mode.")
+    add_defines("LUNA_ENABLE_MEMORY_PROFILER")
+option_end()
 
 
-includes("shader_compiler.lua")
-includes("xmake_func.lua")
+function get_default_rhi_api()
+    local default_rhi_api = false
+    if is_os("windows") then
+        default_rhi_api = "D3D12"
+    elseif is_os("macosx", "ios") then
+        default_rhi_api = "Metal"
+    elseif is_os("linux", "android") then
+        default_rhi_api = "Vulkan"
+    end
+    if default_rhi_api == false then
+        raise("No Graphics API is present for the current platform!")
+    end
+    return default_rhi_api
+end
+
+option("rhi_api")
+    set_default(get_default_rhi_api())
+    set_showmenu(true)
+    if is_os("windows") then
+        set_values("D3D12", "Vulkan")
+    elseif is_os("macosx", "ios") then
+        set_values("Metal")
+    elseif is_os("linux", "android") then
+        set_values("Vulkan")
+    end
+    set_description("The Graphics API to use for Luna SDK")
+option_end()
+
+if is_config("rhi_api", "Vulkan") then 
+    add_requires("volk", {configs = {header_only = true}})
+    add_requires("vulkan-memory-allocator")
+elseif is_config("rhi_api", "D3D12") then 
+    add_requires("d3d12-memory-allocator")
+end
+
+function add_luna_sdk_options()
+    add_options("shared", "contract_assertion", "thread_safe_assertion", "memory_profiler")
+    -- Contract assertion is always enabled in debug mode.
+    if has_config("contract_assertion") or is_mode("debug") then
+        add_defines("LUNA_ENABLE_CONTRACT_ASSERTION")
+    end
+end
+
+function luna_sdk_module_target(target_name)
+    target(target_name)
+    add_luna_sdk_options()
+    set_group("Modules")
+    if has_config("shared") then
+        set_kind("shared")
+    else
+        set_kind("static")
+    end
+    set_basename("Luna" .. target_name)
+end
+
+
+
+add_includedirs("thirdparty")
+set_languages("c99", "cxx17")
+set_exceptions("none")
+
+if is_os("windows") then 
+    add_defines("_WINDOWS")
+    add_defines("UNICODE")
+    add_defines("_UNICODE")
+    add_defines("NOMINMAX")
+    add_defines("_CRT_SECURE_NO_WARNINGS")
+end
+
+function set_program()
+    add_luna_sdk_options()
+    set_group("Engine")
+    set_kind("binary")
+end
 includes("thirdparty")
-
-if is_arch("x64", "x86_64", "arm64") then
-	-- disable ccache in-case error
-	set_policy("build.ccache", true)
-    target("BocchiEngine")
-        set_group("BocchiEngine")
-        -- set bin dir
-        set_targetdir("bin")
-        _config_project({
-            project_kind = "binary",
-            enable_exception = true,
-        })
-        --add definess
-        if is_mode("debug") then
-            add_defines("DEBUG","_DEBUG")
-        end
-        add_defines("USE_VK")
-        add_deps("spdlog","glfw","imgui","nvrhi","UGM")
-        add_includedirs("source")
-        add_headerfiles("source/**.h|source/**.hpp")
-        add_files("source/**.cpp")
-        add_headerfiles("source/shaders/**.hlsl")
-        add_files("source/shaders/**.hlsl",{rule="hlsl_shader_complier"})
-    target_end()
-end 
+includes("Engine")
