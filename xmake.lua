@@ -1,10 +1,11 @@
 set_project("Bocchi Engine")
 set_xmakever("2.8.0")
 set_version("0.0.1")
-
+set_encodings("utf-8")
 -- set_toolset("cc", "clang")
 -- set_toolset("cxx", "clang", "clang++")
 add_rules("mode.debug", "mode.profile", "mode.release")
+add_defines("LUNA_MANUAL_CONFIG_DEBUG_LEVEL")
 if is_mode("debug") then
     add_defines("LUNA_DEBUG_LEVEL=2")
 elseif is_mode("profile") then
