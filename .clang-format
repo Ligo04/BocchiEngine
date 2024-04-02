@@ -4,10 +4,10 @@
 ---
 ### General config, applies to all languages ###
 ### C++ specific config ###
-Language:        Cpp
-Standard:        c++17
+Language: Cpp
+Standard: c++17
 BasedOnStyle:  LLVM
-AccessModifierOffset: -4
+AccessModifierOffset: 4
 AlignAfterOpenBracket: Align
 BreakBeforeBinaryOperators: All
 AlignOperands:   AlignAfterOperator
@@ -75,7 +75,6 @@ IncludeCategories:
     Priority:        3
 IncludeIsMainRegex: '(Test)?$'
 IncludeIsMainSourceRegex: ''
-IndentAccessModifiers: true
 IndentCaseLabels: true
 IndentCaseBlocks: true
 IndentGotoLabels: true
@@ -83,8 +82,6 @@ IndentPPDirectives: None
 IndentExternBlock: AfterExternBlock
 IndentRequires:  false
 IndentWidth: 4
-ConstructorInitializerIndentWidth: 4
-ContinuationIndentWidth: 4
 IndentWrappedFunctionNames: false
 InsertTrailingCommas: None
 KeepEmptyLinesAtTheStartOfBlocks: false
@@ -92,7 +89,7 @@ LambdaBodyIndentation: Signature
 MacroBlockBegin: ''
 MacroBlockEnd:   ''
 MaxEmptyLinesToKeep: 1
-NamespaceIndentation: None
+NamespaceIndentation: All
 PointerAlignment: Right
 PPIndentWidth:   -1
 ReferenceAlignment: Pointer
@@ -139,3 +136,4 @@ SpaceBeforeSquareBrackets: false
 BitFieldColonSpacing: Both
 TabWidth: 4
 UseTab: Never
+AlignArrayOfStructures: Right

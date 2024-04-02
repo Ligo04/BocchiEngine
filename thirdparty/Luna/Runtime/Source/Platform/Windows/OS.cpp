@@ -1,12 +1,12 @@
 /*!
-* This file is a portion of Luna SDK.
-* For conditions of distribution and use, see the disclaimer
-* and license in LICENSE.txt
-* 
-* @file OS.cpp
-* @author JXMaster
-* @date 2020/12/9
-*/
+ * This file is a portion of Luna SDK.
+ * For conditions of distribution and use, see the disclaimer
+ * and license in LICENSE.txt
+ *
+ * @file OS.cpp
+ * @author JXMaster
+ * @date 2020/12/9
+ */
 #include "../../OS.hpp"
 #include "../../../Platform/Windows/MiniWin.hpp"
 
@@ -32,7 +32,7 @@ namespace Luna
             std_io_init();
         }
 
-        void close() 
+        void close()
         {
             std_io_close();
             thread_close();
@@ -46,5 +46,5 @@ namespace Luna
             ::GetSystemInfo(&si);
             return si.dwNumberOfProcessors;
         }
-    }
-}
+    } //namespace OS
+} //namespace Luna

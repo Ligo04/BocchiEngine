@@ -1,32 +1,30 @@
 /*!
-* This file is a portion of Luna SDK.
-* For conditions of distribution and use, see the disclaimer
-* and license in LICENSE.txt
-* 
-* @file Random.cpp
-* @author JXMaster
-* @date 2019/12/26
-*/
+ * This file is a portion of Luna SDK.
+ * For conditions of distribution and use, see the disclaimer
+ * and license in LICENSE.txt
+ *
+ * @file Random.cpp
+ * @author JXMaster
+ * @date 2019/12/26
+ */
 #include <Luna/Runtime/PlatformDefines.hpp>
 #define LUNA_RUNTIME_API LUNA_EXPORT
-#include "Random.hpp"
 #include "../Mutex.hpp"
+#include "Random.hpp"
 #include <Luna/Runtime/Time.hpp>
+
 namespace Luna
 {
     std::mt19937 g_random_engine;
-    Ref<IMutex> g_random_mutex;
-    void random_init()
+    Ref<IMutex>  g_random_mutex;
+    void         random_init()
     {
         register_boxed_type<Random>();
         impl_interface_for_type<Random, IRandom>();
         g_random_engine.seed((unsigned int)get_ticks());
         g_random_mutex = new_mutex();
     }
-    void random_close()
-    {
-        g_random_mutex = nullptr;
-    }
+    void             random_close() { g_random_mutex = nullptr; }
     LUNA_RUNTIME_API Ref<IRandom> new_random(u32 initial_seed)
     {
         auto ret = new_object<Random>();
@@ -65,7 +63,7 @@ namespace Luna
     {
         g_random_mutex->wait();
         std::uniform_real_distribution<f32> dis(range_begin, range_end);
-        f64 r = dis(g_random_engine);
+        f64                                 r = dis(g_random_engine);
         g_random_mutex->unlock();
         return r;
     }
@@ -73,7 +71,7 @@ namespace Luna
     {
         g_random_mutex->wait();
         std::uniform_real_distribution<f64> dis(range_begin, range_end);
-        f64 r = dis(g_random_engine);
+        f64                                 r = dis(g_random_engine);
         g_random_mutex->unlock();
         return r;
     }
@@ -81,9 +79,9 @@ namespace Luna
     {
         g_random_mutex->wait();
         Guid guid;
-        guid.low = random_u64();
+        guid.low  = random_u64();
         guid.high = random_u64();
         g_random_mutex->unlock();
         return guid;
     }
-}
+} //namespace Luna
