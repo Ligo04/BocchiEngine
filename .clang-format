@@ -6,12 +6,11 @@
 ### C++ specific config ###
 Language: Cpp
 Standard: c++17
-BasedOnStyle:  LLVM
-AccessModifierOffset: 4
+BasedOnStyle: LLVM
+ColumnLimit: 120
 AlignAfterOpenBracket: Align
 BreakBeforeBinaryOperators: All
 AlignOperands:   AlignAfterOperator
-# AlignConsecutiveAssignments: None
 AlignConsecutiveAssignments:
   Enabled: true
   AcrossEmptyLines: true
@@ -54,7 +53,6 @@ BreakBeforeConceptDeclarations: Always
 BreakInheritanceList: BeforeColon
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializers: AfterColon
-ColumnLimit: 120
 QualifierAlignment: Leave
 CompactNamespaces: false
 Cpp11BracedListStyle: false
@@ -75,21 +73,23 @@ IncludeCategories:
     Priority:        3
 IncludeIsMainRegex: '(Test)?$'
 IncludeIsMainSourceRegex: ''
+# TabWidth: 4
 IndentCaseLabels: true
 IndentCaseBlocks: true
-IndentGotoLabels: true
+NamespaceIndentation: All
+IndentAccessModifiers: true
+# AccessModifierOffsets: -4
 IndentPPDirectives: None
-IndentExternBlock: AfterExternBlock
-IndentRequires:  false
+IndentExternBlock: Indent
+IndentRequiresClause: false
 IndentWidth: 4
-IndentWrappedFunctionNames: false
+IndentWrappedFunctionNames: True
 InsertTrailingCommas: None
 KeepEmptyLinesAtTheStartOfBlocks: false
 LambdaBodyIndentation: Signature
 MacroBlockBegin: ''
 MacroBlockEnd:   ''
 MaxEmptyLinesToKeep: 1
-NamespaceIndentation: All
 PointerAlignment: Right
 PPIndentWidth:   -1
 ReferenceAlignment: Pointer
@@ -134,6 +134,4 @@ SpacesInLineCommentPrefix:
 SpacesInSquareBrackets: false
 SpaceBeforeSquareBrackets: false
 BitFieldColonSpacing: Both
-TabWidth: 4
-UseTab: Never
 AlignArrayOfStructures: Right
