@@ -1,10 +1,9 @@
-#include "Luna/Runtime/Runtime.hpp"
 #include "Runtime/Engine.hpp"
 #include <iostream>
 
 int main()
 {
-    // Luna::init();
-    std::cout << "Hello Wolrd\n";
+    Bocchi::BocchiEngine engine;
+    engine.StartEngine("");
     return 0;
 }

@@ -1,31 +1,32 @@
 /*!
-* This file is a portion of Luna SDK.
-* For conditions of distribution and use, see the disclaimer
-* and license in LICENSE.txt
-* 
-* @file Runtime.cpp
-* @author JXMaster
-* @date 2020/12/10
-*/
+ * This file is a portion of Luna SDK.
+ * For conditions of distribution and use, see the disclaimer
+ * and license in LICENSE.txt
+ *
+ * @file Runtime.cpp
+ * @author JXMaster
+ * @date 2020/12/10
+ */
 #include "../PlatformDefines.hpp"
 #define LUNA_RUNTIME_API LUNA_EXPORT
 #include "../Runtime.hpp"
-#include "Name.hpp"
-#include "Module.hpp"
-#include "OS.hpp"
-#include "Memory.hpp"
 #include "../Waitable.hpp"
-#include "Signal.hpp"
-#include "Mutex.hpp"
-#include "Semaphore.hpp"
 #include "File.hpp"
-#include "Thread.hpp"
-#include "TypeInfo.hpp"
 #include "Interface.hpp"
+#include "Memory.hpp"
+#include "Module.hpp"
+#include "Mutex.hpp"
+#include "Name.hpp"
+#include "OS.hpp"
+#include "Profiler.hpp"
 #include "Random.hpp"
 #include "ReadWriteLock.hpp"
+#include "Semaphore.hpp"
+#include "Signal.hpp"
 #include "StdIO.hpp"
-#include "Profiler.hpp"
+#include "Thread.hpp"
+#include "TypeInfo.hpp"
+
 namespace Luna
 {
     void error_init();
@@ -58,11 +59,12 @@ namespace Luna
         impl_interface_for_type<StdIOStream, IStream>();
     }
 
-    static bool g_initialized = false;
+    static bool           g_initialized = false;
 
     LUNA_RUNTIME_API bool init()
     {
-        if (g_initialized) return true;
+        if (g_initialized)
+            return true;
         OS::init();
         profiler_init();
         error_init();
@@ -80,7 +82,8 @@ namespace Luna
     }
     LUNA_RUNTIME_API void close()
     {
-        if (!g_initialized) return;
+        if (!g_initialized)
+            return;
         module_close();
         std_io_close();
         log_close();
@@ -94,4 +97,4 @@ namespace Luna
         OS::close();
         g_initialized = false;
     }
-}
+} //namespace Luna

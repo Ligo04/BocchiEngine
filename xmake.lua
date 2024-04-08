@@ -3,7 +3,7 @@ set_xmakever("2.8.0")
 set_version("0.0.1")
 set_encodings("utf-8")
 
-
+set_toolchains("clang-cl")
 add_rules("mode.debug", "mode.profile", "mode.release")
 add_defines("LUNA_MANUAL_CONFIG_DEBUG_LEVEL")
 if is_mode("debug") then
