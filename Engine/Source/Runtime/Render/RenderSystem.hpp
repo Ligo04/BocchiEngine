@@ -7,9 +7,10 @@
 
 namespace Bocchi
 {
+    using namespace Luna;
     struct RenderSystemInfo
     {
-            Luna::Ref<Luna::Window::IWindow> window{ nullptr };
+            Ref<Window::IWindow> window{ nullptr };
     };
 
     class RenderSystem
@@ -23,6 +24,6 @@ namespace Bocchi
             void Clear();
 
         private:
-            Luna::Ref<RHIContent> m_rhi;
+            Ref<RHIContent> m_rhi;
     };
 } //namespace Bocchi

@@ -117,3 +117,5 @@ function set_program()
 end
 set_defaultmode("debug")
 includes("Engine")
+includes("Thirdparty")
+add_includedirs("Thirdparty")

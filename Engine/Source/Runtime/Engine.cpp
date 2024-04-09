@@ -1,4 +1,5 @@
 #include "Engine.hpp"
+#include "Runtime/Global/GlobalContext.hpp"
 #include <Luna/Asset/Asset.hpp>
 #include <Luna/Font/Font.hpp>
 #include <Luna/HID/HID.hpp>
@@ -8,23 +9,20 @@
 #include <Luna/Runtime/File.hpp>
 #include <Luna/Runtime/Log.hpp>
 #include <Luna/Runtime/Runtime.hpp>
+#include <Luna/Runtime/Thread.hpp>
 #include <Luna/VariantUtils/VariantUtils.hpp>
 
 namespace Bocchi
 {
-    void BocchiEngine::StartEngine(const Path &config_file_path)
+    void BocchiEngine::StartEngine(const String &config_file_path)
     {
-        m_project_path = config_file_path;
-        return;
-    };
-
-    void BocchiEngine::Initialize()
-    {
+        /// m_project_path = config_file_path;
         luassert_always(Luna::init());
         SetCurrentDirToProcessPath();
         // log
         set_log_to_platform_enabled(true);
         set_log_to_platform_verbosity(LogVerbosity::verbose);
+        // luna module
         lupanic_if_failed(add_modules({ module_variant_utils(),
                                         module_hid(),
                                         module_window(),
@@ -38,8 +36,14 @@ namespace Bocchi
         {
             log_error("App", explain(r.errcode()));
         }
+        // global context
+        r = g_runtime_global_context.StartSystems("");
+        if (failed(r))
+        {
+            log_error("App", explain(r.errcode()));
+        }
         return;
-    }
+    };
 
     void BocchiEngine::SetCurrentDirToProcessPath()
     {
@@ -48,9 +52,24 @@ namespace Bocchi
         luassert_always(succeeded(set_current_dir(p.encode().c_str())));
     }
 
-    void BocchiEngine::Run() {}
+    void BocchiEngine::Run()
+    {
+        auto window_system = g_runtime_global_context.m_window_system;
+        luassert_always(window_system);
+        while (!window_system->is_closed())
+        {
+            const float delta_time = CalculalteDeltaTime();
+            TickOneFrame(delta_time);
+        }
+    }
 
-    void BocchiEngine::Clear() { Luna::close(); }
+    bool BocchiEngine::TickOneFrame(f32 delta_time)
+    {
+        Window::poll_events();
+        sleep(16);
+        return true;
+    }
 
+    f32  BocchiEngine::CalculalteDeltaTime() { return 0.0f; }
     void BocchiEngine::ShutdownEngine() {}
 } //namespace Bocchi

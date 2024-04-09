@@ -10,14 +10,14 @@ namespace Bocchi
     {
         public:
             // create all global system and inititalize these system
-            void StartSystems(const Luna::String &config_file_path);
+            RV StartSystems(const String &config_file_path);
 
             // destroy all global systems
             void ShutdownSystems();
 
         public:
-            Luna::Ref<Luna::Window::IWindow> m_window_system;
-            Luna::Ref<RenderSystem>          m_render_system;
+            Ref<Window::IWindow> m_window_system;
+            Ref<RenderSystem>    m_render_system;
     };
     extern RuntimeGlobalContext g_runtime_global_context;
 } //namespace Bocchi

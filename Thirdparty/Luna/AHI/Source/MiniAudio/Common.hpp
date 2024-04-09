@@ -1,21 +1,21 @@
 /*!
-* This file is a portion of Luna SDK.
-* For conditions of distribution and use, see the disclaimer
-* and license in LICENSE.txt
-* 
-* @file Common.hpp
-* @author JXMaster
-* @date 2023/10/15
-*/
+ * This file is a portion of Luna SDK.
+ * For conditions of distribution and use, see the disclaimer
+ * and license in LICENSE.txt
+ *
+ * @file Common.hpp
+ * @author JXMaster
+ * @date 2023/10/15
+ */
 #pragma once
 #define MA_NO_DECODING
 #define MA_NO_ENCODING
 #define MA_NO_ENGINE
 #define MA_NO_RESOURCE_MANAGER
 #define MA_NO_NODE_GRAPH
-#include <miniaudio.h>
 #include "../../AHIError.hpp"
 #include "../../Adapter.hpp"
+#include <miniaudio.h>
 
 namespace Luna
 {
@@ -23,7 +23,7 @@ namespace Luna
     {
         inline ErrCode translate_ma_result(ma_result result)
         {
-            switch(result)
+            switch (result)
             {
                 case MA_SUCCESS: return ErrCode(0);
                 case MA_INVALID_ARGS: return BasicError::bad_arguments();
@@ -79,7 +79,7 @@ namespace Luna
 
         inline ma_format encode_format(BitDepth bit_depth)
         {
-            switch(bit_depth)
+            switch (bit_depth)
             {
                 case BitDepth::unspecified: return ma_format_unknown;
                 case BitDepth::u8: return ma_format_u8;
@@ -95,7 +95,7 @@ namespace Luna
 
         inline BitDepth decode_bit_depth(ma_format format)
         {
-            switch(format)
+            switch (format)
             {
                 case ma_format_unknown: return BitDepth::unspecified;
                 case ma_format_u8: return BitDepth::u8;
@@ -110,5 +110,5 @@ namespace Luna
         }
 
         extern ma_context g_context;
-    }
-}
+    } //namespace AHI
+} //namespace Luna
