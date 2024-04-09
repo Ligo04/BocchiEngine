@@ -1,4 +1,5 @@
-#include "Editor/UI/Editor_ui.hpp"
+#pragma once
+#include "Editor/UI/EditorUI.hpp"
 #include "Luna/Runtime/UniquePtr.hpp"
 #include "Runtime/Engine.hpp"
 

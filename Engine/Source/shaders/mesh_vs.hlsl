@@ -2,7 +2,7 @@
 
 struct VSInput
 {
-[[vk::location(0)]] float3 Pos : POSITION0;
+[[vk::location(0)]] float3 PosL : POSITION0;
 [[vk::location(1)]] float3 Normal : NORMAL0;
 [[vk::location(2)]] float2 UV : TEXCOORD0;
 [[vk::location(3)]] float3 Color : COLOR0;
@@ -25,7 +25,7 @@ struct PushConsts {
 
 struct VSOutput
 {
-    float4                     Pos : SV_POSITION;
+    float4                     PosH : SV_POSITION;
     [[vk::location(0)]] float3 Normal : NORMAL0;
     [[vk::location(1)]] float3 Color : COLOR0;
     [[vk::location(2)]] float2 UV : TEXCOORD0;
@@ -39,9 +39,9 @@ VSOutput main(VSInput input)
 	output.Normal = input.Normal;
 	output.Color = input.Color;
 	output.UV = input.UV;
-	output.Pos = mul(ubo.projection, mul(ubo.view, mul(primitive.model, float4(input.Pos.xyz, 1.0))));
+	output.PosH = mul(ubo.projection, mul(ubo.view, mul(primitive.model, float4(input.PosL.xyz, 1.0))));
 
-	float4 pos = mul(ubo.view, float4(input.Pos, 1.0));
+	float4 pos = mul(ubo.view, float4(input.PosL, 1.0));
 	output.Normal = mul((float3x3)ubo.view, input.Normal);
 	output.LightVec = ubo.lightPos.xyz - pos.xyz;
 	output.ViewVec = ubo.viewPos.xyz - pos.xyz;

@@ -1,9 +1,10 @@
 set_project("Bocchi Engine")
 set_xmakever("2.8.0")
 set_version("0.0.1")
-set_encodings("utf-8")
 
+set_encodings("utf-8")
 set_toolchains("clang-cl")
+
 add_rules("mode.debug", "mode.profile", "mode.release")
 add_defines("LUNA_MANUAL_CONFIG_DEBUG_LEVEL")
 if is_mode("debug") then
@@ -98,8 +99,6 @@ function luna_sdk_module_target(target_name)
 end
 
 
-
-add_includedirs("thirdparty")
 set_languages("c99", "cxx17")
 set_exceptions("none")
 
@@ -116,5 +115,5 @@ function set_program()
     set_group("Engine")
     set_kind("binary")
 end
-includes("thirdparty")
+set_defaultmode("debug")
 includes("Engine")

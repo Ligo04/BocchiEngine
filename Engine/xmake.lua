@@ -1,3 +1,5 @@
+add_includedirs("thirdparty")
+includes("thirdparty")
 target('BocchiEngine')
     set_program()
     add_options("rhi_api")

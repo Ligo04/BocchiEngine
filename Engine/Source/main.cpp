@@ -1,9 +1,12 @@
 #include "Runtime/Engine.hpp"
-#include <iostream>
 
 int main()
 {
-    Bocchi::BocchiEngine engine;
-    engine.StartEngine("");
+    Bocchi::BocchiEngine *engine = new Bocchi::BocchiEngine();
+    engine->StartEngine("");
+    engine->Initialize();
+    engine->Run();
+    engine->Clear();
+    engine->ShutdownEngine();
     return 0;
 }
