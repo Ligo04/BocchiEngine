@@ -16,6 +16,9 @@ namespace Bocchi
     class RenderSystem
     {
         public:
+            lustruct("RenderSystem", "{C2D09E8F-1FFA-B7A5-1A0D-FDC67F24ED25}");
+
+        public:
             RenderSystem()  = default;
             ~RenderSystem() = default;
 
@@ -24,6 +27,6 @@ namespace Bocchi
             void Clear();
 
         private:
-            Ref<RHIContent> m_rhi;
+            Ref<RHIContent> m_rhi{ nullptr };
     };
 } //namespace Bocchi

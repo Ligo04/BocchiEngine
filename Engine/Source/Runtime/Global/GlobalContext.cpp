@@ -7,6 +7,7 @@ namespace Bocchi
 
     RV                   RuntimeGlobalContext::StartSystems(const String &config_file_path)
     {
+        Luna::register_boxed_type<RenderSystem>();
         lutry
         {
             luset(m_window_system,
@@ -20,10 +21,10 @@ namespace Bocchi
                 });
         }
         lucatchret;
-        // m_render_system = Ref<RenderSystem>();
-        // RenderSystemInfo render_system_info;
-        // render_system_info.window = m_window_system;
-        // m_render_system->Initialize(render_system_info);
+        RenderSystemInfo render_system_info;
+        render_system_info.window = m_window_system;
+        m_render_system           = new_object<RenderSystem>();
+        m_render_system->Initialize(render_system_info);
         return ok;
     }
 
